@@ -13,5 +13,5 @@
 <p> พิมพิ์ php artisan key:generate แล้วค่อยตามด้วย  php artisan serve --host=localhost --port=80 </p>
 
 
-<p> step 7 </p>
+<p> step 6 </p>
 <p> ถ้าดูหน้า Homepage ให้พิมพิ์ local/show แต่ถ้า จะเข้าหน้าที่ใช้เพิ่มข้อมูล ให้ล็อกอินเข้า ID กับ Pass ดูได้ที่ Sql</p>
