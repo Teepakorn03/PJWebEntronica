@@ -49,6 +49,7 @@ class AboutController extends Controller
       $this->validate($request, [
           'image' => 'required|max:1000',
           'title' => 'required|max:1000',
+          'description' => 'required|max:1000'
 
 
 
@@ -61,6 +62,7 @@ class AboutController extends Controller
       $about = new about;
       $about->image = $filename;
       $about->title = $request->title;
+      $about->description = $request->description;
 
 
 
@@ -78,12 +80,10 @@ class AboutController extends Controller
      */
     public function show($id)
     {
-      $product = product::all();
+
       $about = about::all();
-      $partner = partner::all();
       $data = array(
-        'product' => $product,
-        'partner' => $partner,
+
         'about' => $about
     );
         return view('show', $data);
@@ -118,6 +118,7 @@ class AboutController extends Controller
       $this->validate($request, [
         'image' => 'required|max:1000',
         'title' => 'required|max:10000',
+        'description' => 'required|max:1000'
 
 
 
@@ -130,6 +131,7 @@ class AboutController extends Controller
     $about = about::find($id);
     $about->image = $filename;
     $about->title = $request->title;
+    $about->description = $request->description;
 
 
     $about->save();

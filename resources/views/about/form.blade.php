@@ -52,6 +52,19 @@
         </div>
         <br>
         <div class="row">
+            <div class="col-xs-2">
+                {{ Form::label('description', 'Description') }}
+            </div>
+            <div class="col-xs-5">
+                @if(isset($about->description))
+                    {{ Form::text('description',$about->description,['class' => 'form-control']) }}
+                @else
+                    {{ Form::text('description','',['class' => 'form-control']) }}
+                @endif
+            </div>
+        </div>
+        <br>
+        <div class="row">
             <div class="col-xs-5">
                 {!!  Form::submit('save', ['class'=>'btn btn-primary']) !!}
             </div>

@@ -32,7 +32,7 @@
         @forelse ($Activity as $p)
           <tr>
               <td> {{ $p['id'] }} </td>
-              <td width="30%"><img src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
+              <td><img  width="200px"  src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['name'] }} </td>
 
 

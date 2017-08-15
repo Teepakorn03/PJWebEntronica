@@ -9,7 +9,13 @@ use App\partner;
 use App\product;
 use App\about;
 use App\jobapps;
-
+use App\Activity;
+use App\Home;
+use App\Footers;
+use App\Image;
+use App\file;
+use Illuminate\Support\Facades\Input;
+use Session;
 
 class ShowController extends Controller
 {
@@ -23,10 +29,18 @@ class ShowController extends Controller
 
       $product = product::all();
       $partner = partner::all();
+      $Activity = Activity::all();
+      $about = about::all();
+      $Home = Home::all()->where('id',2);
+      $Footers = Footers::all();
       $about = about::all();
       $data = array(
         'product' => $product,
         'partner' => $partner,
+        'about' => $about,
+        'Activity' => $Activity,
+        'Home' => $Home,
+        'Footers' => $Footers,
         'about' => $about
     );
         return view('show', $data);
@@ -107,11 +121,23 @@ class ShowController extends Controller
      */
     public function show($id)
     {
-      $jobapps = jobapps::all();
+      $product = product::all();
+      $partner = partner::all();
+      $Activity = Activity::all();
+      $about = about::all();
+      $Home = Home::all()->where('id',2);
+      $Footers = Footers::all();
+      $about = about::all();
       $data = array(
-        'jobapps' => $jobapps
+        'product' => $product,
+        'partner' => $partner,
+        'about' => $about,
+        'Activity' => $Activity,
+        'Home' => $Home,
+        'Footers' => $Footers,
+        'about' => $about
     );
-    return view('job.index',$data);
+        return view('show', $data);
 
     }
 

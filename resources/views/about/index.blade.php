@@ -23,7 +23,7 @@
             <th>ID</th>
             <th>image</th>
             <th>title</th>
-
+            <th>description</th>
             <th width="200">Action</th>
         </tr>
     </thead>
@@ -34,6 +34,7 @@
               <td> {{ $p['id'] }} </td>
               <td width="30%"><img width="30%" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
+              <td>{{ $p['description'] }}</td>
 
 
 

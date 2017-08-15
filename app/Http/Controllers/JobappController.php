@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Session;
+use App\show;
+use App\partner;
+use App\product;
+use App\about;
 use App\Jobapp;
+use App\Activity;
+use App\Home;
+use App\Footers;
 use App\Image;
 use App\file;
 use Illuminate\Support\Facades\Input;
+use Session;
 class JobappController extends Controller
 {
     /**
@@ -17,11 +24,25 @@ class JobappController extends Controller
      */
     public function index()
     {
-      $jobapp = jobapp::all();
+      $product = product::all();
+      $partner = partner::all();
+      $Activity = Activity::all();
+      $about = about::all();
+      $Home = Home::all()->where('id',2);
+      $Footers = Footers::all();
+      $about = about::all();
+      $jobapp = Jobapp::all();
       $data = array(
+        'product' => $product,
+        'partner' => $partner,
+        'about' => $about,
+        'Activity' => $Activity,
+        'Home' => $Home,
+        'Footers' => $Footers,
+        'about' => $about,
         'jobapp' => $jobapp
     );
-    return view('job.index',$data);
+        return view('Job.index', $data);
     }
 
     /**
@@ -65,7 +86,7 @@ class JobappController extends Controller
       $filename = $jobapp->getClientOriginalName();
       $jobapp->move(public_path().'/img/upload', $jobapp->getClientOriginalName());
 
-      $jobapp = new jobapp;
+      $jobapp = new Jobapp;
       $jobapp->position = $request->position;
       $jobapp->name = $request->name;
       $jobapp->lastname = $request->lastname;
@@ -88,7 +109,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('jobapps');
+      return redirect('show');
     }
 
     /**
@@ -99,11 +120,24 @@ class JobappController extends Controller
      */
     public function show($id)
     {
-      $jobapp = jobapp::all();
-      $data = array(
-        'jobapp' => $jobapp
-    );
-    return view('job.index',$data);
+
+            $product = product::all();
+            $partner = partner::all();
+            $Activity = Activity::all();
+            $about = about::all();
+            $Home = Home::all()->where('id',2);
+            $Footers = Footers::all();
+            $about = about::all();
+            $data = array(
+              'product' => $product,
+              'partner' => $partner,
+              'about' => $about,
+              'Activity' => $Activity,
+              'Home' => $Home,
+              'Footers' => $Footers,
+              'about' => $about
+          );
+              return view('show', $data);
     }
 
     /**
@@ -149,7 +183,7 @@ class JobappController extends Controller
       $filename = $jobapp->getClientOriginalName();
       $jobapp->move(public_path().'/img/upload', $jobapp->getClientOriginalName());
 
-      $jobapp = jobapp::find($id);
+      $jobapp = Jobapp::find($id);
       $jobapp->position = $request->position;
       $jobapp->name = $request->name;
       $jobapp->lastname = $request->lastname;
@@ -172,7 +206,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('jobapps');
+      return redirect('show');
     }
 
     /**
@@ -183,7 +217,7 @@ class JobappController extends Controller
      */
     public function destroy($id)
     {
-      $jobapp = jobapp::find($id);
+      $jobapp = Jobapp::find($id);
       $jobapp->delete();
       Session::flash('message', 'Success Delete jobapp!!');
       return redirect('jobapp');

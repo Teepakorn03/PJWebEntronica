@@ -21,27 +21,10 @@ Route::resource('logintest','LoginController');
 
 Route::resource('base', 'BaseController');
 //Route::resource('display','ImageController');
-Route::get('/', function () {
+Route::get('index', function () {
     return view('welcome');
 });
 
-Route::resource('show', 'ShowController');
-
-
-Route::get('/hello', function() {
-  return "Hello Laravel 5.3";
-});
-
-Route::get('upload','ImageController@index');
-Route::post('upload','ImageController@upload');
-Route::get('display','ImageController@show');
-
-
-Route::get('from', 'Auth\LoginController@from');
-Route::get('entronica', 'EntronicaController@index');
-Route::get('dataa', 'Information\DataController@index');
-Route::get('service', 'ServiceController@index');
+Route::resource('/', 'ShowController');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

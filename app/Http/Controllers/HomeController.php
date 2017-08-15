@@ -3,8 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Session;
+use Illuminate\Support\Facades\DB;
+use App\show;
+use App\partner;
 use App\product;
+use App\about;
+use App\jobapps;
+use App\Activity;
+use App\Home;
+use App\Footers;
+use App\Image;
+use App\file;
+use Illuminate\Support\Facades\Input;
+use Session;
 class HomeController extends Controller
 {
     /**
@@ -24,11 +35,23 @@ class HomeController extends Controller
      */
     public function index()
     {
-     $product= product::all();
+      $product = product::all();
+      $partner = partner::all();
+      $Activity = Activity::all();
+      $about = about::all();
+      $Home = Home::all()->where('id',2);
+      $Footers = Footers::all();
+      $about = about::all();
       $data = array(
-        'product' => $product
+        'product' => $product,
+        'partner' => $partner,
+        'about' => $about,
+        'Activity' => $Activity,
+        'Home' => $Home,
+        'Footers' => $Footers,
+        'about' => $about
     );
-    return view('product.index',$data);
+        return view('show', $data);
 
 
     }
