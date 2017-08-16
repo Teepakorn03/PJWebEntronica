@@ -248,7 +248,69 @@ http://www.tooplate.com/view/2083-steak-house
     </div>
   </div>
 </section>
+<section class="contactmap" id="contactmap">
+      <h1>MAP</h1>
+      <hr/>
+    <div id="map-container" class="col-md-12"></div>
 
+  <script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
+  <script>
+
+    function init_map() {
+  var myLocation = new google.maps.LatLng(13.7601979, 100.5361053);
+  var map_map_5521249ba8516 = null;
+      var mapOptions = {
+        center: myLocation,
+        zoom: 16,
+    scaleControl: true,
+    streetViewControl: false,
+    mapTypeControl: false,
+    panControl: false,
+    zoomControl: false,
+    scrollwheel: false,
+    zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.SMALL
+        }, mapTypeControlOptions: {
+              mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+          }};var styles = [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}];
+          var styledMap = new google.maps.StyledMapType(styles,
+              {name: "Styled Map"});
+          var map_map_5521249ba8516 = new google.maps.Map(document.getElementById('map-container'),mapOptions);map_map_5521249ba8516.mapTypes.set('map_style', styledMap);
+             map_map_5521249ba8516.setMapTypeId('map_style');
+        var marker_map_5521249ba8516 = new google.maps.Marker({
+          position: new google.maps.LatLng(13.7601979, 100.5361053),
+          animation:  google.maps.Animation.DROP,
+          map: map_map_5521249ba8516,
+          icon: 'img/map.png'
+  });
+
+  var contentString =
+    '<div id="infowindow_content">'+
+          '<p><strong>COL Public Company Limited</strong><br>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+  var marker = new google.maps.Marker({
+    position: myLocation,
+    map: map,
+    title:"Click on marker to see info",
+                maxWidth: 500
+        });
+
+  google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+    });
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', init_map);
+
+  </script>
+
+  </section>
 <section id="contact">
 	</section>
 <footer>
