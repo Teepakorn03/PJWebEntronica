@@ -33,6 +33,26 @@ http://www.tooplate.com/view/2083-steak-house
 
 	<link rel="stylesheet" href="../css/style.css"  type="text/css">
 
+  <!-- javscript js -->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+
+  <script src="../js/jquery.sticky.js"></script>
+  <script src="../js/jquery.backstretch.min.js"></script>
+
+  <script src="../js/isotope.js"></script>
+  <script src="../js/imagesloaded.min.js"></script>
+  <script src="../js/nivo-lightbox.min.js"></script>
+
+  <script src="../js/jquery.flexslider-min.js"></script>
+
+  <script src="../js/jquery.parallax.js"></script>
+  <script src="../js/smoothscroll.js"></script>
+  <script src="../js/wow.min.js"></script>
+
+  <script src="../js/custom.js"></script>
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -345,26 +365,6 @@ http://www.tooplate.com/view/2083-steak-house
 
 
 
-<!-- javscript js -->
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-
-<script src="../js/jquery.magnific-popup.min.js"></script>
-
-<script src="../js/jquery.sticky.js"></script>
-<script src="../js/jquery.backstretch.min.js"></script>
-
-<script src="../js/isotope.js"></script>
-<script src="../js/imagesloaded.min.js"></script>
-<script src="../js/nivo-lightbox.min.js"></script>
-
-<script src="../js/jquery.flexslider-min.js"></script>
-
-<script src="../js/jquery.parallax.js"></script>
-<script src="../js/smoothscroll.js"></script>
-<script src="../js/wow.min.js"></script>
-
-<script src="../js/custom.js"></script>
 
 </body>
 </html>
