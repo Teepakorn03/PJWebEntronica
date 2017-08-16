@@ -77,8 +77,8 @@ http://www.tooplate.com/view/2083-steak-house
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#top" class="smoothScroll">Home</a></li>
         <li><a href="#about" class="smoothScroll">About</a></li>
-        <li><a href="#menu" class="smoothScroll">Prodoct & Service</a></li>
         <li><a href="#team" class="smoothScroll">Partner</a></li>
+        <li><a href="#menu" class="smoothScroll">Prodoct & Service</a></li>
         <li><a href="#gallery" class="smoothScroll">Activity</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
         <li><a href="#"><img src="img/th.png" class="img-responsive"data-wow-delay="1.0s"></a></li>
@@ -311,8 +311,8 @@ http://www.tooplate.com/view/2083-steak-house
   </script>
 
   </section>
-<section id="contact">
-	</section>
+<br>
+<br>
 <footer>
 	<div class="container">
 		<div class="row">
