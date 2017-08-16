@@ -70,19 +70,18 @@ http://www.tooplate.com/view/2083-steak-house
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#top" class="smoothScroll">Home</a></li>
+        <li ><a href="#home" class="smoothScroll">Home</a></li>
         <li><a href="#about" class="smoothScroll">About</a></li>
         <li><a href="#team" class="smoothScroll">Partner</a></li>
         <li><a href="#menu" class="smoothScroll">Prodoct & Service</a></li>
         <li><a href="#gallery" class="smoothScroll">Activity</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
-        <li><a href="#"><img src="img/th.png" class="img-responsive"data-wow-delay="1.0s"></a></li>
+				<li><a href="#"><img src="img/th.png" class="img-responsive"data-wow-delay="1.0s"></a></li>
       </ul>
     </div>
 
   </div>
 </div>
-
 
 <!-- Feature section -->
 
