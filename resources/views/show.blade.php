@@ -1,11 +1,6 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
 	<title>ENTRONICA</title>
 <!--
 
@@ -14,45 +9,25 @@ Template 2083 Steak House
 http://www.tooplate.com/view/2083-steak-house
 
 -->
-
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
 
 
 	<!-- stylesheets css -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css"  type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css"  type="text/css">
+	<link rel="stylesheet" href="css/animate.min.css"  type="text/css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"  type="text/css">
+  <link rel="stylesheet" href="css/nivo-lightbox.css"  type="text/css">
+  <link rel="stylesheet" href="css/nivo_themes/default/default.css"  type="text/css">
+  <link rel="stylesheet" href="css/hover-min.css"  type="text/css">
+  <link rel="stylesheet" href="css/flexslider.css"  type="text/css">
+	<link rel="stylesheet" href="css/style.css"  type="text/css">
 
-  	<link rel="stylesheet" href="../css/magnific-popup.css"  type="text/css">
 
-	<link rel="stylesheet" href="../css/animate.min.css"  type="text/css">
-	<link rel="stylesheet" href="../css/font-awesome.min.css"  type="text/css">
-
-  	<link rel="stylesheet" href="../css/nivo-lightbox.css"  type="text/css">
-  	<link rel="stylesheet" href="../css/nivo_themes/default/default.css"  type="text/css">
-
-  	<link rel="stylesheet" href="../css/hover-min.css"  type="text/css">
-  	<link rel="stylesheet" href="../css/flexslider.css"  type="text/css">
-
-	<link rel="stylesheet" href="../css/style.css"  type="text/css">
-
-  <!-- javscript js -->
-  <script src="../js/jquery.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-
-  <script src="../js/jquery.magnific-popup.min.js"></script>
-
-  <script src="../js/jquery.sticky.js"></script>
-  <script src="../js/jquery.backstretch.min.js"></script>
-
-  <script src="../js/isotope.js"></script>
-  <script src="../js/imagesloaded.min.js"></script>
-  <script src="../js/nivo-lightbox.min.js"></script>
-
-  <script src="../js/jquery.flexslider-min.js"></script>
-
-  <script src="../js/jquery.parallax.js"></script>
-  <script src="../js/smoothscroll.js"></script>
-  <script src="../js/wow.min.js"></script>
-
-  <script src="../js/custom.js"></script>
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -102,14 +77,6 @@ http://www.tooplate.com/view/2083-steak-house
         <li><a href="#gallery" class="smoothScroll">Activity</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
         <li><a href="#"><img src="img/th.png" class="img-responsive"data-wow-delay="1.0s"></a></li>
-				<li>
-          <a href="#">
-
-
-
-
-          </a>
-        </li>
       </ul>
     </div>
 
@@ -333,8 +300,9 @@ http://www.tooplate.com/view/2083-steak-house
   </section>
 <br>
 <br>
+
 <footer>
-	<div class="container">
+	<div class="container" id="contact">
 		<div class="row">
                 @foreach ($Footers as $Footers)
               <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.3s">
@@ -362,7 +330,26 @@ http://www.tooplate.com/view/2083-steak-house
 		</div>
 	</div>
 </footer>
+<!-- javscript js -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script src="js/custom.js"></script>
 
 
 
