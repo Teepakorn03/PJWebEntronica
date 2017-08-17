@@ -1,33 +1,33 @@
-<html lang="{{ config('app.locale') }}">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
 	<title>ENTRONICA</title>
-<!--
 
-Template 2083 Steak House
-
-http://www.tooplate.com/view/2083-steak-house
-
--->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="">
-<meta name="description" content="">
-
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+  	<meta name="description" content="">
 
 	<!-- stylesheets css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
-  <link rel="stylesheet" href="css/magnific-popup.css"  type="text/css">
-	<link rel="stylesheet" href="css/animate.min.css"  type="text/css">
-	<link rel="stylesheet" href="css/font-awesome.min.css"  type="text/css">
-  <link rel="stylesheet" href="css/nivo-lightbox.css"  type="text/css">
-  <link rel="stylesheet" href="css/nivo_themes/default/default.css"  type="text/css">
-  <link rel="stylesheet" href="css/hover-min.css"  type="text/css">
-  <link rel="stylesheet" href="css/flexslider.css"  type="text/css">
-	<link rel="stylesheet" href="css/style.css"  type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
+  	<link rel="stylesheet" href="css/magnific-popup.css">
 
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+  	<link rel="stylesheet" href="css/nivo-lightbox.css">
+  	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+  	<link rel="stylesheet" href="css/hover-min.css">
+  	<link rel="stylesheet" href="css/flexslider.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -55,7 +55,6 @@ http://www.tooplate.com/view/2083-steak-house
     </div>
 </section>
 
-
 <!-- Navigation section -->
 <div class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
@@ -70,10 +69,10 @@ http://www.tooplate.com/view/2083-steak-house
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li ><a href="#home" class="smoothScroll">Home</a></li>
+        <li><a href="#home" class="smoothScroll">Home</a></li>
         <li><a href="#about" class="smoothScroll">About</a></li>
         <li><a href="#team" class="smoothScroll">Partner</a></li>
-        <li><a href="#menu" class="smoothScroll">Prodoct & Service</a></li>
+        <li><a href="#menu" class="smoothScroll">Product & Service</a></li>
         <li><a href="#gallery" class="smoothScroll">Activity</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
 				<li><a href="#"><img src="img/th.png" class="img-responsive"data-wow-delay="1.0s"></a></li>
@@ -82,6 +81,7 @@ http://www.tooplate.com/view/2083-steak-house
 
   </div>
 </div>
+
 
 <!-- Feature section -->
 
@@ -156,7 +156,7 @@ http://www.tooplate.com/view/2083-steak-house
 
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
          <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>Prodoct & Service</h2>
+            <h2>Product & Service</h2>
             <h4>________________</h4>
         </div>
       </div>
@@ -182,12 +182,8 @@ http://www.tooplate.com/view/2083-steak-house
     </div>
   </div>
 </section>
-
-
-
 <!-- Gallery section -->
-<section id="gallery" class="parallax-section" style="background:rgb(240,240,240);">
-
+<section id="gallery" class="parallax-section">
   <div class="container">
     <div class="row">
 
@@ -203,30 +199,27 @@ http://www.tooplate.com/view/2083-steak-house
           <!-- iso section -->
           <div class="iso-section wow fadeInUp" data-wow-delay="0.6s">
 
-
-
                     <!-- iso box section -->
-                    <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
-                      <div class="iso-box-wrapper col4-iso-box">
+										<div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+											<div class="iso-box-wrapper col4-iso-box">
 
-                      @foreach ($Activity as $Activity)
-                        <div class="iso-box col-md-4 col-sm-6">
-                          <div class="gallery-thumb">
-                            <a href="../img/upload/<?php echo $Activity -> image?>" data-lightbox-gallery="food-gallery">
-                              <img width='200px' height='175px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
-                                <div class="gallery-overlay">
-                                  <div class="gallery-item">
-                                    <i class="fa fa-search"></i>
-                                  </div>
-                                </div>
-                            </a>
-                          </div>
-                        </div>
-                      @endforeach
+											@foreach ($Activity as $Activity)
+												<div class="iso-box col-md-4 col-sm-6">
+													<div class="gallery-thumb">
+														<a href="../img/upload/<?php echo $Activity -> image?>" data-lightbox-gallery="food-gallery">
+															<img width='200px' height='175px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
+																<div class="gallery-overlay">
+																	<div class="gallery-item">
+																		<i class="fa fa-search"></i>
+																	</div>
+																</div>
+														</a>
+													</div>
+												</div>
+											@endforeach
 
-                       </div>
-                    </div>
-
+											 </div>
+										</div>
           </div>
 
       </div>
@@ -234,11 +227,11 @@ http://www.tooplate.com/view/2083-steak-house
     </div>
   </div>
 </section>
+
 <section class="contactmap" id="contactmap">
       <h1>MAP</h1>
       <hr/>
     <div id="map-container" class="col-md-12"></div>
-
   <script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
   <script>
 
@@ -296,39 +289,42 @@ http://www.tooplate.com/view/2083-steak-house
 
   </script>
 
-  </section>
+</section>
 <br>
 <br>
-
+<!-- Footer section -->
+<section id="contact">
+	</section>
 <footer>
-	<div class="container" id="contact">
+	<div class="container">
 		<div class="row">
-                @foreach ($Footers as $Footers)
-              <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.3s">
-                <h3><?php echo $Footers -> title?></h3>
-                <p><?php echo $Footers -> description?></p>
-              </div>
-                @endforeach
+
+		@foreach ($Footers as $Footers)
+	<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.3s">
+		<h3><?php echo $Footers -> title?></h3>
+		<p><?php echo $Footers -> description?></p>
+	</div>
+		@endforeach
 
 
 
-              <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.9s">
-                <h3>NETWORK WITH US</h3>
-								<ul class="social-icon">
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-dribbble"></a></li>
-								</ul>
-								 <h3>JOB APPLICATION FORM</h3>
-                 {{ Html::link('jobapps/create', 'JOIN US', array(
-                     'class' => 'btn btn-primary'
-             ))}}
-              </div>
-
+	<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.9s">
+		<h3>NETWORK WITH US</h3>
+		<ul class="social-icon">
+			<li><a href="#" class="fa fa-facebook"></a></li>
+			<li><a href="#" class="fa fa-twitter"></a></li>
+			<li><a href="#" class="fa fa-dribbble"></a></li>
+		</ul>
+		 <h3>JOB APPLICATION FORM</h3>
+		 {{ Html::link('jobapps/create', 'JOIN US', array('class' => 'btn btn-primary')) }}
+	</div>
 
 		</div>
 	</div>
 </footer>
+
+
+
 <!-- javscript js -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -349,8 +345,6 @@ http://www.tooplate.com/view/2083-steak-house
 <script src="js/wow.min.js"></script>
 
 <script src="js/custom.js"></script>
-
-
 
 </body>
 </html>
