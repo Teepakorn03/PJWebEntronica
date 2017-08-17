@@ -183,7 +183,7 @@
   </div>
 </section>
 <!-- Gallery section -->
-<section id="gallery" class="parallax-section">
+<section id="gallery" class="parallax-section" style="background:rgb(240,240,240);">
   <div class="container">
     <div class="row">
 
@@ -293,10 +293,9 @@
 <br>
 <br>
 <!-- Footer section -->
-<section id="contact">
-	</section>
+
 <footer>
-	<div class="container">
+	<div class="container" id="contact">
 		<div class="row">
 
 		@foreach ($Footers as $Footers)
