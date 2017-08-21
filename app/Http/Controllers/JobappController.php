@@ -84,7 +84,7 @@ class JobappController extends Controller
       ]);
       $jobapp = $request->file('resume');
       $filename = $jobapp->getClientOriginalName();
-      $jobapp->move(public_path().'/img/upload', $jobapp->getClientOriginalName());
+      $jobapp->move(public_path().'/Job', $jobapp->getClientOriginalName());
 
       $jobapp = new Jobapp;
       $jobapp->position = $request->position;
@@ -109,7 +109,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('show');
+      return redirect('localhost');
     }
 
     /**
@@ -181,7 +181,7 @@ class JobappController extends Controller
       ]);
       $jobapp = $request->file('resume');
       $filename = $jobapp->getClientOriginalName();
-      $jobapp->move(public_path().'/img/upload', $jobapp->getClientOriginalName());
+      $jobapp->move(public_path().'/Job', $jobapp->getClientOriginalName());
 
       $jobapp = Jobapp::find($id);
       $jobapp->position = $request->position;
@@ -206,7 +206,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('show');
+      return redirect('localhost');
     }
 
     /**

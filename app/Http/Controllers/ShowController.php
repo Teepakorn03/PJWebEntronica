@@ -31,7 +31,7 @@ class ShowController extends Controller
       $partner = partner::all();
       $Activity = Activity::all();
       $about = about::all();
-      $Home = Home::all()->where('id',2);
+      $Home = Home::all()->where('id',1);
       $Footers = Footers::all();
       $about = about::all();
       $data = array(

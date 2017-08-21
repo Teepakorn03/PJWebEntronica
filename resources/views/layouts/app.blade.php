@@ -63,7 +63,7 @@
                                   <a href="Footers">Add Footers</a>
                               </li>
                               <li>
-                                  <a href="show">Show</a>
+                                  <a href="/">Show</a>
                               </li>
                               <li>
                                     <a href="{{ route('logout') }}"
