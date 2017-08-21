@@ -44,7 +44,7 @@ class ActivityController extends Controller
     public function store(Request $request)
     {
       $this->validate($request, [
-          'image' => 'required|max:1000',
+          'image' => 'required|max:2000000',
           'name' => 'required|max:1000'
 
 
@@ -108,7 +108,7 @@ class ActivityController extends Controller
     public function update(Request $request, $id)
     {
       $this->validate($request, [
-        'image' => 'required|max:1000',
+        'image' => 'required|max:2000000',
         'name' => 'required|max:1000'
 
 

@@ -10,7 +10,7 @@
 
 
     <div class="col-xs-5">
-      {{ Html::link('Home/create', 'Add New', array(
+      {{ Html::link('home/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
 
@@ -32,15 +32,15 @@
         @forelse ($Home as $p)
           <tr>
               <td> {{ $p['id'] }} </td>
-              <td width="30%"><img src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
+              <td width="30%"><img width="250" height="200" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
 
 
 
         <td>
-            {{ Form::open(['route' => ['Home.destroy',$p['id'], 'method' => "DELETE"] ]) }}
+            {{ Form::open(['route' => ['home.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
-            {{ Html::link('Home/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+            {{ Html::link('home/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
             {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
             {{ Form::close() }}
 

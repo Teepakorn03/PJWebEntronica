@@ -44,7 +44,7 @@ class Home_Controller extends Controller
     public function store(Request $request)
     {
       $this->validate($request, [
-          'image' => 'required|max:1000',
+          'image' => 'required|max:10000',
           'title' => 'required|max:1000'
 
 
@@ -63,7 +63,7 @@ class Home_Controller extends Controller
 
       $Home->save();
 
-      return redirect('Home');
+      return redirect('home');
     }
 
     /**
@@ -108,7 +108,7 @@ class Home_Controller extends Controller
     public function update(Request $request, $id)
     {
       $this->validate($request, [
-        'image' => 'required|max:1000',
+        'image' => 'required|max:10000',
         'title' => 'required|max:1000'
 
 
@@ -128,7 +128,7 @@ class Home_Controller extends Controller
     $Home->save();
 
     Session::flash('message','Success update Home!!');
-    return redirect('Home');
+    return redirect('home');
     }
 
     /**
@@ -142,6 +142,6 @@ class Home_Controller extends Controller
       $Home = Home::find($id);
       $Home->delete();
       Session::flash('message', 'Success Delete Home!!');
-      return redirect('Home');
+      return redirect('home');
     }
 }

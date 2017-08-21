@@ -12,7 +12,7 @@
 */
 Route::resource('product','ProductController');
 Route::resource('partner','PartnerController');
-Route::resource('Home','Home_Controller');
+Route::resource('home','Home_Controller');
 Route::resource('Activity','ActivityController');
 Route::resource('about','AboutController');
 Route::resource('jobapps','JobappController');
@@ -21,7 +21,7 @@ Route::resource('logintest','LoginController');
 
 Route::resource('base', 'BaseController');
 //Route::resource('display','ImageController');
-Route::get('index', function () {
+Route::get('admin', function () {
     return view('welcome');
 });
 

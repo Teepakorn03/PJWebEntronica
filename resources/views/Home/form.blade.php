@@ -11,9 +11,9 @@
         @endif
     </div>
     @if(isset($Home))
-          {{  Form::open(['method'=>'PATCH', 'enctype'=>'multipart/form-data', 'route' => ['Home.update', $Home->id]])}}
+          {{  Form::open(['method'=>'PATCH', 'enctype'=>'multipart/form-data', 'route' => ['home.update', $Home->id]])}}
     @else
-          {{  Form::open(['method'=>'POST', 'enctype'=>'multipart/form-data', 'url' => 'Home'])}}
+          {{  Form::open(['method'=>'POST', 'enctype'=>'multipart/form-data', 'url' => 'home'])}}
     @endif
     <div class="panel-body">
         @if (count($errors) > 0)
