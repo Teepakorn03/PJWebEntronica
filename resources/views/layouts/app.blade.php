@@ -42,7 +42,7 @@
 
                             <ul class="dropdown-menu" role="menu">
                               <li>
-                                <a href="Home">Add Home</a>
+                                <a href="home">Add Home</a>
                               </li>
                               <li>
                                   <a href="Activity">Add Activity</a>
