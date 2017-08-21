@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2017 at 12:29 PM
+-- Generation Time: Aug 21, 2017 at 08:10 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -65,11 +65,15 @@ CREATE TABLE `activities` (
 --
 
 INSERT INTO `activities` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'anime-feature1.jpg', 'aaaa', '2017-08-02 01:42:19', '2017-08-02 01:42:19'),
-(2, 'anime-feature1.jpg', 'aaaa', '2017-08-03 01:20:59', '2017-08-03 01:20:59'),
-(3, 'anime-feature1.jpg', 'aaaa', '2017-08-03 01:21:10', '2017-08-03 01:21:10'),
-(4, 'anime-feature1.jpg', 'aaaaa', '2017-08-03 01:21:17', '2017-08-03 01:21:17'),
-(5, 'about2.jpg', 'aaaa', '2017-08-03 01:21:46', '2017-08-03 01:21:46');
+(1, 'IMG_7781.jpg', 'รูปที่1', '2017-08-02 01:42:19', '2017-08-20 22:07:31'),
+(2, 'IMG_7890.jpg', 'รูปที่2', '2017-08-03 01:20:59', '2017-08-20 22:07:40'),
+(3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-08-03 01:21:10', '2017-08-20 22:07:47'),
+(4, 'IMG_8036.jpg', 'รูปที่ 4', '2017-08-03 01:21:17', '2017-08-20 22:07:55'),
+(5, 'IMG_8207.jpg', 'รูปที่ 5', '2017-08-03 01:21:46', '2017-08-20 22:08:04'),
+(6, 'IMG_8214.jpg', 'รูปที่ 6', '2017-08-15 01:19:07', '2017-08-20 22:08:12'),
+(7, 'IMG_8540.jpg', 'รูปที่ 7', '2017-08-15 01:19:50', '2017-08-20 22:08:21'),
+(8, 'IMG_8574.jpg', 'รูปที่ 8', '2017-08-15 01:20:07', '2017-08-20 22:36:06'),
+(9, 'IMG_8716.jpg', 'รูปที่ 9', '2017-08-15 01:20:40', '2017-08-20 22:36:20');
 
 -- --------------------------------------------------------
 
@@ -112,8 +116,9 @@ CREATE TABLE `homes` (
 --
 
 INSERT INTO `homes` (`id`, `image`, `title`, `created_at`, `updated_at`) VALUES
-(1, 'anime-feature1.jpg', 'aaa', '2017-08-02 01:55:05', '2017-08-02 01:55:05'),
-(2, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMTANY.', '2017-08-03 01:30:51', '2017-08-03 01:30:51');
+(1, '000copy003.jpg', 'bbbb', '2017-08-02 01:55:05', '2017-08-20 21:44:04'),
+(2, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMTANY.', '2017-08-03 01:30:51', '2017-08-03 01:30:51'),
+(3, '3-bus.png', 'aaa', '2017-08-20 21:50:37', '2017-08-20 21:50:37');
 
 -- --------------------------------------------------------
 
@@ -265,7 +270,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'benz', 'teepakorn46@gmail.com', '$2y$10$FnUjGv4NBtTjZs7/Ohj3huZcLvURUJ/mZuMUbfRuXYxcxm0boMFse', NULL, '2017-08-01 03:39:29', '2017-08-01 03:39:29');
+(1, 'benz', 'teepakorn46@gmail.com', '$2y$10$FnUjGv4NBtTjZs7/Ohj3huZcLvURUJ/mZuMUbfRuXYxcxm0boMFse', '7hwb5AieMpgbLZETg6a06o9a68Vk7cnD1RKuvpaDEXSPh49u8xepQbe7R6Bo', '2017-08-01 03:39:29', '2017-08-01 03:39:29'),
+(2, 'aaaa', 'b_teepakorn@hotmail.com', '$2y$10$UZ0.xajNlq36H94ySl1MtOsq7R3HFz24T3hiBHBLK175cft0u2PAy', 'DzBW5yKA0YyOWaRuX5nmCIEyP7uHDliwCdiTTO6uBiD2vKiaRWjR5uZHGP1R', '2017-08-10 20:25:38', '2017-08-10 20:25:38');
 
 --
 -- Indexes for dumped tables
@@ -333,12 +339,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `abouts`
 --
 ALTER TABLE `abouts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `footers`
 --
@@ -348,7 +354,7 @@ ALTER TABLE `footers`
 -- AUTO_INCREMENT for table `homes`
 --
 ALTER TABLE `homes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `jobapps`
 --
@@ -373,7 +379,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
