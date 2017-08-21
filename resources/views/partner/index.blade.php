@@ -32,9 +32,9 @@
         @forelse ($partner as $p)
           <tr>
               <td> {{ $p['id'] }} </td>
-              <td width="30%"><img src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
+              <td width="30%"><img width = "200" height="180"src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
-            
+
 
 
         <td>
