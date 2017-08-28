@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 21, 2017 at 08:10 AM
+-- Generation Time: Aug 28, 2017 at 08:03 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -116,7 +116,7 @@ CREATE TABLE `homes` (
 --
 
 INSERT INTO `homes` (`id`, `image`, `title`, `created_at`, `updated_at`) VALUES
-(1, '000copy003.jpg', 'bbbb', '2017-08-02 01:55:05', '2017-08-20 21:44:04'),
+(1, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMTANY.', '2017-08-02 01:55:05', '2017-08-20 23:50:01'),
 (2, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMTANY.', '2017-08-03 01:30:51', '2017-08-03 01:30:51'),
 (3, '3-bus.png', 'aaa', '2017-08-20 21:50:37', '2017-08-20 21:50:37');
 
@@ -159,7 +159,8 @@ INSERT INTO `jobapps` (`id`, `position`, `name`, `lastname`, `gender`, `age`, `b
 (5, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', '20/03/1996', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', '0944824655', 'dadasd', 'asdasd', 1231212, 123132, '1-system.png', '2017-08-03 03:13:41', '2017-08-03 03:13:41'),
 (6, 'JAVA Programmer', 'aaaaaaaaa', 'อัจฉริยะประดิษฐ์', 'Female', '20', '20/03/1996', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', '0944824655', 'dadasd', 'asdasd', 1231212, 123132, '1-system.png', '2017-08-03 03:14:53', '2017-08-03 03:14:53'),
 (7, 'JAVA Programmer', 'bbbbbbbbbb', 'อัจฉริยะประดิษฐ์', 'Female', '20', '20/03/1996', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', '0944824655', 'asdasd', 'asdasd', 1231212, 123132, '2-Custom.png', '2017-08-03 03:15:51', '2017-08-03 03:15:51'),
-(8, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', '123123', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', '0944824655', 'dadasd', 'asdasd', 1231212, 123132, 'about1.jpg', '2017-08-03 03:16:56', '2017-08-03 03:16:56');
+(8, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', '123123', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', '0944824655', 'dadasd', 'asdasd', 1231212, 123132, 'about1.jpg', '2017-08-03 03:16:56', '2017-08-03 03:16:56'),
+(9, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', '20/03/1996', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', '0944824655', 'asdasd', '123', 12312, 123123, 'laravel_course-master.zip', '2017-08-20 23:52:01', '2017-08-20 23:52:01');
 
 -- --------------------------------------------------------
 
@@ -270,7 +271,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'benz', 'teepakorn46@gmail.com', '$2y$10$FnUjGv4NBtTjZs7/Ohj3huZcLvURUJ/mZuMUbfRuXYxcxm0boMFse', '7hwb5AieMpgbLZETg6a06o9a68Vk7cnD1RKuvpaDEXSPh49u8xepQbe7R6Bo', '2017-08-01 03:39:29', '2017-08-01 03:39:29'),
+(1, 'benz', 'teepakorn46@gmail.com', '$2y$10$FnUjGv4NBtTjZs7/Ohj3huZcLvURUJ/mZuMUbfRuXYxcxm0boMFse', 'QU4cGAQbP52ZsIolPBJjjCCpjnMBm51PuZQLIsD7ERzHZaYEz4ZyyCYV49dr', '2017-08-01 03:39:29', '2017-08-01 03:39:29'),
 (2, 'aaaa', 'b_teepakorn@hotmail.com', '$2y$10$UZ0.xajNlq36H94ySl1MtOsq7R3HFz24T3hiBHBLK175cft0u2PAy', 'DzBW5yKA0YyOWaRuX5nmCIEyP7uHDliwCdiTTO6uBiD2vKiaRWjR5uZHGP1R', '2017-08-10 20:25:38', '2017-08-10 20:25:38');
 
 --
@@ -354,12 +355,12 @@ ALTER TABLE `footers`
 -- AUTO_INCREMENT for table `homes`
 --
 ALTER TABLE `homes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `jobapps`
 --
 ALTER TABLE `jobapps`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
