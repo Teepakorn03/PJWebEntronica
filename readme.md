@@ -15,3 +15,7 @@
 
 <p> step 6 </p>
 <p> ถ้าดูหน้า Homepage ให้พิมพิ์ localhost แต่ถ้า จะเข้าหน้าที่ใช้เพิ่มข้อมูลเข้า localhost/admin ให้ล็อกอินเข้า ID กับ Pass ดูได้ที่ Sql</p>
+
+<p> step 7 </p>
+<p> ID teepakorn46@gmail.com </p>
+<p> Pass 022861326 </p>
