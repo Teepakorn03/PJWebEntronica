@@ -75,7 +75,6 @@
         <li><a href="#menu" class="smoothScroll">Product & Service</a></li>
         <li><a href="#gallery" class="smoothScroll">Activity</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
-				<li><a href="#"><img src="img/th.png" class="img-responsive"data-wow-delay="1.0s"></a></li>
       </ul>
     </div>
 
@@ -207,7 +206,7 @@
 												<div class="iso-box col-md-4 col-sm-6">
 													<div class="gallery-thumb">
 														<a href="../img/upload/<?php echo $Activity -> image?>" data-lightbox-gallery="food-gallery">
-															<img width='200px' height='185px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
+															<img width='200px' height='175px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
 																<div class="gallery-overlay">
 																	<div class="gallery-item">
 																		<i class="fa fa-search"></i>
@@ -297,7 +296,6 @@
 <footer>
 	<div class="container" id="contact">
 		<div class="row">
-
 		@foreach ($Footers as $Footers)
 	<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.3s">
 		<h3><?php echo $Footers -> title?></h3>

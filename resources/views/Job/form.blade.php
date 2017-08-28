@@ -1,13 +1,13 @@
 @extends('layouts/main')
 
 @section('content')
-<h1>Form Code</h1>
+<h1>Job Form</h1>
 <div class="panel panel-primary">
     <div class="panel-heading">
         @if(isset($jobapp))
             Edit Form
         @else
-            Add Form
+            Job Form
         @endif
     </div>
     @if(isset($jobapp))
