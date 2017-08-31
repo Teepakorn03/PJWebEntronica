@@ -109,7 +109,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('localhost');
+      return redirect('/');
     }
 
     /**
@@ -206,7 +206,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('localhost');
+      return redirect('/');
     }
 
     /**

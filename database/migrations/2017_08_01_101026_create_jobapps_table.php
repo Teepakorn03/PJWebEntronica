@@ -18,7 +18,7 @@ class CreateJobappsTable extends Migration
             $table->text('position');
             $table->text('name');
             $table->text('lastname');
-            $table->integer('gender');
+            $table->text('gender');
             $table->text('age');
             $table->text('brithday');
             $table->text('nationality');
