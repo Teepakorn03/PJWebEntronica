@@ -204,7 +204,7 @@
 												<div class="iso-box col-md-4 col-sm-6">
 													<div class="gallery-thumb">
 														<a href="../img/upload/<?php echo $Activity -> image?>" data-lightbox-gallery="food-gallery">
-															<img width='200px' height='175px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
+															<img width='200px' height='200px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
 																<div class="gallery-overlay">
 																	<div class="gallery-item">
 																		<i class="fa fa-search"></i>
@@ -242,7 +242,7 @@
     streetViewControl: false,
     mapTypeControl: false,
     panControl: false,
-    zoomControl: false,
+    zoomControl:  true,
     scrollwheel: false,
     zoomControlOptions: {
           style: google.maps.ZoomControlStyle.SMALL
