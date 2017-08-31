@@ -148,7 +148,13 @@ class JobappController extends Controller
      */
     public function edit($id)
     {
-        //
+      if($id !== '') {
+          $jobapp = Jobapp::find($id);
+          $data = array(
+              'jobapp' => $jobapp
+          );
+          return view('Job/form',$data);
+      }
     }
 
     /**
@@ -206,7 +212,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('/');
+      return redirect('jobapp');
     }
 
     /**

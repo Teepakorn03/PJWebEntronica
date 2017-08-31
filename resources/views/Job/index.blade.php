@@ -64,9 +64,9 @@
 
 
         <td>
-            {{ Form::open(['route' => ['jobapps.destroy',$p['id'], 'method' => "DELETE"] ]) }}
+            {{ Form::open(['route' => ['jobapp.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
-            {{ Html::link('jobapps/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+            {{ Html::link('jobapp/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
             {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
             {{ Form::close() }}
 

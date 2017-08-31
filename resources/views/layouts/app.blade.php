@@ -40,7 +40,7 @@
                           <a href="product">Add Product</a>
                       </li>
                       <li>
-                          <a href="jobapps">Add job</a>
+                          <a href="jobapp">Add job</a>
                       </li>
                       <li>
                           <a href="Footers">Add Footers</a>
@@ -90,7 +90,7 @@
                                   <a href="product">Add Product</a>
                               </li>
                               <li>
-                                  <a href="jobapps">Add job</a>
+                                  <a href="jobapp">Add job</a>
                               </li>
                               <li>
                                   <a href="Footers">Add Footers</a>

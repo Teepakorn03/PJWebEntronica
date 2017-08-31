@@ -15,7 +15,7 @@ Route::resource('partner','PartnerController');
 Route::resource('home','Home_Controller');
 Route::resource('Activity','ActivityController');
 Route::resource('about','AboutController');
-Route::resource('jobapps','JobappController');
+Route::resource('jobapp','JobappController');
 Route::resource('Footers','FootersController');
 Route::resource('logintest','LoginController');
 
