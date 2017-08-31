@@ -24,7 +24,40 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                      <li>
+                        <a href="home">Add Home</a>
+                      </li>
+                      <li>
+                          <a href="Activity">Add Activity</a>
+                      </li>
+                      <li>
+                        <a href="about">Add About</a>
+                      </li>
+                      <li>
+                          <a href="partner">Add Partner</a>
+                      </li>
+                      <li>
+                          <a href="product">Add Product</a>
+                      </li>
+                      <li>
+                          <a href="jobapps">Add job</a>
+                      </li>
+                      <li>
+                          <a href="Footers">Add Footers</a>
+                      </li>
+                      <li>
+                          <a href="/">Show</a>
+                      </li>
+                      <li>
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                      </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

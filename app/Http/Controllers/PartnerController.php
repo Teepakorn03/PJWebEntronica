@@ -45,7 +45,9 @@ class PartnerController extends Controller
     {
       $this->validate($request, [
           'image' => 'required|max:1000',
-          'title' => 'required|max:1000'
+          'title' => 'required|max:1000',
+          'Facebook' => 'required|max:1000',
+          'Twitter' => 'required|max:1000'
 
 
 
@@ -58,6 +60,8 @@ class PartnerController extends Controller
       $partner = new partner;
       $partner->image = $filename;
       $partner->title = $request->title;
+      $partner->Facebook = $request->Facebook;
+      $partner->Twitter = $request->Twitter;
 
 
 
@@ -109,8 +113,9 @@ class PartnerController extends Controller
     {
       $this->validate($request, [
         'image' => 'required|max:1000',
-        'title' => 'required|max:1000'
-
+        'title' => 'required|max:1000',
+        'Facebook' => 'required|max:1000',
+        'Twitter' => 'required|max:1000'
 
 
 
@@ -122,7 +127,8 @@ class PartnerController extends Controller
     $partner = partner::find($id);
     $partner->image = $filename;
     $partner->title = $request->title;
-
+    $partner->Facebook = $request->Facebook;
+    $partner->Twitter = $request->Twitter;
 
 
     $partner->save();

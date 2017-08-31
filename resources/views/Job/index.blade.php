@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1>Home</h1>
+  <h1>Job</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}

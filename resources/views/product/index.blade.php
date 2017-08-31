@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1>Home</h1>
+  <h1>Product</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}
@@ -33,7 +33,7 @@
         @forelse ($product as $p)
           <tr>
               <td> {{ $p['id'] }} </td>
-              <td width="30%"><img src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
+              <td width="30%"><img width="190px" height="180px" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
               <td> {{ $p['description'] }} </td>
 

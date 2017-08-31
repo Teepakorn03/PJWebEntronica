@@ -45,7 +45,9 @@ class FootersController extends Controller
     {
       $this->validate($request, [
           'title' => 'required|max:1000',
-          'description' => 'required|max:1000'
+          'description' => 'required|max:1000',
+          'Facebook' => 'required|max:1000',
+          'Twitter' => 'required|max:1000'
 
 
         //  'description' => 'required|max:100',
@@ -55,6 +57,8 @@ class FootersController extends Controller
       $Footers = new Footers;
       $Footers->title = $request->title;
       $Footers->description = $request->description;
+      $Footers->Facebook = $request->Facebook;
+      $Footers->Twitter = $request->Twitter;
 
 
 
@@ -106,7 +110,9 @@ class FootersController extends Controller
     {
       $this->validate($request, [
         'title' => 'required|max:1000',
-        'description' => 'required|max:1000'
+        'description' => 'required|max:1000',
+        'Facebook' => 'required|max:1000',
+        'Twitter' => 'required|max:1000'
 
 
 
@@ -115,6 +121,8 @@ class FootersController extends Controller
     $Footers = Footers::find($id);
     $Footers->title = $request->title;
     $Footers->description = $request->description;
+    $Footers->Facebook = $request->Facebook;
+    $Footers->Twitter = $request->Twitter;
 
 
 

@@ -82,7 +82,6 @@
 </div>
 
 
-<!-- Feature section -->
 
 
 <!-- About section -->
@@ -134,9 +133,8 @@
                 <div class="team-des">
                   <h3>PARTNER</h3>
                     <ul class="social-icon">
-                      <li><a href="#" class="fa fa-facebook"></a></li>
-                      <li><a href="#" class="fa fa-twitter"></a></li>
-                      <li><a href="#" class="fa fa-dribbble"></a></li>
+                      <li><a href="<?php echo $partner -> Facebook?>" class="fa fa-facebook"></a></li>
+                      <li><a href="<?php echo $partner -> Twitter?>" class="fa fa-twitter"></a></li>
                     </ul>
                 </div>
           </div>
@@ -302,19 +300,20 @@
 		<p><?php echo $Footers -> description?></p>
 	</div>
 		@endforeach
-
-
-
 	<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.9s">
-		<h3>NETWORK WITH US</h3>
+		@foreach ($Footers1 as $Footers)
+		<h3><?php echo $Footers -> title?></h3>
 		<ul class="social-icon">
-			<li><a href="#" class="fa fa-facebook"></a></li>
-			<li><a href="#" class="fa fa-twitter"></a></li>
-			<li><a href="#" class="fa fa-dribbble"></a></li>
+			<li><a href="<?php echo $Footers -> Facebook?>" class="fa fa-facebook"></a></li>
+			<li><a href="<?php echo $Footers -> Twitter?>" class="fa fa-twitter"></a></li>
 		</ul>
-		 <h3>JOB APPLICATION FORM</h3>
+		@endforeach
+		@foreach ($Footers2 as $Footers)
+		<h3><?php echo $Footers -> title?></h3>
+		@endforeach
 		 {{ Html::link('jobapps/create', 'JOIN US', array('class' => 'btn btn-primary')) }}
-	</div>
+		</div>
+
 
 		</div>
 	</div>

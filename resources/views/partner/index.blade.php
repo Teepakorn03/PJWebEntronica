@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1>Home</h1>
+  <h1>Partner</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}
@@ -23,6 +23,8 @@
             <th>ID</th>
             <th>image</th>
             <th>title</th>
+            <th>Facebook</th>
+            <th>Twitter</th>
 
             <th width="200">Action</th>
         </tr>
@@ -34,6 +36,8 @@
               <td> {{ $p['id'] }} </td>
               <td width="30%"><img width = "200" height="180"src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
+              <td> {{ $p['Facebook'] }} </td>
+              <td> {{ $p['Twitter'] }} </td>
 
 
 

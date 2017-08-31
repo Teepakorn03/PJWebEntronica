@@ -32,7 +32,9 @@ class ShowController extends Controller
       $Activity = Activity::all();
       $about = about::all();
       $Home = Home::all()->where('id',1);
-      $Footers = Footers::all();
+      $Footers = Footers::all()->whereIn('id', [1, 2]);
+      $Footers1 = Footers::all()->where('id',3);
+      $Footers2 = Footers::all()->where('id',4);
       $about = about::all();
       $data = array(
         'product' => $product,
@@ -41,6 +43,8 @@ class ShowController extends Controller
         'Activity' => $Activity,
         'Home' => $Home,
         'Footers' => $Footers,
+        'Footers1' => $Footers1,
+        'Footers2' => $Footers2,
         'about' => $about
     );
         return view('show', $data);

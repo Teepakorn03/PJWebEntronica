@@ -52,6 +52,32 @@
         </div>
         <br>
         <div class="row">
+            <div class="col-xs-2">
+                {{ Form::label('facebook', 'Facebook') }}
+            </div>
+            <div class="col-xs-5">
+                @if(isset($Footers->Facebook))
+                    {{ Form::text('Facebook',$Footers->Facebook,['class' => 'form-control']) }}
+                @else
+                    {{ Form::text('Facebook','',['class' => 'form-control']) }}
+                @endif
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-2">
+                {{ Form::label('twitter', 'Twitter') }}
+            </div>
+            <div class="col-xs-5">
+                @if(isset($Footers->Twitter))
+                    {{ Form::text('Twitter',$Footers->Twitter,['class' => 'form-control']) }}
+                @else
+                    {{ Form::text('Twitter','',['class' => 'form-control']) }}
+                @endif
+            </div>
+        </div>
+        <br>
+        <div class="row">
             <div class="col-xs-5">
                 {!!  Form::submit('save', ['class'=>'btn btn-primary']) !!}
             </div>
