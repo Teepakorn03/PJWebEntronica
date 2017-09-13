@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 13, 2017 at 09:13 AM
+-- Generation Time: Sep 13, 2017 at 10:30 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -97,7 +97,7 @@ CREATE TABLE `footers` (
 
 INSERT INTO `footers` (`id`, `title`, `description`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
 (1, 'PROFILE', 'Entronica is an IT solution provider and system integrator company based in Thailand. We provide software solution, implementation, integration, including professional and consultancy service on IT and telecommunication area..', '', '', '2017-08-30 21:53:34', '2017-08-30 21:53:34'),
-(2, 'CONTACT | MAP', '31 Phyathai Building Suite  No. 911-913, 9th Floor,  Phayathai Rd., Kwang Phayathai Road,Ratchathewi, Bangkok 10400', '-', '-', '2017-08-30 21:54:18', '2017-09-13 00:10:49'),
+(2, 'CONTACT', '31 Phyathai Building Suite  No. 911-913, 9th Floor,  Phayathai Rd., Kwang Phayathai Road,Ratchathewi, Bangkok 10400', '-', '-', '2017-08-30 21:54:18', '2017-09-13 01:28:15'),
 (3, 'NETWORK WITH US', 'ส่วนของหัวข้อตรง Footers', 'https://www.facebook.com/oOteepakornOo', '--', '2017-08-30 21:55:32', '2017-08-30 22:18:40'),
 (4, 'JOB APPLICATION FORM', 'ส่วนของหัวข้อตรง Footers', '', '', '2017-08-30 21:56:07', '2017-08-30 21:56:07');
 
