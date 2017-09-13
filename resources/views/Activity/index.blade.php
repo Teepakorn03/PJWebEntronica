@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1>Activity</h1>
+  <h1 align="center">Activity</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}
@@ -9,7 +9,7 @@
   @endif
 
 
-    <div class="col-xs-5">
+    <div align="center" class="col-xs-5">
       {{ Html::link('Activity/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
@@ -17,13 +17,12 @@
 
 
 </div>
-<table class="table table-bordered">
+<table align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>
             <th>ID</th>
             <th>image</th>
             <th>name</th>
-
             <th width="200">Action</th>
         </tr>
     </thead>

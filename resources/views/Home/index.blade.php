@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1>Home</h1>
+  <h1 align="center" >Home</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}
@@ -9,16 +9,16 @@
   @endif
 
 
-    <div class="col-xs-5">
+    <div  align="center" class="col-xs-5">
       {{ Html::link('home/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
-  <p>**ไอดีที่ 1 อย่างเดียวเท่านั้นที่โชว์หน้า Home</p>
+  <p  align="center">**ไอดีที่ 1 อย่างเดียวเท่านั้นที่โชว์หน้า Home</p>
 
 
 
 </div>
-<table class="table table-bordered">
+<table  align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>
             <th>ID</th>

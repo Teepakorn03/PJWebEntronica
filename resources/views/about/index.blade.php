@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1>About</h1>
+  <h1 align="center">About</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}
@@ -9,7 +9,7 @@
   @endif
 
 
-    <div class="col-xs-5">
+    <div  align="center" class="col-xs-5">
       {{ Html::link('about/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
@@ -17,7 +17,7 @@
 
 
 </div>
-<table class="table table-bordered">
+<table  align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>
             <th>ID</th>
@@ -32,7 +32,7 @@
         @forelse ($about as $p)
           <tr>
               <td> {{ $p['id'] }} </td>
-              <td width="30%"><img width="30%" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
+              <td><img width="100%" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
               <td>{{ $p['description'] }}</td>
 

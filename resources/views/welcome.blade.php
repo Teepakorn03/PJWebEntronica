@@ -82,8 +82,6 @@
                 <div class="title m-b-md">
                     ENTRONICA
                 </div>
-
-
             </div>
         </div>
     </body>
