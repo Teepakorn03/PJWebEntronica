@@ -9,7 +9,7 @@
   @endif
 
 
-    <div align="center" class="col-xs-5">
+    <div align="right" class="col-xs-10">
       {{ Html::link('product/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
@@ -17,6 +17,7 @@
 
 
 </div>
+<div align="center" class="col-xs-6"><br></div>
 <table align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>

@@ -9,15 +9,15 @@
   @endif
 
 
-    <div align="center" class="col-xs-5">
-      {{ Html::link('jobapps/create', 'Add New', array(
-          'class' => 'btn btn-primary'
-  ))}}
+    <div align="right" class="col-xs-12">
 
-
+        {{ Html::link('jobapps/create', 'Add New', array(
+            'class' => 'btn btn-primary'
+    ))}}
 
 </div>
-<table  align="center" class="table table-bordered" style="width:70%;">
+<div align="center" class="col-xs-6"><br></div>
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>ID</th>

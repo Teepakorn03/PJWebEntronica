@@ -9,15 +9,14 @@
   @endif
 
 
-    <div  align="center" class="col-xs-5">
+    <div align="right" class="col-xs-10">
       {{ Html::link('home/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
-  <p  align="center">**ไอดีที่ 1 อย่างเดียวเท่านั้นที่โชว์หน้า Home</p>
-
-
 
 </div>
+
+    <p  align="center" class="col-xs-6">**ไอดีที่ 1 อย่างเดียวเท่านั้นที่โชว์หน้า Home</p>
 <table  align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>
