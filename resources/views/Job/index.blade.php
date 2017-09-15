@@ -1,6 +1,10 @@
 @extends('layouts/app')
 
 @section('content')
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <h1 align="center" >Job</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
@@ -9,15 +13,15 @@
   @endif
 
 
-    <div align="right" class="col-xs-12">
+    <div align="right" class="col-xs-10">
 
-        {{ Html::link('jobapps/create', 'Add New', array(
+        {{ Html::link('jobapp/create', 'Add New', array(
             'class' => 'btn btn-primary'
     ))}}
 
 </div>
 <div align="center" class="col-xs-6"><br></div>
-<table class="table table-bordered">
+<table class="table table-bordered" style="width:70%;" align="center">
     <thead>
         <tr>
             <th>ID</th>
@@ -26,18 +30,11 @@
             <th>lastname</th>
             <th>gender</th>
             <th>age</th>
-            <th>brithday</th>
-            <th>nationality</th>
-            <th>address</th>
             <th>email</th>
             <th>telephone</th>
-            <th>currentposition</th>
-            <th>education</th>
-            <th>experience</th>
-            <th>expectedsalary</th>
             <th>resume</th>
 
-            <th width="200">Action</th>
+            <th width="200px">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -50,15 +47,8 @@
               <td> {{ $p['lastname'] }} </td>
               <td> {{ $p['gender'] }} </td>
               <td> {{ $p['age'] }} </td>
-              <td> {{ $p['brithday'] }} </td>
-              <td> {{ $p['nationality'] }} </td>
-              <td> {{ $p['address'] }} </td>
               <td> {{ $p['email'] }} </td>
               <td> {{ $p['telephone'] }} </td>
-              <td> {{ $p['currentposition'] }} </td>
-              <td> {{ $p['education'] }} </td>
-              <td> {{ $p['experience'] }} </td>
-              <td> {{ $p['expectedsalary'] }} </td>
               <td> {{ $p['resume'] }} </td>
 
 
@@ -68,7 +58,14 @@
             <input type="hidden" name="_method" value="delete" />
             {{ Html::link('jobapp/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
             {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
-            {{ Form::close() }}
+            <a href="Job/{{$p->resume}}" download="{{$p->resume}}">
+								<button type="button" class="btn btn-primary">
+								<i class="glyphicon glyphicon-download">
+									Download
+								</i>
+								</button>
+							</a>
+  {{ Form::close() }}
 
 
         </td>

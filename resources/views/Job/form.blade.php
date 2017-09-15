@@ -13,7 +13,7 @@
     @if(isset($jobapp))
           {{  Form::open(['method'=>'PATCH', 'enctype'=>'multipart/form-data', 'route' => ['jobapp.update', $jobapp->id]])}}
     @else
-          {{  Form::open(['method'=>'POST', 'enctype'=>'multipart/form-data', 'url' => 'jobapps'])}}
+          {{  Form::open(['method'=>'POST', 'enctype'=>'multipart/form-data', 'url' => 'jobapp'])}}
     @endif
     <div class="panel-body">
         @if (count($errors) > 0)
@@ -67,33 +67,16 @@
           </div>
         </div>
 
-
-
-          <div class="form-group">
-            <div class="row">
-
-              <div class="col-xs-2">
-                      {!! Form::label('gender', 'Gender') !!}
-              </div>
-
-              <div class="col-xs-5">
-                  <div class="radio">
-
-                      {!! Form::radio('gender', 'Female', true, ['id' => 'Female']) !!}
-                      {!! Form::label('female', 'Female') !!}
-
-                  </div>
-
-                  <div class="radio">
-
-                      {!! Form::radio('gender', 'Male', false, ['id' => 'Male']) !!}
-                      {!! Form::label('male', 'Male') !!}
-                  </div>
-            </div>
-
-
+        <div class="form-group">
+          <div class="row">
+          <div class="col-xs-2">
+          {!! Form::label('gender', 'Gender')  !!}
+          </div>
+          <div class="col-xs-5">
+              {!!  Form::select('gender', ['Female' => 'Female', 'Male' => 'Male'],  'Female', ['class' => 'form-control' ]) !!}
+          </div>
+          </div>
         </div>
-      </div>
 
         <div class="form-group">
           <div class="row">
@@ -106,50 +89,6 @@
         </div>
         </div>
 
-        <div class="form-group">
-          <div class="row">
-              <div class="col-xs-2">
-                  {{ Form::label('brithday', 'Brithday') }}
-              </div>
-              <div class="col-xs-5">
-                  @if(isset($jobapp->brithday))
-                      {{ Form::text('brithday',$jobapp->brithday,['class' => 'form-control']) }}
-                  @else
-                      {{ Form::text('brithday','',['class' => 'form-control']) }}
-                  @endif
-              </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="row">
-              <div class="col-xs-2">
-                  {{ Form::label('nationality', 'Nationality') }}
-              </div>
-              <div class="col-xs-5">
-                  @if(isset($jobapp->nationality))
-                      {{ Form::text('nationality',$jobapp->nationality,['class' => 'form-control']) }}
-                  @else
-                      {{ Form::text('nationality','',['class' => 'form-control']) }}
-                  @endif
-              </div>
-          </div>
-      </div>
-
-      <div class="form-group">
-        <div class="row">
-            <div class="col-xs-2">
-                {{ Form::label('address', 'Address') }}
-            </div>
-            <div class="col-xs-5">
-                @if(isset($jobapp->address))
-                    {{ Form::text('address',$jobapp->address,['class' => 'form-control']) }}
-                @else
-                    {{ Form::text('address','',['class' => 'form-control']) }}
-                @endif
-            </div>
-        </div>
-      </div>
 
       <div class="form-group">
         <div class="row">
@@ -181,65 +120,6 @@
         </div>
       </div>
 
-      <div class="form-group">
-        <div class="row">
-            <div class="col-xs-2">
-                {{ Form::label('currentposition', 'Currentposition') }}
-            </div>
-            <div class="col-xs-5">
-                @if(isset($jobapp->currentposition))
-                    {{ Form::text('currentposition',$jobapp->currentposition,['class' => 'form-control']) }}
-                @else
-                    {{ Form::text('currentposition','',['class' => 'form-control']) }}
-                @endif
-            </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="row">
-            <div class="col-xs-2">
-                {{ Form::label('education', 'Education') }}
-            </div>
-            <div class="col-xs-5">
-                @if(isset($jobapp->education))
-                    {{ Form::text('education',$jobapp->education,['class' => 'form-control']) }}
-                @else
-                    {{ Form::text('education','',['class' => 'form-control']) }}
-                @endif
-            </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="row">
-            <div class="col-xs-2">
-                {{ Form::label('experience', 'Experience') }}
-            </div>
-            <div class="col-xs-5">
-                @if(isset($jobapp->experience))
-                    {{ Form::text('experience',$jobapp->experience,['class' => 'form-control']) }}
-                @else
-                    {{ Form::text('experience','',['class' => 'form-control']) }}
-                @endif
-            </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="row">
-            <div class="col-xs-2">
-                {{ Form::label('expectedsalary', 'Expectedsalary') }}
-            </div>
-            <div class="col-xs-5">
-                @if(isset($jobapp->expectedsalary))
-                    {{ Form::text('expectedsalary',$jobapp->expectedsalary,['class' => 'form-control']) }}
-                @else
-                    {{ Form::text('expectedsalary','',['class' => 'form-control']) }}
-                @endif
-            </div>
-        </div>
-      </div>
 
       <div class="form-group">
         <div class="row">

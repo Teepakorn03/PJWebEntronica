@@ -15,6 +15,7 @@ use App\Image;
 use App\file;
 use Illuminate\Support\Facades\Input;
 use Session;
+use DB;
 class JobappController extends Controller
 {
     /**
@@ -52,7 +53,7 @@ class JobappController extends Controller
      */
     public function create()
     {
-        return view('job.form');
+        return view('Job.form');
     }
 
     /**
@@ -64,21 +65,14 @@ class JobappController extends Controller
     public function store(Request $request)
     {
       $this->validate($request, [
-          'position' => 'required|max:1000',
-          'name' => 'required|max:1000',
-          'lastname' => 'required|max:1000',
-          'gender' => 'required|max:1000',
-          'age' => 'required|numeric',
-          'brithday' => 'required|max:1000',
-          'nationality' => 'required|max:1000',
-          'address' => 'required|max:1000',
-          'email' => 'required|max:1000',
-          'telephone' => 'required|numeric',
-          'currentposition' => 'required|max:1000',
-          'education' => 'required|max:1000',
-          'experience' => 'required|numeric',
-          'expectedsalary' => 'required|numeric',
-          'resume' => 'required|max:1000'
+        'position' => 'required|max:1000',
+        'name' => 'required|max:1000',
+        'lastname' => 'required|max:1000',
+        'gender' => 'required|max:1000',
+        'age' => 'required|numeric',
+        'email' => 'required|max:1000',
+        'telephone' => 'required|numeric',
+        'resume' => 'required|max:1000'
 
         //  'description' => 'required|max:100',
       ]);
@@ -92,24 +86,16 @@ class JobappController extends Controller
       $jobapp->lastname = $request->lastname;
       $jobapp->gender = $request->gender;
       $jobapp->age = $request->age;
-      $jobapp->brithday = $request->brithday;
-      $jobapp->nationality = $request->nationality;
-      $jobapp->address = $request->address;
       $jobapp->email = $request->email;
       $jobapp->telephone = $request->telephone;
-      $jobapp->currentposition = $request->currentposition;
-      $jobapp->education = $request->education;
-      $jobapp->experience = $request->experience;
-      $jobapp->expectedsalary = $request->expectedsalary;
       $jobapp->resume = $filename;
-
 
 
 
 
       $jobapp->save();
 
-      return redirect('/');
+      return redirect('jobapp');
     }
 
     /**
@@ -172,15 +158,8 @@ class JobappController extends Controller
           'lastname' => 'required|max:1000',
           'gender' => 'required|max:1000',
           'age' => 'required|numeric',
-          'brithday' => 'required|max:1000',
-          'nationality' => 'required|max:1000',
-          'address' => 'required|max:1000',
           'email' => 'required|max:1000',
           'telephone' => 'required|numeric',
-          'currentposition' => 'required|max:1000',
-          'education' => 'required|max:1000',
-          'experience' => 'required|numeric',
-          'expectedsalary' => 'required|numeric',
           'resume' => 'required|max:1000'
 
         //  'description' => 'required|max:100',
@@ -195,15 +174,8 @@ class JobappController extends Controller
       $jobapp->lastname = $request->lastname;
       $jobapp->gender = $request->gender;
       $jobapp->age = $request->age;
-      $jobapp->brithday = $request->brithday;
-      $jobapp->nationality = $request->nationality;
-      $jobapp->address = $request->address;
       $jobapp->email = $request->email;
       $jobapp->telephone = $request->telephone;
-      $jobapp->currentposition = $request->currentposition;
-      $jobapp->education = $request->education;
-      $jobapp->experience = $request->experience;
-      $jobapp->expectedsalary = $request->expectedsalary;
       $jobapp->resume = $filename;
 
 
@@ -227,5 +199,10 @@ class JobappController extends Controller
       $jobapp->delete();
       Session::flash('message', 'Success Delete jobapp!!');
       return redirect('jobapp');
+    }
+    public function downfunc()
+    {
+      $downloads = DB::table('jobapps')->gtt();
+      return view('Job.index',compact('downloads'));
     }
 }

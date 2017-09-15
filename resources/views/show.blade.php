@@ -28,7 +28,21 @@
 
   	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
-
+<style type="text/css">
+.map-responsive{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+.map-responsive iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+</style>
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -231,17 +245,19 @@
     <div id="map-container" class="col-md-12"></div>
   <script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
   <script>
-
     function init_map() {
   var myLocation = new google.maps.LatLng(13.7601979, 100.5361053);
   var map_map_5521249ba8516 = null;
       var mapOptions = {
         center: myLocation,
         zoom: 16,
+		draggable: true,
+		overviewMapControl: true,
+		rotateControl: true,
     scaleControl: true,
-    streetViewControl: false,
-    mapTypeControl: false,
-    panControl: false,
+    streetViewControl: true,
+    mapTypeControl: true,
+    panControl: true,
     zoomControl:  true,
     scrollwheel: false,
     zoomControlOptions: {
@@ -259,33 +275,25 @@
           map: map_map_5521249ba8516,
           icon: 'img/map.png'
   });
-
   var contentString =
     '<div id="infowindow_content">'+
           '<p><strong>COL Public Company Limited</strong><br>'+
           '</div>';
-
       var infowindow = new google.maps.InfoWindow({
           content: contentString
         });
-
   var marker = new google.maps.Marker({
     position: myLocation,
     map: map,
     title:"Click on marker to see info",
                 maxWidth: 500
         });
-
   google.maps.event.addListener(marker, 'click', function() {
   infowindow.open(map,marker);
     });
-
     }
-
     google.maps.event.addDomListener(window, 'load', init_map);
-
   </script>
-
 </section>
 <br>
 <br>
@@ -311,7 +319,7 @@
 		@foreach ($Footers2 as $Footers)
 		<h3><?php echo $Footers -> title?></h3>
 		@endforeach
-		 {{ Html::link('jobapps/create', 'JOIN US', array('class' => 'btn btn-primary')) }}
+		 {{ Html::link('jobapp/create', 'Careers', array('class' => 'btn btn-primary')) }}
 		</div>
 
 

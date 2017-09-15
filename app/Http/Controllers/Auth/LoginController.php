@@ -38,8 +38,8 @@ class LoginController extends Controller
     }
 
 
-public function from()
+public function username()
 {
-  return 'Welcome to from';
+  return 'username';
 }
 }
