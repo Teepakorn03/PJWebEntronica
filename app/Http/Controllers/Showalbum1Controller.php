@@ -77,7 +77,11 @@ class Showalbum1Controller extends Controller
      */
     public function show($id)
     {
-        //
+      $Album = Album1::all();
+      $data = array(
+        'Album' => $Album
+      );
+      return view('Album1.showalbum', $data);
     }
 
     /**

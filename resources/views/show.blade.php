@@ -213,6 +213,118 @@
 											</div>
 										</div>
 									@endforeach
+									@foreach ($Album1 as $Album1)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum2">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album1 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album2 as $Album2)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum3">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album2 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album3 as $Album3)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum4">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album3 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album4 as $Album4)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum5">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album4 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album5 as $Album5)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum6">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album5 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album6 as $Album6)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum7">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album6 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album7 as $Album7)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum8">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album7 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
+									@foreach ($Album8 as $Album8)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="showalbum9">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Album8 -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
+										</div>
+									@endforeach
 								</div>
 						</div>
           </div>

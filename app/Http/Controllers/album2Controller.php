@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Activity;
-use Illuminate\Support\Facades\Input;
-use Session;
-class ShowalbumController extends Controller
+use App\Album1;
+
+class album2Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,12 +14,11 @@ class ShowalbumController extends Controller
      */
     public function index()
     {
-      $Activity = Activity::all();
+      $Album = Album1::all();
       $data = array(
-        'Activity' => $Activity,
-    );
-
-      return view('Activity\showalbum', $data);
+        'Album' => $Album
+      );
+      return view('Album1.showalbum', $data);
     }
 
     /**
@@ -53,7 +50,7 @@ class ShowalbumController extends Controller
      */
     public function show($id)
     {
-
+        //
     }
 
     /**

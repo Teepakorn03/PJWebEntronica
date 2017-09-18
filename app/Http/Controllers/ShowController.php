@@ -15,6 +15,14 @@ use App\Footers;
 use App\Image;
 use App\file;
 use App\Album1;
+use App\Album2;
+use App\Album3;
+use App\Album4;
+use App\Album5;
+use App\Album6;
+use App\Album7;
+use App\Album8;
+
 use Illuminate\Support\Facades\Input;
 use Session;
 
@@ -31,8 +39,14 @@ class ShowController extends Controller
       $product = product::all();
       $partner = partner::all();
       $Activity = Activity::all()->where('id',1);
-      $Album = Album1::all()->where('id',2);
-
+      $Album1 = Album1::all()->where('id',1);
+      $Album2 = Album2::all()->where('id',1);
+      $Album3 = Album3::all()->where('id',1);
+      $Album4 = Album4::all()->where('id',1);
+      $Album5 = Album5::all()->where('id',1);
+      $Album6 = Album6::all()->where('id',1);
+      $Album7 = Album7::all()->where('id',1);
+      $Album8 = Album8::all()->where('id',1);
       $about = about::all();
       $Home = Home::all()->where('id',1);
       $Footers = Footers::all()->whereIn('id', [1, 2]);
@@ -44,7 +58,14 @@ class ShowController extends Controller
         'partner' => $partner,
         'about' => $about,
         'Activity' => $Activity,
-
+        'Album1' => $Album1,
+        'Album2' => $Album2,
+        'Album3' => $Album3,
+        'Album4' => $Album4,
+        'Album5' => $Album5,
+        'Album6' => $Album6,
+        'Album7' => $Album7,
+        'Album8' => $Album8,
         'Home' => $Home,
         'Footers' => $Footers,
         'Footers1' => $Footers1,
@@ -83,6 +104,7 @@ class ShowController extends Controller
      */
     public function show($id)
     {
+      
     }
 
     /**
