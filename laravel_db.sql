@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2017 at 11:26 AM
+-- Generation Time: Sep 18, 2017 at 12:21 PM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -449,8 +449,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 (2, 'benz1', 'teepakorn46@gmail.com', '$2y$10$yA92Ns5UvhUKpkKT8h9/zOCExBbjIA2tCHC3LXospr6XmZgfssqqe', '7YD3lKhfs54Wbg4t4XNxLKae1jEtNsYhGKhAJ8sASiQtD3bAbde4x7xik8PK', '2017-09-14 00:44:24', '2017-09-14 00:44:24', ''),
 (3, 'benzza2009', 'teepakorn@gmail.com', '$2y$10$.IZbj4VCXum4ESeWm1SgNuQ2gI3EGMIIgXA3znkVG/l7.iLSAdrS.', 'WWHTQfk7s7CsK9Y9dQAIy3oUtv5PdnPnWrzCY1bVTaOGqBVZ3we6Rx1Vl4Qq', '2017-09-14 00:48:53', '2017-09-14 00:48:53', ''),
 (4, 'teepakorn', 'benz@mail.com', '$2y$10$JgRZsDfDCyePMvHHqpjUV.NY14fxw4VqCQL9X16/TEembA79DBvBe', 'hH85yYUQBbCv3O2XNtcJv76kMlLSNVM4v9lwsCLaG70MI5KNmBQTaeWt3nYF', '2017-09-14 23:34:07', '2017-09-14 23:34:07', 'benz'),
-(5, 'useradmin', 'admin@mail.com', '$2y$10$iq/8C.2Pobd6brtDfoG33OBvTIhJgLWWUet5we7niuZ6Ja1ri/wXm', 'mM93zFinPBpplWSWvFWScd8OXSbde3aGu1I8CbsUZ7700jjFw0Du9TUqq7Er', '2017-09-14 23:36:59', '2017-09-14 23:36:59', 'admin'),
-(6, 'admin', 'admin@gmail.com', '$2y$10$y4wgwF7eJIXw8WwnprEFQuiPZp2kuvuCSqHiZx1yHX/dKid0JFJR6', 'b8F7LTmpIk9Y0tQFUdV8VMbaeMWQwbLvq9hDP3LtXUJArjEpzvXYk26fpRfJ', '2017-09-18 02:24:01', '2017-09-18 02:24:01', 'admin1');
+(6, 'admin', 'admin@gmail.com', '$2y$10$y4wgwF7eJIXw8WwnprEFQuiPZp2kuvuCSqHiZx1yHX/dKid0JFJR6', 'b8F7LTmpIk9Y0tQFUdV8VMbaeMWQwbLvq9hDP3LtXUJArjEpzvXYk26fpRfJ', '2017-09-18 02:24:01', '2017-09-18 02:24:01', 'admin1'),
+(7, 'admin', 'admin1@gmail.com', '$2y$10$ZlyZYrQv26gDSpBk7mdlQOAMSpisNy3PjzaSHrzulfc77wuFJn2x2', NULL, '2017-09-18 03:21:37', '2017-09-18 03:21:37', 'useradmin');
 
 --
 -- Indexes for dumped tables
@@ -646,7 +646,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
