@@ -24,7 +24,17 @@
   </head>
 
   <body id="page-top">
+    <div class="navbar navbar-default navbar-static-top" role="navigation" align="left" style="position:fixed;">
+      <div class="container">
 
+        <div class="navbar-header">
+
+          <a href="/"><img src="../img/home .png" alt="" width="60px" height="60px"></a>
+        </div>
+
+
+      </div>
+    </div>
 
 
     <!-- Portfolio Grid Section -->
@@ -56,8 +66,8 @@
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top d-lg-none">
-      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
+      <a class="btn btn-primary js-scroll-trigger" href="/">
+        <i class="fa fa-chevron-left"></i>
       </a>
     </div>
 

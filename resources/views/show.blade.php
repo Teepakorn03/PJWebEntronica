@@ -73,7 +73,7 @@
         <span class="icon icon-bar"></span>
         <span class="icon icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand">ENTRONICA</a>
+      <img src="../img/logo ent_new.png" alt="" style="margin-top: 15px">
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -203,7 +203,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -217,7 +217,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum2">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album1 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album1 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -231,7 +231,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum3">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album2 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album2 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -245,7 +245,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum4">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album3 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album3 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -259,7 +259,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum5">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album4 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album4 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -273,7 +273,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum6">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album5 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album5 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -287,7 +287,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum7">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album6 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album6 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -301,7 +301,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum8">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album7 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album7 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -315,7 +315,7 @@
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
 												<a href="showalbum9">
-													<img width='200px' height='200px'src="../img/upload/<?php echo $Album8 -> image?>" class="fluid-img" alt="Gallery" >
+													<img src="../img/upload/<?php echo $Album8 -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">
 																<i class="fa fa-search"></i>
@@ -337,58 +337,8 @@
 <section class="contactmap" id="contactmap">
       <h1>MAP</h1>
       <hr/>
-    <div id="map-container" class="col-md-12"></div>
-  <script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
-  <script>
-    function init_map() {
-  var myLocation = new google.maps.LatLng(13.7601979, 100.5361053);
-  var map_map_5521249ba8516 = null;
-      var mapOptions = {
-        center: myLocation,
-        zoom: 16,
-		draggable: true,
-		overviewMapControl: true,
-		rotateControl: true,
-    scaleControl: true,
-    streetViewControl: true,
-    mapTypeControl: true,
-    panControl: true,
-    zoomControl:  true,
-    scrollwheel: false,
-    zoomControlOptions: {
-          style: google.maps.ZoomControlStyle.SMALL
-        }, mapTypeControlOptions: {
-              mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-          }};var styles = [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}];
-          var styledMap = new google.maps.StyledMapType(styles,
-              {name: "Styled Map"});
-          var map_map_5521249ba8516 = new google.maps.Map(document.getElementById('map-container'),mapOptions);map_map_5521249ba8516.mapTypes.set('map_style', styledMap);
-             map_map_5521249ba8516.setMapTypeId('map_style');
-        var marker_map_5521249ba8516 = new google.maps.Marker({
-          position: new google.maps.LatLng(13.7601979, 100.5361053),
-          animation:  google.maps.Animation.DROP,
-          map: map_map_5521249ba8516,
-          icon: 'img/map.png'
-  });
-  var contentString =
-    '<div id="infowindow_content">'+
-          '<p><strong>COL Public Company Limited</strong><br>'+
-          '</div>';
-      var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-  var marker = new google.maps.Marker({
-    position: myLocation,
-    map: map,
-    title:"Click on marker to see info",
-                maxWidth: 500
-        });
-  google.maps.event.addListener(marker, 'click', function() {
-  infowindow.open(map,marker);
-    });
-    }
-    google.maps.event.addDomListener(window, 'load', init_map);
-  </script>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.4877778283585!2d100.53622194163593!3d13.76091520228001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4dc88ebc01bb2a09!2sEntronica+Co.%2C+Ltd.!5e0!3m2!1sth!2sth!4v1505719889462" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
 <br>
 <br>
