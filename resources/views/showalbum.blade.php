@@ -33,20 +33,19 @@
         <h2 class="text-center">ACTIVITY</h2>
         <hr class="star-primary">
         <div class="row">
-          @foreach ($Activity as $i)
-            <div class="col-sm-4 portfolio-item">
-              <a class="portfolio-link" href="#<?php echo $i -> id?>" data-toggle="modal">
-                <div class="caption">
-                  <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </div>
+
+              @foreach ($Activity as $i)
+                <div class="col-sm-4 portfolio-item">
+                  <a class="portfolio-link" href="#<?php echo $i -> id?>" data-toggle="modal">
+                    <div class="caption">
+                      <div class="caption-content">
+                        <i class="fa fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="../img/upload/<?php echo $i -> image?>" alt="">
+                  </a>
                 </div>
-                <img class="img-fluid" src="../img/upload/<?php echo $i -> image?>" alt="">
-              </a>
-            </div>
-          @endforeach
-
-
+              @endforeach
 
         </div>
       </div>
@@ -63,6 +62,7 @@
     </div>
 
     <!-- Portfolio Modals -->
+
       @foreach ($Activity as $i)
         <div class="portfolio-modal modal fade" id="<?php echo $i -> id?>" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">

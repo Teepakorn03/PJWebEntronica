@@ -17,16 +17,11 @@ class ShowalbumController extends Controller
      */
     public function index()
     {
-
-  if ($id = '1') {
-      $Activity = Activity::all()->where('status', '=' ,'1');
-  } elseif ($id = '2') {
-      $Activity = Activity::all()->where('status', '=' ,'2');
-  }
-
-
+      $Activity = Activity::all()->where('status','=','1');
+      $Activity1 = Activity::all()->where('status','=','2');
       $data = array(
-        'Activity' => $Activity
+        'Activity' => $Activity,
+        'Activity1' => $Activity1
     );
 
       return view('showalbum', $data);
