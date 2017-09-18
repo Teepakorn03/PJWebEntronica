@@ -29,8 +29,8 @@ class ShowController extends Controller
 
       $product = product::all();
       $partner = partner::all();
-      $Activity = Activity::all();
-      $Activity1 = Activity::all()->where('status', 1);
+      $Activity = Activity::all()->where('id','<','10');
+
       $about = about::all();
       $Home = Home::all()->where('id',1);
       $Footers = Footers::all()->whereIn('id', [1, 2]);
@@ -42,7 +42,7 @@ class ShowController extends Controller
         'partner' => $partner,
         'about' => $about,
         'Activity' => $Activity,
-        'activity1' => $Activity1,
+
         'Home' => $Home,
         'Footers' => $Footers,
         'Footers1' => $Footers1,
