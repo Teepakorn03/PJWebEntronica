@@ -4,16 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\show;
-use App\partner;
-use App\product;
-use App\about;
-use App\jobapps;
 use App\Activity;
-use App\Home;
-use App\Footers;
-use App\Image;
-use App\file;
+use App\partner;
 use Illuminate\Support\Facades\Input;
 use Session;
 class ShowalbumController extends Controller
@@ -25,10 +17,17 @@ class ShowalbumController extends Controller
      */
     public function index()
     {
-      $Activity = DB::table('activity')->where('status', 1);
+
+  if ($id = '1') {
+      $Activity = Activity::all()->where('status', '=' ,'1');
+  } elseif ($id = '2') {
+      $Activity = Activity::all()->where('status', '=' ,'2');
+  }
+
+
       $data = array(
-        'activity' => $Activity
-      );
+        'Activity' => $Activity
+    );
 
       return view('showalbum', $data);
     }
@@ -62,7 +61,7 @@ class ShowalbumController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**

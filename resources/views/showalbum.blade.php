@@ -35,7 +35,7 @@
         <div class="row">
           @foreach ($Activity as $i)
             <div class="col-sm-4 portfolio-item">
-              <a class="portfolio-link" href="#<?php echo $i -> name?>" data-toggle="modal">
+              <a class="portfolio-link" href="#<?php echo $i -> id?>" data-toggle="modal">
                 <div class="caption">
                   <div class="caption-content">
                     <i class="fa fa-search-plus fa-3x"></i>
@@ -47,7 +47,7 @@
           @endforeach
 
 
-x
+
         </div>
       </div>
     </section>
@@ -63,65 +63,34 @@ x
     </div>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <!-- Acticity1 -->
-          <section id="portfolio">
-            <div class="container">
-              <h2 class="text-center">Acticity1</h2>
-              <hr class="star-primary">
-              <div class="row">
-
-                <div class="col-sm-4 portfolio-item">
-                  <a class="portfolio-link" href="#portfolioModal1-1" data-toggle="modal">
-                    <div class="caption">
-                      <div class="caption-content">
-                        <i class="fa fa-search-plus fa-3x"></i>
+      @foreach ($Activity as $i)
+        <div class="portfolio-modal modal fade" id="<?php echo $i -> id?>" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl"></div>
+                </div>
+              </div>
+              <!-- Acticity1 -->
+              <section id="portfolio">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <img class="img-fluid img-centered" src="../img/upload/<?php echo $i -> image?>" alt="">
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </div>
-
-
-    <div class="portfolio-modal modal fade" id="portfolioModal1-1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <!-- Acticity1 -->
-          <section id="portfolio">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <div class="modal-body">
-                    <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
+              </section>
 
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+  @endforeach
+
+
 
 
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 13, 2017 at 10:30 AM
+-- Generation Time: Sep 18, 2017 at 05:32 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -56,6 +56,7 @@ CREATE TABLE `activities` (
   `id` int(10) UNSIGNED NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -64,16 +65,17 @@ CREATE TABLE `activities` (
 -- Dumping data for table `activities`
 --
 
-INSERT INTO `activities` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_7781.jpg', 'รูปที่ 1', '2017-08-30 21:48:46', '2017-08-30 21:48:46'),
-(2, 'IMG_7890.jpg', 'รูปที่ 2', '2017-08-30 21:49:00', '2017-08-30 21:49:00'),
-(3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-08-30 21:49:09', '2017-08-30 21:49:09'),
-(4, 'IMG_8036.jpg', 'รูปที่ 4', '2017-08-30 21:49:16', '2017-08-30 21:49:16'),
-(5, 'IMG_8207.jpg', 'รูปที่ 5', '2017-08-30 21:49:24', '2017-08-30 21:49:24'),
-(6, 'IMG_8214.jpg', 'รูปที่ 6', '2017-08-30 21:49:31', '2017-08-30 21:49:31'),
-(7, 'IMG_8540.jpg', 'รูปที่ 7', '2017-08-30 21:49:41', '2017-08-30 21:49:41'),
-(8, 'IMG_8574.jpg', 'รูปที่ 8', '2017-08-30 21:49:48', '2017-08-30 21:49:48'),
-(9, 'IMG_8716.jpg', 'รูปที่ 9', '2017-08-30 21:49:56', '2017-08-30 21:49:56');
+INSERT INTO `activities` (`id`, `image`, `name`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_7781.jpg', 'รูปที่ 1', '1', '2017-08-30 21:48:46', '2017-08-30 21:48:46'),
+(2, 'IMG_7890.jpg', 'รูปที่ 2', '2', '2017-08-30 21:49:00', '2017-08-30 21:49:00'),
+(3, 'IMG_7903.jpg', 'รูปที่ 3', '3', '2017-08-30 21:49:09', '2017-08-30 21:49:09'),
+(4, 'IMG_8036.jpg', 'รูปที่ 4', '4', '2017-08-30 21:49:16', '2017-08-30 21:49:16'),
+(5, 'IMG_8207.jpg', 'รูปที่ 5', '5', '2017-08-30 21:49:24', '2017-08-30 21:49:24'),
+(6, 'IMG_8214.jpg', 'รูปที่ 6', '6', '2017-08-30 21:49:31', '2017-08-30 21:49:31'),
+(7, 'IMG_8540.jpg', 'รูปที่ 7', '7', '2017-08-30 21:49:41', '2017-08-30 21:49:41'),
+(8, 'IMG_8574.jpg', 'รูปที่ 8', '8', '2017-08-30 21:49:48', '2017-08-30 21:49:48'),
+(9, 'IMG_8716.jpg', 'รูปที่ 9', '9', '2017-08-30 21:49:56', '2017-08-30 21:49:56'),
+(10, 'IMG_7781.jpg', '12', '1', '2017-09-17 18:20:57', '2017-09-17 18:20:57');
 
 -- --------------------------------------------------------
 
@@ -120,7 +122,7 @@ CREATE TABLE `homes` (
 --
 
 INSERT INTO `homes` (`id`, `image`, `title`, `created_at`, `updated_at`) VALUES
-(1, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMTANY.', '2017-08-30 21:43:41', '2017-08-30 21:43:41');
+(1, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMPANY.', '2017-08-30 21:43:41', '2017-09-14 23:44:38');
 
 -- --------------------------------------------------------
 
@@ -135,15 +137,8 @@ CREATE TABLE `jobapps` (
   `lastname` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `gender` varchar(11) COLLATE utf8mb4_unicode_ci NOT NULL,
   `age` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `brithday` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `nationality` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `address` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `telephone` int(11) NOT NULL,
-  `currentposition` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `education` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `experience` int(11) NOT NULL,
-  `expectedsalary` int(11) NOT NULL,
+  `telephone` varchar(11) COLLATE utf8mb4_unicode_ci NOT NULL,
   `resume` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -153,8 +148,12 @@ CREATE TABLE `jobapps` (
 -- Dumping data for table `jobapps`
 --
 
-INSERT INTO `jobapps` (`id`, `position`, `name`, `lastname`, `gender`, `age`, `brithday`, `nationality`, `address`, `email`, `telephone`, `currentposition`, `education`, `experience`, `expectedsalary`, `resume`, `created_at`, `updated_at`) VALUES
-(1, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', '23', 'ไทย', '74/22 ม.พฤกษา49/2 ถ.กาญจนาภิเษก', 'teepakorn46@gmail.com', 944824655, 'asdasdsad', 'adsasd', 23, 23, 'about1.jpg', '2017-08-31 01:02:26', '2017-08-31 01:02:26');
+INSERT INTO `jobapps` (`id`, `position`, `name`, `lastname`, `gender`, `age`, `email`, `telephone`, `resume`, `created_at`, `updated_at`) VALUES
+(1, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', 'about1.jpg', '2017-08-31 01:02:26', '2017-08-31 01:02:26'),
+(2, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', '20638836_288075061668754_7272772087976038806_n.jpg', '2017-09-15 00:08:26', '2017-09-15 00:08:26'),
+(3, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', '20663702_288075058335421_6013825784035907148_n.jpg', '2017-09-15 00:15:24', '2017-09-15 00:15:24'),
+(4, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', '20663702_288075058335421_6013825784035907148_n.jpg', '2017-09-15 03:53:55', '2017-09-15 03:53:55'),
+(5, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', '20638836_288075061668754_7272772087976038806_n.jpg', '2017-09-15 03:54:27', '2017-09-15 03:54:27');
 
 -- --------------------------------------------------------
 
@@ -259,15 +258,20 @@ CREATE TABLE `users` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `username` text CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'benz', 'teepakorn46@gmail.com', '$2y$10$t75XQJ6xKklcDmEqntzO6upGFtatKGqqAeu2rDwBmsIyIjrJ1jCMi', NULL, '2017-08-30 21:41:22', '2017-08-30 21:41:22');
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`, `username`) VALUES
+(1, 'benz', 'teepakorn46@gmail.com', '$2y$10$t75XQJ6xKklcDmEqntzO6upGFtatKGqqAeu2rDwBmsIyIjrJ1jCMi', 'hUHT5RlALZgPiheSqRshvBVz1IKiNiCFS0PUWmec7yHqomBkDIfq8DImOOwt', '2017-08-30 21:41:22', '2017-08-30 21:41:22', ''),
+(2, 'benz1', 'teepakorn46@gmail.com', '$2y$10$yA92Ns5UvhUKpkKT8h9/zOCExBbjIA2tCHC3LXospr6XmZgfssqqe', '7YD3lKhfs54Wbg4t4XNxLKae1jEtNsYhGKhAJ8sASiQtD3bAbde4x7xik8PK', '2017-09-14 00:44:24', '2017-09-14 00:44:24', ''),
+(3, 'benzza2009', 'teepakorn@gmail.com', '$2y$10$.IZbj4VCXum4ESeWm1SgNuQ2gI3EGMIIgXA3znkVG/l7.iLSAdrS.', 'WWHTQfk7s7CsK9Y9dQAIy3oUtv5PdnPnWrzCY1bVTaOGqBVZ3we6Rx1Vl4Qq', '2017-09-14 00:48:53', '2017-09-14 00:48:53', ''),
+(4, 'teepakorn', 'benz@mail.com', '$2y$10$JgRZsDfDCyePMvHHqpjUV.NY14fxw4VqCQL9X16/TEembA79DBvBe', 'q4RtRsL4QQRJhfvDOuENgsfeepQgs7TrZrT0Di98APvy15ePrX8g1SGjqKJe', '2017-09-14 23:34:07', '2017-09-14 23:34:07', 'benz'),
+(5, 'useradmin', 'admin@mail.com', '$2y$10$iq/8C.2Pobd6brtDfoG33OBvTIhJgLWWUet5we7niuZ6Ja1ri/wXm', 'mM93zFinPBpplWSWvFWScd8OXSbde3aGu1I8CbsUZ7700jjFw0Du9TUqq7Er', '2017-09-14 23:36:59', '2017-09-14 23:36:59', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -340,7 +344,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `footers`
 --
@@ -355,7 +359,7 @@ ALTER TABLE `homes`
 -- AUTO_INCREMENT for table `jobapps`
 --
 ALTER TABLE `jobapps`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
@@ -375,7 +379,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
