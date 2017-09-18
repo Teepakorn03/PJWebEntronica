@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2017 at 09:13 AM
+-- Generation Time: Sep 18, 2017 at 10:55 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -74,7 +74,8 @@ INSERT INTO `activities` (`id`, `image`, `name`, `created_at`, `updated_at`) VAL
 (7, 'IMG_8540.jpg', 'รูปที่ 7', '2017-08-30 21:49:41', '2017-08-30 21:49:41'),
 (8, 'IMG_8574.jpg', 'รูปที่ 8', '2017-08-30 21:49:48', '2017-08-30 21:49:48'),
 (9, 'IMG_8716.jpg', 'รูปที่ 9', '2017-08-30 21:49:56', '2017-08-30 21:49:56'),
-(10, 'IMG_7781.jpg', '12', '2017-09-17 18:20:57', '2017-09-17 18:20:57');
+(10, 'IMG_7781.jpg', '12', '2017-09-17 18:20:57', '2017-09-17 18:20:57'),
+(11, 'IMG_8716.jpg', 'รูปที่ 3', '2017-09-18 00:25:57', '2017-09-18 00:25:57');
 
 -- --------------------------------------------------------
 
@@ -95,7 +96,7 @@ CREATE TABLE `album1s` (
 --
 
 INSERT INTO `album1s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_7903.jpg', 'รูปที่ 8', '2017-09-17 23:34:45', '2017-09-17 23:34:53'),
+(1, 'IMG_7890.jpg', 'รูปที่ 2', '2017-09-17 23:34:45', '2017-09-18 00:46:23'),
 (2, 'IMG_8036.jpg', 'รูปที่ 4', '2017-09-17 23:42:32', '2017-09-17 23:42:32'),
 (3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-09-17 23:43:24', '2017-09-17 23:43:24');
 
@@ -569,7 +570,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `album1s`
 --
