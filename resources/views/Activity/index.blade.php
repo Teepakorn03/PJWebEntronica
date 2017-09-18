@@ -36,10 +36,9 @@
 
 
       <td>
-          {{ Html::link('Activity/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
-          {{ Form::open(['route' => ['Activity.destroy',$p['id'], 'method' => "DELETE"] ]) }}
+        {{ Form::open(['route' => ['Activity.destroy',$p['id'], 'method' => "DELETE"] ]) }}
           <input type="hidden" name="_method" value="delete" />
-
+          {{ Html::link('Activity/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }} &nbsp;
           {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
           {{ Form::close() }}
 

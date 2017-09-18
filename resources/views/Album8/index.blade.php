@@ -36,10 +36,10 @@
 
 
       <td>
-          {{ Html::link('Album8/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+
           {{ Form::open(['route' => ['Album8.destroy',$p['id'], 'method' => "DELETE"] ]) }}
           <input type="hidden" name="_method" value="delete" />
-
+          {{ Html::link('Album8/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;
           {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
           {{ Form::close() }}
 

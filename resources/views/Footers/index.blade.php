@@ -43,7 +43,7 @@
         <td>
             {{ Form::open(['route' => ['Footers.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
-            {{ Html::link('Footers/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+            {{ Html::link('Footers/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;
             {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
             {{ Form::close() }}
 
