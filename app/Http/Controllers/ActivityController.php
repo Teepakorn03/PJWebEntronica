@@ -45,7 +45,8 @@ class ActivityController extends Controller
     {
       $this->validate($request, [
           'image' => 'required|max:2000000',
-          'name' => 'required|max:1000'
+          'name' => 'required|max:1000',
+          'status' => 'required|max:1000'
 
 
 
@@ -58,6 +59,7 @@ class ActivityController extends Controller
       $Activity = new Activity;
       $Activity->image = $filename;
       $Activity->name = $request->name;
+      $Activity->status = $request->status;
 
 
 
@@ -109,7 +111,8 @@ class ActivityController extends Controller
     {
       $this->validate($request, [
         'image' => 'required|max:2000000',
-        'name' => 'required|max:1000'
+        'name' => 'required|max:1000',
+        'status' => 'required|max:1000'
 
 
 
@@ -122,6 +125,7 @@ class ActivityController extends Controller
     $Activity = Activity::find($id);
     $Activity->image = $filename;
     $Activity->name = $request->name;
+    $Activity->status = $request->status;
 
 
 

@@ -51,6 +51,16 @@
             </div>
         </div>
         <br>
+        <div class="form-group">
+          <div class="row">
+          <div class="col-xs-2">
+          {!! Form::label('album', 'Album')  !!}
+          </div>
+          <div class="col-xs-5">
+              {!!  Form::select('status', ['1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9'],  '1', ['class' => 'form-control' ]) !!}
+          </div>
+          </div>
+        </div>
         <div class="row">
             <div class="col-xs-5">
                 {!!  Form::submit('save', ['class'=>'btn btn-primary']) !!}

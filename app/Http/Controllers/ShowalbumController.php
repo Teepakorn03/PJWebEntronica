@@ -16,8 +16,7 @@ use App\Image;
 use App\file;
 use Illuminate\Support\Facades\Input;
 use Session;
-
-class ShowController extends Controller
+class ShowalbumController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,30 +25,12 @@ class ShowController extends Controller
      */
     public function index()
     {
-
-      $product = product::all();
-      $partner = partner::all();
-      $Activity = Activity::all();
-      $Activity1 = Activity::all()->where('status', 1);
-      $about = about::all();
-      $Home = Home::all()->where('id',1);
-      $Footers = Footers::all()->whereIn('id', [1, 2]);
-      $Footers1 = Footers::all()->where('id',3);
-      $Footers2 = Footers::all()->where('id',4);
-      $about = about::all();
+      $Activity = DB::table('activity')->where('status', 1);
       $data = array(
-        'product' => $product,
-        'partner' => $partner,
-        'about' => $about,
-        'Activity' => $Activity,
-        'activity1' => $Activity1,
-        'Home' => $Home,
-        'Footers' => $Footers,
-        'Footers1' => $Footers1,
-        'Footers2' => $Footers2,
-        'about' => $about
-    );
-        return view('show', $data);
+        'activity' => $Activity
+      );
+
+      return view('showalbum', $data);
     }
 
     /**
@@ -70,7 +51,7 @@ class ShowController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
@@ -81,12 +62,7 @@ class ShowController extends Controller
      */
     public function show($id)
     {
-      $Activity = Activity::all()->where('status', 1);
-      $data = array(
-        'activity' => $Activity
-      );
-
-      return view('showalbum', $data);
+        //
     }
 
     /**
@@ -97,7 +73,7 @@ class ShowController extends Controller
      */
     public function edit($id)
     {
-
+        //
     }
 
     /**
@@ -109,7 +85,7 @@ class ShowController extends Controller
      */
     public function update(Request $request, $id)
     {
-
+        //
     }
 
     /**
@@ -120,6 +96,6 @@ class ShowController extends Controller
      */
     public function destroy($id)
     {
-
+        //
     }
 }

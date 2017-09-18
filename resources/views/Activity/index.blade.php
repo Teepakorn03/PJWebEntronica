@@ -20,6 +20,7 @@
           <th>ID</th>
           <th>image</th>
           <th>name</th>
+          <th>album</th>
           <th width="200">Action</th>
       </tr>
   </thead>
@@ -30,13 +31,15 @@
             <td> {{ $p['id'] }} </td>
             <td width="30%"><img  width="200px"  src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
             <td> {{ $p['name'] }} </td>
+            <td> {{ $p['status'] }} </td>
 
 
 
       <td>
+          {{ Html::link('Activity/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
           {{ Form::open(['route' => ['Activity.destroy',$p['id'], 'method' => "DELETE"] ]) }}
           <input type="hidden" name="_method" value="delete" />
-          {{ Html::link('Activity/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+
           {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
           {{ Form::close() }}
 

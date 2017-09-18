@@ -18,6 +18,7 @@ Route::resource('about','AboutController');
 Route::resource('jobapp','JobappController');
 Route::resource('Footers','FootersController');
 Route::resource('logintest','LoginController');
+Route::resource('showalbum','ShowalbumController');
 
 Route::resource('base', 'BaseController');
 //Route::resource('display','ImageController');

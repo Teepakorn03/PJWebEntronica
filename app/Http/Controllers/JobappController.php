@@ -95,7 +95,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('jobapp');
+      return redirect('/');
     }
 
     /**

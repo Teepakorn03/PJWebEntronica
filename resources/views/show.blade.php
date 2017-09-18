@@ -12,22 +12,16 @@
 
 	<!-- stylesheets css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-  	<link rel="stylesheet" href="css/magnific-popup.css">
-
+  <link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
-  	<link rel="stylesheet" href="css/nivo-lightbox.css">
-  	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-
-  	<link rel="stylesheet" href="css/hover-min.css">
-  	<link rel="stylesheet" href="css/flexslider.css">
-
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/style.css">
-
-  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 <style type="text/css">
 .map-responsive{
 	overflow:hidden;
@@ -193,50 +187,39 @@
     </div>
   </div>
 </section>
+
 <!-- Gallery section -->
 <section id="gallery" class="parallax-section" style="background:rgb(240,240,240);">
   <div class="container">
+		<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+			 <h2>ACTIVITY</h2>
+			 <h4>__________</h4>
+	 </div>
     <div class="row">
-
-      <div class="col-md-12">
-
-       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>ACTIVITY</h2>
-            <h4>__________</h4>
-        </div>
-      </div>
-
-          <!-- iso section -->
           <div class="iso-section wow fadeInUp" data-wow-delay="0.6s">
-
-                    <!-- iso box section -->
-										<div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
-											<div class="iso-box-wrapper col4-iso-box">
-
-											@foreach ($Activity as $Activity)
-												<div class="iso-box col-md-4 col-sm-6">
-													<div class="gallery-thumb">
-														<a href="../img/upload/<?php echo $Activity -> image?>" data-lightbox-gallery="food-gallery">
-															<img width='200px' height='200px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery">
-																<div class="gallery-overlay">
-																	<div class="gallery-item">
-																		<i class="fa fa-search"></i>
-																	</div>
-																</div>
-														</a>
-													</div>
-												</div>
-											@endforeach
-
-											 </div>
+							<div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+								<div class="iso-box-wrapper col4-iso-box">
+									@foreach ($Activity as $Activity)
+										<div class="iso-box col-sm-4">
+											<div class="gallery-thumb">
+												<a href="<?php echo 'showalbum'?>">
+													<img width='200px' height='200px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery" >
+														<div class="gallery-overlay">
+															<div class="gallery-item">
+																<i class="fa fa-search"></i>
+															</div>
+														</div>
+												</a>
+											</div>
 										</div>
+									@endforeach
+								</div>
+						</div>
           </div>
-
       </div>
-
     </div>
-  </div>
+
+
 </section>
 
 <section class="contactmap" id="contactmap">
@@ -349,6 +332,10 @@
 <script src="js/wow.min.js"></script>
 
 <script src="js/custom.js"></script>
+
+
+
+
 
 </body>
 </html>
