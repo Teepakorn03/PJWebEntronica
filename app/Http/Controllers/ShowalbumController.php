@@ -21,7 +21,7 @@ class ShowalbumController extends Controller
         'Activity' => $Activity,
     );
 
-      return view('Activity\showalbum', $data);
+      return view('Activity.showalbum', $data);
     }
 
     /**
