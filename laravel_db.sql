@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2017 at 05:32 AM
+-- Generation Time: Sep 18, 2017 at 09:13 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -56,7 +56,6 @@ CREATE TABLE `activities` (
   `id` int(10) UNSIGNED NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `status` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -65,17 +64,187 @@ CREATE TABLE `activities` (
 -- Dumping data for table `activities`
 --
 
-INSERT INTO `activities` (`id`, `image`, `name`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_7781.jpg', 'รูปที่ 1', '1', '2017-08-30 21:48:46', '2017-08-30 21:48:46'),
-(2, 'IMG_7890.jpg', 'รูปที่ 2', '2', '2017-08-30 21:49:00', '2017-08-30 21:49:00'),
-(3, 'IMG_7903.jpg', 'รูปที่ 3', '3', '2017-08-30 21:49:09', '2017-08-30 21:49:09'),
-(4, 'IMG_8036.jpg', 'รูปที่ 4', '4', '2017-08-30 21:49:16', '2017-08-30 21:49:16'),
-(5, 'IMG_8207.jpg', 'รูปที่ 5', '5', '2017-08-30 21:49:24', '2017-08-30 21:49:24'),
-(6, 'IMG_8214.jpg', 'รูปที่ 6', '6', '2017-08-30 21:49:31', '2017-08-30 21:49:31'),
-(7, 'IMG_8540.jpg', 'รูปที่ 7', '7', '2017-08-30 21:49:41', '2017-08-30 21:49:41'),
-(8, 'IMG_8574.jpg', 'รูปที่ 8', '8', '2017-08-30 21:49:48', '2017-08-30 21:49:48'),
-(9, 'IMG_8716.jpg', 'รูปที่ 9', '9', '2017-08-30 21:49:56', '2017-08-30 21:49:56'),
-(10, 'IMG_7781.jpg', '12', '1', '2017-09-17 18:20:57', '2017-09-17 18:20:57');
+INSERT INTO `activities` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_7781.jpg', 'รูปที่ 1', '2017-08-30 21:48:46', '2017-08-30 21:48:46'),
+(2, 'IMG_7890.jpg', 'รูปที่ 2', '2017-08-30 21:49:00', '2017-08-30 21:49:00'),
+(3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-08-30 21:49:09', '2017-08-30 21:49:09'),
+(4, 'IMG_8036.jpg', 'รูปที่ 4', '2017-08-30 21:49:16', '2017-08-30 21:49:16'),
+(5, 'IMG_8207.jpg', 'รูปที่ 5', '2017-08-30 21:49:24', '2017-08-30 21:49:24'),
+(6, 'IMG_8214.jpg', 'รูปที่ 6', '2017-08-30 21:49:31', '2017-08-30 21:49:31'),
+(7, 'IMG_8540.jpg', 'รูปที่ 7', '2017-08-30 21:49:41', '2017-08-30 21:49:41'),
+(8, 'IMG_8574.jpg', 'รูปที่ 8', '2017-08-30 21:49:48', '2017-08-30 21:49:48'),
+(9, 'IMG_8716.jpg', 'รูปที่ 9', '2017-08-30 21:49:56', '2017-08-30 21:49:56'),
+(10, 'IMG_7781.jpg', '12', '2017-09-17 18:20:57', '2017-09-17 18:20:57');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album1s`
+--
+
+CREATE TABLE `album1s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album1s`
+--
+
+INSERT INTO `album1s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_7903.jpg', 'รูปที่ 8', '2017-09-17 23:34:45', '2017-09-17 23:34:53'),
+(2, 'IMG_8036.jpg', 'รูปที่ 4', '2017-09-17 23:42:32', '2017-09-17 23:42:32'),
+(3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-09-17 23:43:24', '2017-09-17 23:43:24');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album2s`
+--
+
+CREATE TABLE `album2s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album2s`
+--
+
+INSERT INTO `album2s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_7903.jpg', 'รูปที่ 8', '2017-09-17 23:45:05', '2017-09-17 23:45:13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album3s`
+--
+
+CREATE TABLE `album3s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album3s`
+--
+
+INSERT INTO `album3s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_8036.jpg', 'รูปที่ 4', '2017-09-17 23:45:22', '2017-09-17 23:45:31');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album4s`
+--
+
+CREATE TABLE `album4s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album4s`
+--
+
+INSERT INTO `album4s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_8207.jpg', 'รูปที่ 1', '2017-09-17 23:51:53', '2017-09-17 23:52:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album5s`
+--
+
+CREATE TABLE `album5s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album5s`
+--
+
+INSERT INTO `album5s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_8214.jpg', 'รูปที่ 3', '2017-09-17 23:57:55', '2017-09-17 23:59:27');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album6s`
+--
+
+CREATE TABLE `album6s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album6s`
+--
+
+INSERT INTO `album6s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_8540.jpg', 'รูปที่ 7', '2017-09-18 00:03:31', '2017-09-18 00:03:40');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album7s`
+--
+
+CREATE TABLE `album7s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album7s`
+--
+
+INSERT INTO `album7s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_8574.jpg', 'รูปที่ 1', '2017-09-18 00:07:43', '2017-09-18 00:07:51');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album8s`
+--
+
+CREATE TABLE `album8s` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `album8s`
+--
+
+INSERT INTO `album8s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'IMG_8716.jpg', 'รูปที่ 1', '2017-09-18 00:11:51', '2017-09-18 00:12:02');
 
 -- --------------------------------------------------------
 
@@ -180,7 +349,15 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (6, '2017_08_01_083452_create_abouts_table', 1),
 (7, '2017_08_01_101026_create_jobapps_table', 1),
 (8, '2017_08_02_083223_create_activities_table', 1),
-(9, '2017_08_02_084654_create_homes_table', 1);
+(9, '2017_08_02_084654_create_homes_table', 1),
+(11, '2017_09_18_062354_create_album2s_table', 3),
+(12, '2017_09_18_063032_create_album3s_table', 3),
+(13, '2017_09_18_063042_create_album4s_table', 3),
+(14, '2017_09_18_063052_create_album5s_table', 3),
+(15, '2017_09_18_063101_create_album6s_table', 3),
+(16, '2017_09_18_063110_create_album7s_table', 3),
+(17, '2017_09_18_063120_create_album8s_table', 3),
+(18, '2017_09_18_052407_create_album1s_table', 4);
 
 -- --------------------------------------------------------
 
@@ -290,6 +467,54 @@ ALTER TABLE `activities`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `album1s`
+--
+ALTER TABLE `album1s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album2s`
+--
+ALTER TABLE `album2s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album3s`
+--
+ALTER TABLE `album3s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album4s`
+--
+ALTER TABLE `album4s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album5s`
+--
+ALTER TABLE `album5s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album6s`
+--
+ALTER TABLE `album6s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album7s`
+--
+ALTER TABLE `album7s`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `album8s`
+--
+ALTER TABLE `album8s`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `footers`
 --
 ALTER TABLE `footers`
@@ -346,6 +571,46 @@ ALTER TABLE `abouts`
 ALTER TABLE `activities`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
+-- AUTO_INCREMENT for table `album1s`
+--
+ALTER TABLE `album1s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `album2s`
+--
+ALTER TABLE `album2s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `album3s`
+--
+ALTER TABLE `album3s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `album4s`
+--
+ALTER TABLE `album4s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `album5s`
+--
+ALTER TABLE `album5s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `album6s`
+--
+ALTER TABLE `album6s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `album7s`
+--
+ALTER TABLE `album7s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `album8s`
+--
+ALTER TABLE `album8s`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `footers`
 --
 ALTER TABLE `footers`
@@ -364,7 +629,7 @@ ALTER TABLE `jobapps`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `partners`
 --
