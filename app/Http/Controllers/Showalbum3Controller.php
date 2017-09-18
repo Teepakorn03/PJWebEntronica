@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Activity;
+use App\Album3;
 use App\Image;
 use App\file;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Session;
-
-class ActivityController extends Controller
+class Showalbum3Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,11 +18,11 @@ class ActivityController extends Controller
      */
     public function index()
     {
-      $Activity = Activity::all();
+      $Album3 = Album3::all();
       $data = array(
-        'Activity' => $Activity
-    );
-    return view('Activity.index',$data);
+        'Album3' => $Album3
+      );
+      return view('Album3.index', $data);
     }
 
     /**
@@ -32,7 +32,7 @@ class ActivityController extends Controller
      */
     public function create()
     {
-          return view('Activity.form');
+            return view('Album3.form');
     }
 
     /**
@@ -52,20 +52,20 @@ class ActivityController extends Controller
 
         //  'description' => 'required|max:100',
       ]);
-      $Activity = $request->file('image');
-      $filename = $Activity->getClientOriginalName();
-      $Activity->move(public_path().'/img/upload', $Activity->getClientOriginalName());
+      $Album3 = $request->file('image');
+      $filename = $Album3->getClientOriginalName();
+      $Album3->move(public_path().'/img/upload', $Album3->getClientOriginalName());
 
-      $Activity = new Activity;
-      $Activity->image = $filename;
-      $Activity->name = $request->name;
-
-
+      $Album3 = new Album3;
+      $Album3->image = $filename;
+      $Album3->name = $request->name;
 
 
-      $Activity->save();
 
-      return redirect('Activity');
+
+      $Album3->save();
+
+      return redirect('Album3');
     }
 
     /**
@@ -76,11 +76,7 @@ class ActivityController extends Controller
      */
     public function show($id)
     {
-      $Activity = Activity::all();
-      $data = array(
-        'partner' => $Activity
-    );
-        return view('show', $data);
+        //
     }
 
     /**
@@ -92,11 +88,11 @@ class ActivityController extends Controller
     public function edit($id)
     {
       if($id !== '') {
-          $Activity = Activity::find($id);
+          $Album3 = Album3::find($id);
           $data = array(
-              'Activity' => $Activity
+              'Album3' => $Album3
           );
-          return view('Activity/form',$data);
+          return view('Album3/form',$data);
       }
     }
 
@@ -113,25 +109,22 @@ class ActivityController extends Controller
         'image' => 'required|max:2000000',
         'name' => 'required|max:1000'
 
-
-
-
-
     ]);
-    $Activity = $request->file('image');
-    $filename = $Activity->getClientOriginalName();
-    $Activity->move(public_path().'/img/upload', $Activity->getClientOriginalName());
+    $Album3 = $request->file('image');
+    $filename = $Album3->getClientOriginalName();
+    $Album3->move(public_path().'/img/upload', $Album3->getClientOriginalName());
 
-    $Activity = Activity::find($id);
-    $Activity->image = $filename;
-    $Activity->name = $request->name;
+    $Album3 = Album3::find($id);
+    $Album3->image = $filename;
+    $Album3->name = $request->name;
 
 
 
-    $Activity->save();
 
-    Session::flash('message','Success update Activity!!');
-    return redirect('Activity');
+    $Album3->save();
+
+    Session::flash('message','Success update Album!!');
+    return redirect('Album3');
     }
 
     /**
@@ -142,9 +135,9 @@ class ActivityController extends Controller
      */
     public function destroy($id)
     {
-      $Activity = Activity::find($id);
-      $Activity->delete();
-      Session::flash('message', 'Success Delete Activity!!');
-      return redirect('Activity');
+      $Album3 = Album3::find($id);
+      $Album3->delete();
+      Session::flash('message', 'Success Delete Album!!');
+      return redirect('Album3');
     }
 }

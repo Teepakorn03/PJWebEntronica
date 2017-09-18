@@ -14,6 +14,7 @@ use App\Home;
 use App\Footers;
 use App\Image;
 use App\file;
+use App\Album1;
 use Illuminate\Support\Facades\Input;
 use Session;
 
@@ -29,7 +30,8 @@ class ShowController extends Controller
 
       $product = product::all();
       $partner = partner::all();
-      $Activity = Activity::all()->where('id','<','10');
+      $Activity = Activity::all()->where('id',1);
+      $Album = Album1::all()->where('id',2);
 
       $about = about::all();
       $Home = Home::all()->where('id',1);
@@ -81,12 +83,6 @@ class ShowController extends Controller
      */
     public function show($id)
     {
-      $Activity = Activity::all()->where('status', 1);
-      $data = array(
-        'activity' => $Activity
-      );
-
-      return view('showalbum', $data);
     }
 
     /**

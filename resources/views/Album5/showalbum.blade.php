@@ -34,7 +34,7 @@
         <hr class="star-primary">
         <div class="row">
 
-              @foreach ($Activity as $i)
+              @foreach ($Album5 as $i)
                 <div class="col-sm-4 portfolio-item">
                   <a class="portfolio-link" href="#<?php echo $i -> id?>" data-toggle="modal">
                     <div class="caption">
@@ -63,7 +63,7 @@
 
     <!-- Portfolio Modals -->
 
-      @foreach ($Activity as $i)
+      @foreach ($Album5 as $i)
         <div class="portfolio-modal modal fade" id="<?php echo $i -> id?>" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">

@@ -1,14 +1,14 @@
 @extends('layouts/app')
 
 @section('content')
-  <h1 align="center">Album 1</h1>
+  <h1 align="center">Album 4</h1>
   @if(Session::has('message'))
       <div class="alert alert-info">
           {{ Session::get('message') }}
       </div>
   @endif
   <div align="right" class="col-xs-10">
-        {{ Html::link('Activity/create', 'Add New', array(
+        {{ Html::link('Album3/create', 'Add New', array(
             'class' => 'btn btn-primary'
     ))}}
 
@@ -26,7 +26,7 @@
   </thead>
   <tbody>
     <tr>
-      @forelse ($Activity as $p)
+      @forelse ($Album3 as $p)
         <tr>
             <td> {{ $p['id'] }} </td>
             <td width="30%"><img  width="200px"  src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
@@ -36,8 +36,8 @@
 
 
       <td>
-          {{ Html::link('Activity/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
-          {{ Form::open(['route' => ['Activity.destroy',$p['id'], 'method' => "DELETE"] ]) }}
+          {{ Html::link('Album3/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+          {{ Form::open(['route' => ['Album3.destroy',$p['id'], 'method' => "DELETE"] ]) }}
           <input type="hidden" name="_method" value="delete" />
 
           {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}

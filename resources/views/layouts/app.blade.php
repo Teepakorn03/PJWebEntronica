@@ -27,8 +27,41 @@
                       <li>
                         <a href="home">Add Home</a>
                       </li>
-                      <li>
-                          <a href="Activity">Add Activity</a>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                             Add Activity   <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                              <a href="Activity">Add Album 1</a>
+                            </li>
+                            <li>
+                              <a href="Album1">Add Album 2</a>
+                            </li>
+                            <li>
+                              <a href="Album2">Add Album 3</a>
+                            </li>
+                            <li>
+                              <a href="Album3">Add Album 4</a>
+                            </li>
+                            <li>
+                              <a href="Album4">Add Album 5</a>
+                            </li>
+                            <li>
+                              <a href="Album5">Add Album 6</a>
+                            </li>
+                            <li>
+                              <a href="Album6">Add Album 7</a>
+                            </li>
+                            <li>
+                              <a href="Album7">Add Album 8</a>
+                            </li>
+                            <li>
+                              <a href="Album8">Add Album 9</a>
+                            </li>
+
+                          </ul>
                       </li>
                       <li>
                         <a href="about">Add About</a>

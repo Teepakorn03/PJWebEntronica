@@ -202,7 +202,7 @@
 									@foreach ($Activity as $Activity)
 										<div class="iso-box col-sm-4">
 											<div class="gallery-thumb">
-												<a href="<?php echo 'showalbum'?>">
+												<a href="showalbum">
 													<img width='200px' height='200px'src="../img/upload/<?php echo $Activity -> image?>" class="fluid-img" alt="Gallery" >
 														<div class="gallery-overlay">
 															<div class="gallery-item">

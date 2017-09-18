@@ -4,16 +4,16 @@
 <h1>Form Code</h1>
 <div class="panel panel-primary">
     <div class="panel-heading">
-        @if(isset($Activity))
+        @if(isset($Album))
             Edit Form
         @else
             Add Form
         @endif
     </div>
-    @if(isset($Activity))
-          {{  Form::open(['method'=>'PATCH', 'enctype'=>'multipart/form-data', 'route' => ['Activity.update', $Activity->id]])}}
+    @if(isset($Album))
+          {{  Form::open(['method'=>'PATCH', 'enctype'=>'multipart/form-data', 'route' => ['Album1.update', $Album->id]])}}
     @else
-          {{  Form::open(['method'=>'POST', 'enctype'=>'multipart/form-data', 'url' => 'Activity'])}}
+          {{  Form::open(['method'=>'POST', 'enctype'=>'multipart/form-data', 'url' => 'Album1'])}}
     @endif
     <div class="panel-body">
         @if (count($errors) > 0)
@@ -30,7 +30,7 @@
                   {{   Form::label('photo', 'Photo') }}
             </div>
             <div class="col-xs-5">
-                @if(isset($Activity->image))
+                @if(isset($Album->image))
                   {{ Form::file('image', null, ['class'=>'form-control']) }}
                 @else
                   {{ Form::file('image', null, ['class'=>'form-control']) }}
@@ -43,24 +43,14 @@
                 {{ Form::label('title', 'Title') }}
             </div>
             <div class="col-xs-5">
-                @if(isset($Activity->name))
-                    {{ Form::text('name',$Activity->title,['class' => 'form-control']) }}
+                @if(isset($Album->name))
+                    {{ Form::text('name',$Album->title,['class' => 'form-control']) }}
                 @else
                     {{ Form::text('name','',['class' => 'form-control']) }}
                 @endif
             </div>
         </div>
         <br>
-        <div class="form-group">
-          <div class="row">
-          <div class="col-xs-2">
-          {!! Form::label('album', 'Album')  !!}
-          </div>
-          <div class="col-xs-5">
-              {!!  Form::select('status', ['1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5', '6' => '6', '7' => '7', '8' => '8', '9' => '9'],  '1', ['class' => 'form-control' ]) !!}
-          </div>
-          </div>
-        </div>
         <div class="row">
             <div class="col-xs-5">
                 {!!  Form::submit('save', ['class'=>'btn btn-primary']) !!}
