@@ -3,10 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Album5;
-class album6Controller extends Controller
+use App\Jobapp;
+use App\Image;
+use App\file;
+use Illuminate\Support\Facades\Input;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Session;
+use DB;
+class JobController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -14,11 +21,7 @@ class album6Controller extends Controller
      */
     public function index()
     {
-      $Album5 = Album5::all();
-      $data = array(
-        'Album5' => $Album5
-      );
-      return view('Album5.showalbum', $data);
+        return redirect('/');
     }
 
     /**
@@ -28,7 +31,7 @@ class album6Controller extends Controller
      */
     public function create()
     {
-        //
+        return view('Job.form0');
     }
 
     /**
@@ -39,7 +42,38 @@ class album6Controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $this->validate($request, [
+        'position' => 'required|max:1000',
+        'name' => 'required|max:1000',
+        'lastname' => 'required|max:1000',
+        'gender' => 'required|max:1000',
+        'age' => 'required|numeric',
+        'email' => 'required|max:1000',
+        'telephone' => 'required|numeric',
+        'resume' => 'required|max:1000'
+
+        //  'description' => 'required|max:100',
+      ]);
+      $jobapp = $request->file('resume');
+      $filename = $jobapp->getClientOriginalName();
+      $jobapp->move(public_path().'/Job', $jobapp->getClientOriginalName());
+
+      $jobapp = new Jobapp;
+      $jobapp->position = $request->position;
+      $jobapp->name = $request->name;
+      $jobapp->lastname = $request->lastname;
+      $jobapp->gender = $request->gender;
+      $jobapp->age = $request->age;
+      $jobapp->email = $request->email;
+      $jobapp->telephone = $request->telephone;
+      $jobapp->resume = $filename;
+
+
+
+
+      $jobapp->save();
+
+      return redirect('/');
     }
 
     /**
@@ -50,7 +84,7 @@ class album6Controller extends Controller
      */
     public function show($id)
     {
-        //
+      //
     }
 
     /**
@@ -61,7 +95,7 @@ class album6Controller extends Controller
      */
     public function edit($id)
     {
-        //
+      //
     }
 
     /**
@@ -73,7 +107,7 @@ class album6Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      //
     }
 
     /**
@@ -84,6 +118,6 @@ class album6Controller extends Controller
      */
     public function destroy($id)
     {
-        //
+      //
     }
 }

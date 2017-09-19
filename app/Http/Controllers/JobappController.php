@@ -14,10 +14,18 @@ use App\Footers;
 use App\Image;
 use App\file;
 use Illuminate\Support\Facades\Input;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Session;
 use DB;
 class JobappController extends Controller
 {
+      public function __construct()
+    {
+    $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -205,4 +213,5 @@ class JobappController extends Controller
       $downloads = DB::table('jobapps')->gtt();
       return view('Job.index',compact('downloads'));
     }
+
 }

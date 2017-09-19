@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Album2;
 class album3Controller extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *

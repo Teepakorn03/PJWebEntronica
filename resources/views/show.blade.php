@@ -364,7 +364,7 @@
 		@foreach ($Footers2 as $Footers)
 		<h3><?php echo $Footers -> title?></h3>
 		@endforeach
-		 {{ Html::link('jobapp/create', 'Careers', array('class' => 'btn btn-primary')) }}
+		 {{ Html::link('form/create', 'Careers', array('class' => 'btn btn-primary')) }}
 		</div>
 
 

@@ -24,17 +24,17 @@
 <table class="table table-bordered" style="width:80%;" align="center">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>position</th>
-            <th>name</th>
-            <th>lastname</th>
-            <th>gender</th>
-            <th>age</th>
-            <th>email</th>
-            <th>telephone</th>
-            <th>resume</th>
+            <th width="2%">ID</th>
+            <th width="10%">position</th>
+            <th width="10%">name</th>
+            <th width="10%">lastname</th>
+            <th width="5%">gender</th>
+            <th width="2%">age</th>
+            <th width="10%">email</th>
+            <th width="5%">telephone</th>
+            <th width="10%">resume</th>
 
-            <th width="300px">Action</th>
+            <th width="10%">Action</th>
         </tr>
     </thead>
     <tbody>

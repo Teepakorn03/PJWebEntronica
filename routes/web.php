@@ -15,7 +15,6 @@ Route::resource('partner','PartnerController');
 Route::resource('home','Home_Controller');
 Route::resource('Activity','ActivityController');
 Route::resource('about','AboutController');
-Route::resource('jobapp','JobappController');
 Route::resource('Footers','FootersController');
 Route::resource('logintest','LoginController');
 Route::resource('showalbum','ShowalbumController');
@@ -37,6 +36,8 @@ Route::resource('Album7','Showalbum7Controller');
 Route::resource('Album8','Showalbum8Controller');
 
 Route::resource('base', 'BaseController');
+Route::resource('form','JobController');
+Route::resource('jobapp','JobappController');
 //Route::resource('display','ImageController');
 Route::get('admin', function () {
     return view('welcome');

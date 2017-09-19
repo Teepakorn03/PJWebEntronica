@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Input;
 use Session;
 class Showalbum8Controller extends Controller
 {
+      public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *

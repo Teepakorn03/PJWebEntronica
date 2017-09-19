@@ -7,6 +7,7 @@ use App\Album1;
 
 class album2Controller extends Controller
 {
+  
     /**
      * Display a listing of the resource.
      *
