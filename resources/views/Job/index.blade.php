@@ -32,7 +32,7 @@
             <th width="2%">age</th>
             <th width="10%">email</th>
             <th width="5%">telephone</th>
-            <th width="10%">resume</th>
+            <th width="10%">attach file</th>
 
             <th width="10%">Action</th>
         </tr>

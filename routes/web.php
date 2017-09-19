@@ -34,7 +34,7 @@ Route::resource('Album5','Showalbum5Controller');
 Route::resource('Album6','Showalbum6Controller');
 Route::resource('Album7','Showalbum7Controller');
 Route::resource('Album8','Showalbum8Controller');
-
+Route::resource('DetailJob','DetailController');
 Route::resource('base', 'BaseController');
 Route::resource('form','JobController');
 Route::resource('jobapp','JobappController');

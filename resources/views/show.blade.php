@@ -82,6 +82,7 @@
         <li><a href="#team" class="smoothScroll">Partner</a></li>
         <li><a href="#menu" class="smoothScroll">Product & Service</a></li>
         <li><a href="#gallery" class="smoothScroll">Activity</a></li>
+				<li><a href="DetailJob/show" class="smoothScroll">Careers</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
       </ul>
     </div>
@@ -211,6 +212,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Activity -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album1 as $Album1)
@@ -225,6 +227,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album1 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album2 as $Album2)
@@ -239,6 +242,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album2 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album3 as $Album3)
@@ -253,6 +257,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album3 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album4 as $Album4)
@@ -267,6 +272,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album4 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album5 as $Album5)
@@ -281,6 +287,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album5 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album6 as $Album6)
@@ -295,6 +302,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album6 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album7 as $Album7)
@@ -309,6 +317,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album7 -> name?></h3>
 										</div>
 									@endforeach
 									@foreach ($Album8 as $Album8)
@@ -323,6 +332,7 @@
 														</div>
 												</a>
 											</div>
+											<h3><?php echo $Album8 -> name?></h3>
 										</div>
 									@endforeach
 								</div>
@@ -364,7 +374,7 @@
 		@foreach ($Footers2 as $Footers)
 		<h3><?php echo $Footers -> title?></h3>
 		@endforeach
-		 {{ Html::link('form/create', 'Careers', array('class' => 'btn btn-primary')) }}
+		 {{ Html::link('DetailJob/show', 'Careers', array('class' => 'btn btn-primary')) }}
 		</div>
 
 

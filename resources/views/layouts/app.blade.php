@@ -79,6 +79,9 @@
                           <a href="Footers">Add Footers</a>
                       </li>
                       <li>
+                          <a href="DetailJob">job Details</a>
+                      </li>
+                      <li>
                           <a href="/">Show</a>
                       </li>
                       <li>
@@ -127,6 +130,9 @@
                               </li>
                               <li>
                                   <a href="Footers">Add Footers</a>
+                              </li>
+                              <li>
+                                  <a href="DetailJob">job Details</a>
                               </li>
                               <li>
                                   <a href="/">Show</a>

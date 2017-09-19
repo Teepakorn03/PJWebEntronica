@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2017 at 12:21 PM
+-- Generation Time: Sep 19, 2017 at 01:08 PM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -65,7 +65,7 @@ CREATE TABLE `activities` (
 --
 
 INSERT INTO `activities` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_7781.jpg', 'รูปที่ 1', '2017-08-30 21:48:46', '2017-08-30 21:48:46'),
+(1, 'IMG_7781.jpg', 'อัลบั้มที่ 1', '2017-08-30 21:48:46', '2017-09-19 04:05:41'),
 (2, 'IMG_7890.jpg', 'รูปที่ 2', '2017-08-30 21:49:00', '2017-08-30 21:49:00'),
 (3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-08-30 21:49:09', '2017-08-30 21:49:09'),
 (4, 'IMG_8036.jpg', 'รูปที่ 4', '2017-08-30 21:49:16', '2017-08-30 21:49:16'),
@@ -75,7 +75,8 @@ INSERT INTO `activities` (`id`, `image`, `name`, `created_at`, `updated_at`) VAL
 (8, 'IMG_8574.jpg', 'รูปที่ 8', '2017-08-30 21:49:48', '2017-08-30 21:49:48'),
 (9, 'IMG_8716.jpg', 'รูปที่ 9', '2017-08-30 21:49:56', '2017-08-30 21:49:56'),
 (10, 'IMG_7781.jpg', '12', '2017-09-17 18:20:57', '2017-09-17 18:20:57'),
-(11, 'IMG_8716.jpg', 'รูปที่ 3', '2017-09-18 00:25:57', '2017-09-18 00:25:57');
+(11, 'IMG_8716.jpg', 'รูปที่ 3', '2017-09-18 00:25:57', '2017-09-18 00:25:57'),
+(12, 'IMG_7781.jpg', 'รูปที่ 1', '2017-09-18 03:42:10', '2017-09-18 03:42:10');
 
 -- --------------------------------------------------------
 
@@ -96,7 +97,7 @@ CREATE TABLE `album1s` (
 --
 
 INSERT INTO `album1s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_7890.jpg', 'รูปที่ 2', '2017-09-17 23:34:45', '2017-09-18 00:46:23'),
+(1, 'IMG_7890.jpg', 'อัลบั้มที่ 2', '2017-09-17 23:34:45', '2017-09-19 04:05:57'),
 (2, 'IMG_8036.jpg', 'รูปที่ 4', '2017-09-17 23:42:32', '2017-09-17 23:42:32'),
 (3, 'IMG_7903.jpg', 'รูปที่ 3', '2017-09-17 23:43:24', '2017-09-17 23:43:24');
 
@@ -119,7 +120,7 @@ CREATE TABLE `album2s` (
 --
 
 INSERT INTO `album2s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_7903.jpg', 'รูปที่ 8', '2017-09-17 23:45:05', '2017-09-17 23:45:13');
+(1, 'IMG_7903.jpg', 'อัลบั้มที่ 3', '2017-09-17 23:45:05', '2017-09-19 04:06:07');
 
 -- --------------------------------------------------------
 
@@ -140,7 +141,7 @@ CREATE TABLE `album3s` (
 --
 
 INSERT INTO `album3s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_8036.jpg', 'รูปที่ 4', '2017-09-17 23:45:22', '2017-09-17 23:45:31');
+(1, 'IMG_8036.jpg', 'อัลบั้มที่ 4', '2017-09-17 23:45:22', '2017-09-19 04:06:15');
 
 -- --------------------------------------------------------
 
@@ -161,7 +162,7 @@ CREATE TABLE `album4s` (
 --
 
 INSERT INTO `album4s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_8207.jpg', 'รูปที่ 1', '2017-09-17 23:51:53', '2017-09-17 23:52:00');
+(1, 'IMG_8207.jpg', 'อัลบั้มที่ 5', '2017-09-17 23:51:53', '2017-09-19 04:06:26');
 
 -- --------------------------------------------------------
 
@@ -182,7 +183,7 @@ CREATE TABLE `album5s` (
 --
 
 INSERT INTO `album5s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_8214.jpg', 'รูปที่ 3', '2017-09-17 23:57:55', '2017-09-17 23:59:27');
+(1, 'IMG_8214.jpg', 'อัลบั้มที่ 6', '2017-09-17 23:57:55', '2017-09-19 04:06:37');
 
 -- --------------------------------------------------------
 
@@ -203,7 +204,7 @@ CREATE TABLE `album6s` (
 --
 
 INSERT INTO `album6s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_8540.jpg', 'รูปที่ 7', '2017-09-18 00:03:31', '2017-09-18 00:03:40');
+(1, 'IMG_8540.jpg', 'อัลบั้มที่ 7', '2017-09-18 00:03:31', '2017-09-19 04:06:46');
 
 -- --------------------------------------------------------
 
@@ -224,7 +225,7 @@ CREATE TABLE `album7s` (
 --
 
 INSERT INTO `album7s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_8574.jpg', 'รูปที่ 1', '2017-09-18 00:07:43', '2017-09-18 00:07:51');
+(1, 'IMG_8574.jpg', 'อัลบั้มที่ 8', '2017-09-18 00:07:43', '2017-09-19 04:06:55');
 
 -- --------------------------------------------------------
 
@@ -245,7 +246,34 @@ CREATE TABLE `album8s` (
 --
 
 INSERT INTO `album8s` (`id`, `image`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IMG_8716.jpg', 'รูปที่ 1', '2017-09-18 00:11:51', '2017-09-18 00:12:02');
+(1, 'IMG_8716.jpg', 'อัลบั้มที่ 9', '2017-09-18 00:11:51', '2017-09-19 04:07:02');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `detail_jobs`
+--
+
+CREATE TABLE `detail_jobs` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subheading` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subheading1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail1` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `detail_jobs`
+--
+
+INSERT INTO `detail_jobs` (`id`, `title`, `subheading`, `detail`, `subheading1`, `detail1`, `created_at`, `updated_at`) VALUES
+(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field  0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:03:14', '2017-09-19 03:48:57'),
+(2, 'SYSTEM ANALYST', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field 0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:16:27', '2017-09-19 04:05:05'),
+(3, 'ccc', 'ccc', '', 'cccc', 'cccc', '2017-09-19 03:19:29', '2017-09-19 03:19:29'),
+(4, 'kjk', 'jkj', 'kjk', 'jkj', 'kjk', '2017-09-19 03:30:42', '2017-09-19 03:30:42');
 
 -- --------------------------------------------------------
 
@@ -319,11 +347,16 @@ CREATE TABLE `jobapps` (
 --
 
 INSERT INTO `jobapps` (`id`, `position`, `name`, `lastname`, `gender`, `age`, `email`, `telephone`, `resume`, `created_at`, `updated_at`) VALUES
-(1, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', 'about1.jpg', '2017-08-31 01:02:26', '2017-08-31 01:02:26'),
-(2, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', '20638836_288075061668754_7272772087976038806_n.jpg', '2017-09-15 00:08:26', '2017-09-15 00:08:26'),
-(3, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', '20663702_288075058335421_6013825784035907148_n.jpg', '2017-09-15 00:15:24', '2017-09-15 00:15:24'),
-(4, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', '20663702_288075058335421_6013825784035907148_n.jpg', '2017-09-15 03:53:55', '2017-09-15 03:53:55'),
-(5, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', '20638836_288075061668754_7272772087976038806_n.jpg', '2017-09-15 03:54:27', '2017-09-15 03:54:27');
+(1, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', 'about2.jpg', '2017-08-31 01:02:26', '2017-09-18 23:57:07'),
+(2, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', '3-bus.png', '2017-09-15 00:08:26', '2017-09-18 23:56:29'),
+(3, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '944824655', 'about1.jpg', '2017-09-15 00:15:24', '2017-09-18 23:56:36'),
+(4, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'about1.jpg', '2017-09-15 03:53:55', '2017-09-18 23:56:43'),
+(5, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'about1.jpg', '2017-09-15 03:54:27', '2017-09-18 23:56:49'),
+(6, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'about1.jpg', '2017-09-19 00:10:30', '2017-09-19 00:10:30'),
+(7, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'EN.png', '2017-09-19 00:11:07', '2017-09-19 00:11:07'),
+(8, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'about1.jpg', '2017-09-19 00:16:43', '2017-09-19 00:16:43'),
+(9, 'JAVA Programmer', 'bbbbb', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'fer.jpg', '2017-09-19 00:17:30', '2017-09-19 00:17:30'),
+(10, 'JAVA Programmer', 'cccc', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'TH.png', '2017-09-19 00:20:01', '2017-09-19 00:20:01');
 
 -- --------------------------------------------------------
 
@@ -358,7 +391,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (15, '2017_09_18_063101_create_album6s_table', 3),
 (16, '2017_09_18_063110_create_album7s_table', 3),
 (17, '2017_09_18_063120_create_album8s_table', 3),
-(18, '2017_09_18_052407_create_album1s_table', 4);
+(18, '2017_09_18_052407_create_album1s_table', 4),
+(19, '2017_09_19_092900_create_detail_jobs_table', 5);
 
 -- --------------------------------------------------------
 
@@ -450,7 +484,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 (3, 'benzza2009', 'teepakorn@gmail.com', '$2y$10$.IZbj4VCXum4ESeWm1SgNuQ2gI3EGMIIgXA3znkVG/l7.iLSAdrS.', 'WWHTQfk7s7CsK9Y9dQAIy3oUtv5PdnPnWrzCY1bVTaOGqBVZ3we6Rx1Vl4Qq', '2017-09-14 00:48:53', '2017-09-14 00:48:53', ''),
 (4, 'teepakorn', 'benz@mail.com', '$2y$10$JgRZsDfDCyePMvHHqpjUV.NY14fxw4VqCQL9X16/TEembA79DBvBe', 'hH85yYUQBbCv3O2XNtcJv76kMlLSNVM4v9lwsCLaG70MI5KNmBQTaeWt3nYF', '2017-09-14 23:34:07', '2017-09-14 23:34:07', 'benz'),
 (6, 'admin', 'admin@gmail.com', '$2y$10$y4wgwF7eJIXw8WwnprEFQuiPZp2kuvuCSqHiZx1yHX/dKid0JFJR6', 'b8F7LTmpIk9Y0tQFUdV8VMbaeMWQwbLvq9hDP3LtXUJArjEpzvXYk26fpRfJ', '2017-09-18 02:24:01', '2017-09-18 02:24:01', 'admin1'),
-(7, 'admin', 'admin1@gmail.com', '$2y$10$ZlyZYrQv26gDSpBk7mdlQOAMSpisNy3PjzaSHrzulfc77wuFJn2x2', NULL, '2017-09-18 03:21:37', '2017-09-18 03:21:37', 'useradmin');
+(7, 'admin', 'admin1@gmail.com', '$2y$10$ZlyZYrQv26gDSpBk7mdlQOAMSpisNy3PjzaSHrzulfc77wuFJn2x2', 'ttgRzCSYii4W2TiXjrkSwHlYAURPUX51z9m7y2GNtocnFFeNPz0Pjtlf3BmC', '2017-09-18 03:21:37', '2017-09-18 03:21:37', 'useradmin');
 
 --
 -- Indexes for dumped tables
@@ -517,6 +551,12 @@ ALTER TABLE `album8s`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `detail_jobs`
+--
+ALTER TABLE `detail_jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `footers`
 --
 ALTER TABLE `footers`
@@ -571,7 +611,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `album1s`
 --
@@ -613,6 +653,11 @@ ALTER TABLE `album7s`
 ALTER TABLE `album8s`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `detail_jobs`
+--
+ALTER TABLE `detail_jobs`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
 -- AUTO_INCREMENT for table `footers`
 --
 ALTER TABLE `footers`
@@ -626,12 +671,12 @@ ALTER TABLE `homes`
 -- AUTO_INCREMENT for table `jobapps`
 --
 ALTER TABLE `jobapps`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `partners`
 --
