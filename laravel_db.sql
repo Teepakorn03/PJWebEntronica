@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2017 at 01:08 PM
+-- Generation Time: Sep 21, 2017 at 09:24 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -270,7 +270,7 @@ CREATE TABLE `detail_jobs` (
 --
 
 INSERT INTO `detail_jobs` (`id`, `title`, `subheading`, `detail`, `subheading1`, `detail1`, `created_at`, `updated_at`) VALUES
-(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field  0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:03:14', '2017-09-19 03:48:57'),
+(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science,                                                                                                Information Technology, or related field  0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:03:14', '2017-09-20 03:30:23'),
 (2, 'SYSTEM ANALYST', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field 0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:16:27', '2017-09-19 04:05:05'),
 (3, 'ccc', 'ccc', '', 'cccc', 'cccc', '2017-09-19 03:19:29', '2017-09-19 03:19:29'),
 (4, 'kjk', 'jkj', 'kjk', 'jkj', 'kjk', '2017-09-19 03:30:42', '2017-09-19 03:30:42');

@@ -28,6 +28,7 @@
 						</div>
 					</div>
 					 @endforeach
+
 					 <div class="" align='center'>
 					 	 {{ Html::link('jobapp/create', 'Careers', array('class' => 'button')) }}
 					 </div>
