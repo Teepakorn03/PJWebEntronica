@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 21, 2017 at 09:24 AM
+-- Generation Time: Sep 25, 2017 at 05:55 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -259,8 +259,22 @@ CREATE TABLE `detail_jobs` (
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `subheading` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `detail` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No2` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No3` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No4` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No5` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No6` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No7` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `subheading1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `detail1` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No8` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No9` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No10` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No11` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No12` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No13` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No14` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -269,11 +283,11 @@ CREATE TABLE `detail_jobs` (
 -- Dumping data for table `detail_jobs`
 --
 
-INSERT INTO `detail_jobs` (`id`, `title`, `subheading`, `detail`, `subheading1`, `detail1`, `created_at`, `updated_at`) VALUES
-(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science,                                                                                                Information Technology, or related field  0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:03:14', '2017-09-20 03:30:23'),
-(2, 'SYSTEM ANALYST', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field 0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:16:27', '2017-09-19 04:05:05'),
-(3, 'ccc', 'ccc', '', 'cccc', 'cccc', '2017-09-19 03:19:29', '2017-09-19 03:19:29'),
-(4, 'kjk', 'jkj', 'kjk', 'jkj', 'kjk', '2017-09-19 03:30:42', '2017-09-19 03:30:42');
+INSERT INTO `detail_jobs` (`id`, `title`, `subheading`, `detail`, `No1`, `No2`, `No3`, `No4`, `No5`, `No6`, `No7`, `subheading1`, `detail1`, `No8`, `No9`, `No10`, `No11`, `No12`, `No13`, `No14`, `created_at`, `updated_at`) VALUES
+(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field', '0-3 years working experience in Java application development', 'Strong in JAVA Programming: J2EE, J2SE, JSP', 'Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML', 'Strong in Internet Protocol: TCP, UDP', '-', '-', '-', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices', 'Perform Unit Testing to ensure 1st level of quality of the program created', 'Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements', 'Prepare documents related to the application', 'Knowledge transfer for application development to Tester and Application Administration', '-', '-', '-', '2017-09-19 03:03:14', '2017-09-21 00:52:18'),
+(2, 'SYSTEM ANALYST', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field 0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', '', '', '', '', '', '', '', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '', '', '', '', '', '', '', '2017-09-19 03:16:27', '2017-09-19 04:05:05'),
+(3, 'ccc', 'ccc', '', '', '', '', '', '', '', '', 'cccc', 'cccc', '', '', '', '', '', '', '', '2017-09-19 03:19:29', '2017-09-19 03:19:29'),
+(4, 'kjk', 'jkj', 'kjk', '', '', '', '', '', '', '', 'jkj', 'kjk', '', '', '', '', '', '', '', '2017-09-19 03:30:42', '2017-09-19 03:30:42');
 
 -- --------------------------------------------------------
 

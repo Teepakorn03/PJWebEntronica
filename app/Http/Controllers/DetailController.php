@@ -58,8 +58,22 @@ class DetailController extends Controller
       $detail->title = $request->title;
       $detail->subheading = $request->subheading;
       $detail->detail = $request->detail;
+      $detail->No1 = $request->No1;
+      $detail->No2 = $request->No2;
+      $detail->No3 = $request->No3;
+      $detail->No4 = $request->No4;
+      $detail->No5 = $request->No5;
+      $detail->No6 = $request->No6;
+      $detail->No7 = $request->No7;
       $detail->subheading1 = $request->subheading1;
       $detail->detail1 = $request->detail1;
+      $detail->No8 = $request->No8;
+      $detail->No9 = $request->No9;
+      $detail->No10 = $request->No10;
+      $detail->No11 = $request->No11;
+      $detail->No12 = $request->No12;
+      $detail->No13 = $request->No13;
+      $detail->No14 = $request->No14;
 
 
 
@@ -127,8 +141,22 @@ class DetailController extends Controller
     $detail->title = $request->title;
     $detail->subheading = $request->subheading;
     $detail->detail = $request->detail;
+    $detail->No1 = $request->No1;
+    $detail->No2 = $request->No2;
+    $detail->No3 = $request->No3;
+    $detail->No4 = $request->No4;
+    $detail->No5 = $request->No5;
+    $detail->No6 = $request->No6;
+    $detail->No7 = $request->No7;
     $detail->subheading1 = $request->subheading1;
     $detail->detail1 = $request->detail1;
+    $detail->No8 = $request->No8;
+    $detail->No9 = $request->No9;
+    $detail->No10 = $request->No10;
+    $detail->No11 = $request->No11;
+    $detail->No12 = $request->No12;
+    $detail->No13 = $request->No13;
+    $detail->No14 = $request->No14;
 
 
 

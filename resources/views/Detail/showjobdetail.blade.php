@@ -22,9 +22,23 @@
 						<div class="entry">
 							<p><strong><?php echo $detail -> subheading?></strong></p>
 							<p><?php echo $detail -> detail?></p>
+							<p><?php echo $detail -> No1?></p>
+							<p><?php echo $detail -> No2?></p>
+							<p><?php echo $detail -> No3?></p>
+							<p><?php echo $detail -> No4?></p>
+							<p><?php echo $detail -> No5?></p>
+							<p><?php echo $detail -> No6?></p>
+							<p><?php echo $detail -> No7?></p>
 							<br>
 							<p><strong><?php echo $detail -> subheading1?></strong></p>
 							<p><?php echo $detail -> detail1?></p>
+							<p><?php echo $detail -> No8?></p>
+							<p><?php echo $detail -> No9?></p>
+							<p><?php echo $detail -> No10?></p>
+							<p><?php echo $detail -> No11?></p>
+							<p><?php echo $detail -> No12?></p>
+							<p><?php echo $detail -> No13?></p>
+							<p><?php echo $detail -> No14?></p>
 						</div>
 					</div>
 					 @endforeach
