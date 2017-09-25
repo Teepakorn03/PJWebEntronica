@@ -44,7 +44,7 @@
 					 @endforeach
 
 					 <div class="" align='center'>
-					 	 {{ Html::link('jobapp/create', 'Careers', array('class' => 'button')) }}
+					 	 {{ Html::link('form/create', 'Careers', array('class' => 'button')) }}
 					 </div>
 
 					<div style="clear: both;">&nbsp;</div>
