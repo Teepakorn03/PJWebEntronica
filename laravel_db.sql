@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2017 at 05:55 AM
+-- Generation Time: Sep 26, 2017 at 11:17 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -45,6 +45,28 @@ INSERT INTO `abouts` (`id`, `image`, `title`, `description`, `created_at`, `upda
 (1, 'about4.jpg', 'Entronica Co.,', 'Ltd. was founded in January 1998', '2017-08-30 21:50:26', '2017-08-30 21:50:26'),
 (2, 'about1.jpg', 'Entronica', 'Entronica is an IT solution provider and system integrator company based in Thailand.We provide software solution development, implementation, integration, including professional and consultancy service on IT and telecommunication area.', '2017-08-30 21:51:54', '2017-08-30 21:51:54'),
 (3, 'about2.jpg', 'WHY ENTRONICA?', 'Realizing that key success for our business is relying on our customers, we have built our business by focusing on the delivery of high quality solutions and services to our customers. The basis for this successful can only be achieved through good collaboration between customers, employees, and management. Apart from that, all deliveries we provided to our customers are surrounded by our customer support which is our fundamental aspect of how we are doing our business. Regardless of availability of solutions we have or no matter what kind of problems you are facing, we are here to support your needs.', '2017-08-30 21:52:15', '2017-08-30 21:52:15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about_ths`
+--
+
+CREATE TABLE `about_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `about_ths`
+--
+
+INSERT INTO `about_ths` (`id`, `image`, `title`, `description`, `created_at`, `updated_at`) VALUES
+(1, 'anime-feature1.jpg', 'aaa', 'aaa', '2017-09-26 00:18:26', '2017-09-26 00:18:26');
 
 -- --------------------------------------------------------
 
@@ -263,18 +285,12 @@ CREATE TABLE `detail_jobs` (
   `No2` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `No3` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `No4` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `No5` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `No6` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `No7` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `subheading1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `detail1` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `No8` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `No9` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `No10` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `No11` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `No12` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `No13` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `No14` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -283,11 +299,43 @@ CREATE TABLE `detail_jobs` (
 -- Dumping data for table `detail_jobs`
 --
 
-INSERT INTO `detail_jobs` (`id`, `title`, `subheading`, `detail`, `No1`, `No2`, `No3`, `No4`, `No5`, `No6`, `No7`, `subheading1`, `detail1`, `No8`, `No9`, `No10`, `No11`, `No12`, `No13`, `No14`, `created_at`, `updated_at`) VALUES
-(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field', '0-3 years working experience in Java application development', 'Strong in JAVA Programming: J2EE, J2SE, JSP', 'Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML', 'Strong in Internet Protocol: TCP, UDP', '-', '-', '-', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices', 'Perform Unit Testing to ensure 1st level of quality of the program created', 'Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements', 'Prepare documents related to the application', 'Knowledge transfer for application development to Tester and Application Administration', '-', '-', '-', '2017-09-19 03:03:14', '2017-09-21 00:52:18'),
-(2, 'SYSTEM ANALYST', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field 0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', '', '', '', '', '', '', '', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '', '', '', '', '', '', '', '2017-09-19 03:16:27', '2017-09-19 04:05:05'),
-(3, 'ccc', 'ccc', '', '', '', '', '', '', '', '', 'cccc', 'cccc', '', '', '', '', '', '', '', '2017-09-19 03:19:29', '2017-09-19 03:19:29'),
-(4, 'kjk', 'jkj', 'kjk', '', '', '', '', '', '', '', 'jkj', 'kjk', '', '', '', '', '', '', '', '2017-09-19 03:30:42', '2017-09-19 03:30:42');
+INSERT INTO `detail_jobs` (`id`, `title`, `subheading`, `detail`, `No1`, `No2`, `No3`, `No4`, `subheading1`, `detail1`, `No8`, `No9`, `No10`, `No11`, `created_at`, `updated_at`) VALUES
+(1, 'JAVA PROGRAMMER', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field', '0-3 years working experience in Java application development', 'Strong in JAVA Programming: J2EE, J2SE, JSP', 'Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML', 'Strong in Internet Protocol: TCP, UDP', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices', 'Perform Unit Testing to ensure 1st level of quality of the program created', 'Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements', 'Prepare documents related to the application', 'Knowledge transfer for application development to Tester and Application Administration', '2017-09-19 03:03:14', '2017-09-21 00:52:18'),
+(2, 'SYSTEM ANALYST', 'Qualifications', 'Bachelor/Master\'s Degree in Computer Science, Information Technology, or related field 0-3 years working experience in Java application development Strong in JAVA Programming: J2EE, J2SE, JSP Experience in Object-Oriented analysis and design using UML, Java/J2EE, RDBMS, SQL statements, XML Strong in Internet Protocol: TCP, UDP', '', '', '', '', 'Responsibilities:', 'Coding programs as designed in specification documents using Programming Best Practices Perform Unit Testing to ensure 1st level of quality of the program created Perform Peer Reviews by reviewing other developer programs’ to detect initial defects and possible enhancements Prepare documents related to the application Knowledge transfer for application development to Tester and Application Administration', '', '', '', '', '2017-09-19 03:16:27', '2017-09-19 04:05:05'),
+(3, 'ccc', 'ccc', '', '', '', '', '', 'cccc', 'cccc', '', '', '', '', '2017-09-19 03:19:29', '2017-09-19 03:19:29'),
+(4, 'kjk', 'jkj', 'kjk', '', '', '', '', 'jkj', 'kjk', '', '', '', '', '2017-09-19 03:30:42', '2017-09-19 03:30:42');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `detail_ths`
+--
+
+CREATE TABLE `detail_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subheading` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No2` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No3` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No4` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subheading1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No8` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No9` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No10` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `No11` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `detail_ths`
+--
+
+INSERT INTO `detail_ths` (`id`, `title`, `subheading`, `detail`, `No1`, `No2`, `No3`, `No4`, `subheading1`, `detail1`, `No8`, `No9`, `No10`, `No11`, `created_at`, `updated_at`) VALUES
+(1, 'aaaaa', 'aaaa', 'aa', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'aa', '2017-09-25 22:16:00', '2017-09-25 22:16:00');
 
 -- --------------------------------------------------------
 
@@ -318,6 +366,29 @@ INSERT INTO `footers` (`id`, `title`, `description`, `Facebook`, `Twitter`, `cre
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `footer_ths`
+--
+
+CREATE TABLE `footer_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Facebook` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Twitter` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `footer_ths`
+--
+
+INSERT INTO `footer_ths` (`id`, `title`, `description`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
+(1, 'aaaa', 'aaa', 'aaa', 'aaaa', '2017-09-25 22:33:30', '2017-09-25 22:33:30');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `homes`
 --
 
@@ -335,6 +406,27 @@ CREATE TABLE `homes` (
 
 INSERT INTO `homes` (`id`, `image`, `title`, `created_at`, `updated_at`) VALUES
 (1, 'logo.png', 'IT SOLUTION PROVIDER AND SYSTEM INTEGRATOR COMPANY.', '2017-08-30 21:43:41', '2017-09-14 23:44:38');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `home_ths`
+--
+
+CREATE TABLE `home_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `home_ths`
+--
+
+INSERT INTO `home_ths` (`id`, `image`, `title`, `created_at`, `updated_at`) VALUES
+(1, 'anime-feature1.jpg', 'aa', '2017-09-25 22:58:26', '2017-09-25 22:58:26');
 
 -- --------------------------------------------------------
 
@@ -370,7 +462,37 @@ INSERT INTO `jobapps` (`id`, `position`, `name`, `lastname`, `gender`, `age`, `e
 (7, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'EN.png', '2017-09-19 00:11:07', '2017-09-19 00:11:07'),
 (8, 'JAVA Programmer', 'ทีปกร อัจฉริยะประดิษฐ์', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'about1.jpg', '2017-09-19 00:16:43', '2017-09-19 00:16:43'),
 (9, 'JAVA Programmer', 'bbbbb', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'fer.jpg', '2017-09-19 00:17:30', '2017-09-19 00:17:30'),
-(10, 'JAVA Programmer', 'cccc', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'TH.png', '2017-09-19 00:20:01', '2017-09-19 00:20:01');
+(10, 'JAVA Programmer', 'cccc', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'TH.png', '2017-09-19 00:20:01', '2017-09-19 00:20:01'),
+(11, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'anime-feature1.jpg', '2017-09-24 21:19:55', '2017-09-24 21:19:55'),
+(12, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'anime-feature1.jpg', '2017-09-26 01:39:09', '2017-09-26 01:39:09');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `job_ths`
+--
+
+CREATE TABLE `job_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `position` varchar(205) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `lastname` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `age` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `telephone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `resume` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `job_ths`
+--
+
+INSERT INTO `job_ths` (`id`, `position`, `name`, `lastname`, `gender`, `age`, `email`, `telephone`, `resume`, `created_at`, `updated_at`) VALUES
+(1, 'JAVA Programmer', 'ทีปกร', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'anime-feature1.jpg', '2017-09-26 00:46:21', '2017-09-26 00:47:00'),
+(2, 'JAVA Programmer', 'aaaa', 'อัจฉริยะประดิษฐ์', 'Female', '20', 'teepakorn46@gmail.com', '0944824655', 'anime-feature1.jpg', '2017-09-26 01:41:07', '2017-09-26 01:41:07');
 
 -- --------------------------------------------------------
 
@@ -406,7 +528,15 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (16, '2017_09_18_063110_create_album7s_table', 3),
 (17, '2017_09_18_063120_create_album8s_table', 3),
 (18, '2017_09_18_052407_create_album1s_table', 4),
-(19, '2017_09_19_092900_create_detail_jobs_table', 5);
+(19, '2017_09_19_092900_create_detail_jobs_table', 5),
+(20, '2017_09_26_044441_create_product_ths_table', 6),
+(21, '2017_09_26_045732_create_detail_ths_table', 7),
+(22, '2017_09_26_051915_create_show_ths_table', 8),
+(23, '2017_09_26_052443_create_footer_ths_table', 8),
+(24, '2017_09_26_053853_create_partner_ths_table', 9),
+(25, '2017_09_26_055155_create_home_ths_table', 10),
+(26, '2017_09_26_060034_create_about_ths_table', 11),
+(27, '2017_09_26_072205_create_job_ths_table', 12);
 
 -- --------------------------------------------------------
 
@@ -432,7 +562,31 @@ INSERT INTO `partners` (`id`, `image`, `title`, `Facebook`, `Twitter`, `created_
 (1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', '--', '2017-08-30 21:44:14', '2017-08-30 22:25:32'),
 (2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:20', '2017-08-30 22:26:26'),
 (3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:27', '2017-08-30 22:26:16'),
-(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:32', '2017-08-30 22:26:37');
+(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:32', '2017-08-30 22:26:37'),
+(5, 'anime-feature1.jpg', 'aaaa', 'aaa', 'aaa', '2017-09-25 22:45:55', '2017-09-25 22:45:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `partner_ths`
+--
+
+CREATE TABLE `partner_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Facebook` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Twitter` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `partner_ths`
+--
+
+INSERT INTO `partner_ths` (`id`, `image`, `title`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
+(1, 'anime-feature1.jpg', 'aaa2', 'aaa', 'aaa', '2017-09-25 22:49:19', '2017-09-26 00:49:08');
 
 -- --------------------------------------------------------
 
@@ -474,6 +628,40 @@ INSERT INTO `products` (`id`, `image`, `title`, `description`, `created_at`, `up
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product_ths`
+--
+
+CREATE TABLE `product_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `product_ths`
+--
+
+INSERT INTO `product_ths` (`id`, `image`, `title`, `description`, `created_at`, `updated_at`) VALUES
+(1, 'anime-feature1.jpg', 'aaa', 'aaa', '2017-09-25 21:54:48', '2017-09-25 21:54:48');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `show_ths`
+--
+
+CREATE TABLE `show_ths` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -508,6 +696,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 -- Indexes for table `abouts`
 --
 ALTER TABLE `abouts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `about_ths`
+--
+ALTER TABLE `about_ths`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -571,9 +765,21 @@ ALTER TABLE `detail_jobs`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `detail_ths`
+--
+ALTER TABLE `detail_ths`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `footers`
 --
 ALTER TABLE `footers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `footer_ths`
+--
+ALTER TABLE `footer_ths`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -583,9 +789,21 @@ ALTER TABLE `homes`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `home_ths`
+--
+ALTER TABLE `home_ths`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `jobapps`
 --
 ALTER TABLE `jobapps`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `job_ths`
+--
+ALTER TABLE `job_ths`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -601,9 +819,27 @@ ALTER TABLE `partners`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `partner_ths`
+--
+ALTER TABLE `partner_ths`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `product_ths`
+--
+ALTER TABLE `product_ths`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `show_ths`
+--
+ALTER TABLE `show_ths`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -621,6 +857,11 @@ ALTER TABLE `users`
 --
 ALTER TABLE `abouts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `about_ths`
+--
+ALTER TABLE `about_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `activities`
 --
@@ -672,35 +913,70 @@ ALTER TABLE `album8s`
 ALTER TABLE `detail_jobs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
+-- AUTO_INCREMENT for table `detail_ths`
+--
+ALTER TABLE `detail_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `footers`
 --
 ALTER TABLE `footers`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `footer_ths`
+--
+ALTER TABLE `footer_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `homes`
 --
 ALTER TABLE `homes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `home_ths`
+--
+ALTER TABLE `home_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `jobapps`
 --
 ALTER TABLE `jobapps`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `job_ths`
+--
+ALTER TABLE `job_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `partners`
 --
 ALTER TABLE `partners`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `partner_ths`
+--
+ALTER TABLE `partner_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `product_ths`
+--
+ALTER TABLE `product_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `show_ths`
+--
+ALTER TABLE `show_ths`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `users`
 --

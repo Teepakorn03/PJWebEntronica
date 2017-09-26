@@ -77,13 +77,13 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home" class="smoothScroll">Home</a></li>
-        <li><a href="#about" class="smoothScroll">About</a></li>
-        <li><a href="#team" class="smoothScroll">Partner</a></li>
-        <li><a href="#menu" class="smoothScroll">Product & Service</a></li>
-        <li><a href="#gallery" class="smoothScroll">Activity</a></li>
-				<li><a href="DetailJob/show" class="smoothScroll">Careers</a></li>
-        <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        <li><a href="#home" class="smoothScroll">หน้าแรก</a></li>
+        <li><a href="#about" class="smoothScroll">เกี่ยวกับ</a></li>
+        <li><a href="#team" class="smoothScroll">ผู้มีส่วนร่วม</a></li>
+        <li><a href="#menu" class="smoothScroll">สินค้า & บริการ</a></li>
+        <li><a href="#gallery" class="smoothScroll">รูปภาพกิจกรรม</a></li>
+				<li><a href="DetailJobTh/show" class="smoothScroll">สมัครงาน</a></li>
+        <li><a href="#contact" class="smoothScroll">ติดต่อ</a></li>
 				<li><a href="/"><img width="35px" height="20px"  src="img/EN.png" alt=""></a></li>
 				<li><a href="showth"><img width="35px" height="20px"  src="img/TH.png" alt=""></a></li>
       </ul>
@@ -102,7 +102,7 @@
 
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
           <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>About</h2>
+            <h2>เกี่ยวกับ</h2>
             <h4>________________</h4>
           </div>
       </div>
@@ -131,7 +131,7 @@
 
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
          <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>PARTNER</h2>
+            <h2>ผู้มีส่วนร่วม</h2>
             <h4>_______________</h4>
         </div>
       </div>
@@ -142,7 +142,7 @@
           <div class="team-thumb">
               <img src="../img/upload/<?php echo $partner -> image?>" class="img-responsive" alt="Team">>
                 <div class="team-des">
-                  <h3>PARTNER</h3>
+                  <h3>ผู้มีส่วนร่วม</h3>
                     <ul class="social-icon">
                       <li><a href="<?php echo $partner -> Facebook?>" class="fa fa-facebook"></a></li>
                       <li><a href="<?php echo $partner -> Twitter?>" class="fa fa-twitter"></a></li>
@@ -164,7 +164,7 @@
 
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
          <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>Product & Service</h2>
+            <h2>สินค้า & บริการ</h2>
             <h4>________________</h4>
         </div>
       </div>
@@ -195,7 +195,7 @@
 <section id="gallery" class="parallax-section" style="background:rgb(240,240,240);">
   <div class="container">
 		<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-			 <h2>ACTIVITY</h2>
+			 <h2>รูปภาพกิจกรรม</h2>
 			 <h4>__________</h4>
 	 </div>
     <div class="row">
@@ -347,7 +347,7 @@
 </section>
 
 <section class="contactmap" id="contactmap">
-      <h1>MAP</h1>
+      <h1>แผนที่</h1>
       <hr/>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.4877778283585!2d100.53622194163593!3d13.76091520228001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4dc88ebc01bb2a09!2sEntronica+Co.%2C+Ltd.!5e0!3m2!1sth!2sth!4v1505719889462" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -376,7 +376,7 @@
 		@foreach ($Footers2 as $Footers)
 		<h3><?php echo $Footers -> title?></h3>
 		@endforeach
-		 {{ Html::link('DetailJob/show', 'Careers', array('class' => 'btn btn-primary')) }}
+		 {{ Html::link('DetailJobTh/show', 'สมัครงาน', array('class' => 'btn btn-primary')) }}
 		</div>
 
 

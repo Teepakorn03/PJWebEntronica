@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\DetailJob;
+use App\DetailTh;
 use Session;
 use Illuminate\Support\Facades\Input;
-class DetailController extends Controller
+class DetailThController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,11 @@ class DetailController extends Controller
      */
     public function index()
     {
-      $detail = DetailJob::all();
+      $detail = DetailTh::all();
       $data = array(
         'detail' => $detail
     );
-    return view('Detail.index',$data);
+    return view('Detailth.index',$data);
     }
 
     /**
@@ -29,7 +29,7 @@ class DetailController extends Controller
      */
     public function create()
     {
-          return view('Detail.from');
+            return view('Detailth.from');
     }
 
     /**
@@ -64,7 +64,7 @@ class DetailController extends Controller
       ]);
 
 
-      $detail = new DetailJob;
+      $detail = new DetailTh;
       $detail->title = $request->title;
       $detail->subheading = $request->subheading;
       $detail->detail = $request->detail;
@@ -87,7 +87,7 @@ class DetailController extends Controller
 
       $detail->save();
 
-      return redirect('DetailJob');
+      return redirect('DetailJobTh');
     }
 
     /**
@@ -96,13 +96,13 @@ class DetailController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-      $detail = DetailJob::all()->whereIn('id', [1,2]);
+      $detail = DetailTh::all()->whereIn('id', [1,2]);
       $data = array(
         'detail' => $detail
     );
-        return view('Detail.showjobdetail', $data);
+        return view('Detailth.showjobdetail', $data);
     }
 
     /**
@@ -114,11 +114,11 @@ class DetailController extends Controller
     public function edit($id)
     {
       if($id !== '') {
-          $detail = DetailJob::find($id);
+          $detail = DetailTh::find($id);
           $data = array(
               'detail' => $detail
           );
-          return view('Detail.from',$data);
+          return view('Detailth.from',$data);
       }
     }
 
@@ -153,7 +153,7 @@ class DetailController extends Controller
     ]);
 
 
-    $detail = DetailJob::find($id);
+    $detail = DetailTh::find($id);
     $detail->title = $request->title;
     $detail->subheading = $request->subheading;
     $detail->detail = $request->detail;
@@ -175,7 +175,7 @@ class DetailController extends Controller
     $detail->save();
 
     Session::flash('message','Success update detail!!');
-    return redirect('DetailJob');
+    return redirect('DetailJobTh');
     }
 
     /**
@@ -186,9 +186,9 @@ class DetailController extends Controller
      */
     public function destroy($id)
     {
-      $detail = DetailJob::find($id);
+      $detail = DetailTh::find($id);
       $detail->delete();
       Session::flash('message', 'Success Delete detail!!');
-      return redirect('DetailJob');
+      return redirect('DetailJobTh');
     }
 }

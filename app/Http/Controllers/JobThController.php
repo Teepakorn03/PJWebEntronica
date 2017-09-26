@@ -3,29 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\show;
-use App\partner;
-use App\product;
-use App\about;
-use App\Jobapp;
-use App\Activity;
-use App\Home;
-use App\Footers;
+
+use App\JobTh;;
 use App\Image;
 use App\file;
 use Illuminate\Support\Facades\Input;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Session;
-use DB;
-class JobappController extends Controller
+class JobThController extends Controller
 {
       public function __construct()
     {
     $this->middleware('auth');
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -34,12 +23,12 @@ class JobappController extends Controller
     public function index()
     {
 
-      $jobapp = Jobapp::all();
+      $jobapp = JobTh::all();
       $data = array(
-    
+
         'jobapp' => $jobapp
     );
-        return view('Job.index', $data);
+        return view('JobTh.index', $data);
     }
 
     /**
@@ -49,7 +38,7 @@ class JobappController extends Controller
      */
     public function create()
     {
-        return view('Job.form');
+          return view('JobTh.form');
     }
 
     /**
@@ -76,7 +65,7 @@ class JobappController extends Controller
       $filename = $jobapp->getClientOriginalName();
       $jobapp->move(public_path().'/Job', $jobapp->getClientOriginalName());
 
-      $jobapp = new Jobapp;
+      $jobapp = new JobTh;
       $jobapp->position = $request->position;
       $jobapp->name = $request->name;
       $jobapp->lastname = $request->lastname;
@@ -103,23 +92,6 @@ class JobappController extends Controller
     public function show($id)
     {
 
-            $product = product::all();
-            $partner = partner::all();
-            $Activity = Activity::all();
-            $about = about::all();
-            $Home = Home::all()->where('id',2);
-            $Footers = Footers::all();
-            $about = about::all();
-            $data = array(
-              'product' => $product,
-              'partner' => $partner,
-              'about' => $about,
-              'Activity' => $Activity,
-              'Home' => $Home,
-              'Footers' => $Footers,
-              'about' => $about
-          );
-              return view('show', $data);
     }
 
     /**
@@ -131,11 +103,11 @@ class JobappController extends Controller
     public function edit($id)
     {
       if($id !== '') {
-          $jobapp = Jobapp::find($id);
+          $jobapp = JobTh::find($id);
           $data = array(
               'jobapp' => $jobapp
           );
-          return view('Job/form',$data);
+          return view('JobTh/form',$data);
       }
     }
 
@@ -164,7 +136,7 @@ class JobappController extends Controller
       $filename = $jobapp->getClientOriginalName();
       $jobapp->move(public_path().'/Job', $jobapp->getClientOriginalName());
 
-      $jobapp = Jobapp::find($id);
+      $jobapp = JobTh::find($id);
       $jobapp->position = $request->position;
       $jobapp->name = $request->name;
       $jobapp->lastname = $request->lastname;
@@ -180,7 +152,7 @@ class JobappController extends Controller
 
       $jobapp->save();
 
-      return redirect('jobapp');
+      return redirect('JobTh');
     }
 
     /**
@@ -191,15 +163,15 @@ class JobappController extends Controller
      */
     public function destroy($id)
     {
-      $jobapp = Jobapp::find($id);
+      $jobapp = JobTh::find($id);
       $jobapp->delete();
-      Session::flash('message', 'Success Delete jobapp!!');
-      return redirect('jobapp');
-    }
-    public function downfunc()
-    {
-      $downloads = DB::table('jobapps')->gtt();
-      return view('Job.index',compact('downloads'));
+      Session::flash('message', 'Success Delete JobTh!!');
+      return redirect('JobTh');
     }
 
+    public function downfunc()
+    {
+      $downloads = DB::table('jobth')->gtt();
+      return view('JobTh.index',compact('downloads'));
+    }
 }

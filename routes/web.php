@@ -11,11 +11,16 @@
 |
 */
 Route::resource('product','ProductController');
+Route::resource('productth','ProductThController');
 Route::resource('partner','PartnerController');
+Route::resource('partnerTh','PartnerThController');
 Route::resource('home','Home_Controller');
+Route::resource('hometh','HomeThController');
 Route::resource('Activity','ActivityController');
 Route::resource('about','AboutController');
+Route::resource('AboutTh','AboutThController');
 Route::resource('Footers','FootersController');
+Route::resource('FootersTh','FooterThController');
 Route::resource('logintest','LoginController');
 Route::resource('showalbum','ShowalbumController');
 Route::resource('showalbum2','album2Controller');
@@ -35,9 +40,14 @@ Route::resource('Album6','Showalbum6Controller');
 Route::resource('Album7','Showalbum7Controller');
 Route::resource('Album8','Showalbum8Controller');
 Route::resource('DetailJob','DetailController');
+Route::resource('DetailJobTh','DetailThController');
 Route::resource('base', 'BaseController');
 Route::resource('form','JobController');
+Route::resource('formTh','JobformThController');
+Route::resource('JobTh','JobThController');
 Route::resource('jobapp','JobappController');
+
+Route::resource('showth', 'ShowThController');
 //Route::resource('display','ImageController');
 Route::get('admin', function () {
     return view('welcome');

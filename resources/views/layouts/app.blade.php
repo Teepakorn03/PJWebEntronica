@@ -24,12 +24,24 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                      <li>
-                        <a href="home">Add Home</a>
-                      </li>
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                             Add Activity   <span class="caret"></span>
+                            Home  <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                              <a href="home">Add Home</a>
+                            </li>
+                            <li>
+                                <a href="hometh">หน้าแรก</a>
+                            </li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                             Activity   <span class="caret"></span>
                           </a>
 
                           <ul class="dropdown-menu" role="menu">
@@ -63,27 +75,109 @@
 
                           </ul>
                       </li>
-                      <li>
-                        <a href="about">Add About</a>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            About  <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                              <a href="about">Add About</a>
+                            </li>
+                            <li>
+                                <a href="AboutTh">เกี่ยวกับ</a>
+                            </li>
+                          </ul>
                       </li>
-                      <li>
-                          <a href="partner">Add Partner</a>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Partner  <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="partner">Add Partner</a>
+                            </li>
+                            <li>
+                                <a href="partnerTh">ผู้มีส่วนร่วม</a>
+                            </li>
+                          </ul>
                       </li>
-                      <li>
-                          <a href="product">Add Product</a>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                              Product   <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="product">Add Product</a>
+                            </li>
+                            <li>
+                                <a href="productth">เพิ่มข้อมูลสินค้า</a>
+                            </li>
+                          </ul>
                       </li>
-                      <li>
-                          <a href="jobapp">Add job</a>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Job  <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="jobapp">Add job</a>
+                            </li>
+                            <li>
+                                <a href="JobTh">สมัครงาน</a>
+                            </li>
+                          </ul>
                       </li>
-                      <li>
-                          <a href="Footers">Add Footers</a>
+
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                             Footers  <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="Footers">Add Footers</a>
+                            </li>
+                            <li>
+                                <a href="FootersTh">เพิ่มข้อมูลติดต่อ</a>
+                            </li>
+                          </ul>
                       </li>
-                      <li>
-                          <a href="DetailJob">job Details</a>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                             job Details   <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="DetailJob">job Details</a>
+                            </li>
+                            <li>
+                                <a href="DetailJobTh">รายละเอียดของงาน</a>
+                            </li>
+                          </ul>
                       </li>
-                      <li>
-                          <a href="/">Show</a>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                             Show <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="/">Show</a>
+                            </li>
+                            <li>
+                                <a href="showth">หน้าภาษาไทย</a>
+                            </li>
+                          </ul>
                       </li>
+
                       <li>
                             <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();

@@ -10,7 +10,7 @@
 
 
     <div align="right" class="col-xs-10">
-      {{ Html::link('DetailJob/create', 'Add New', array(
+      {{ Html::link('DetailJobTh/create', 'Add New', array(
           'class' => 'btn btn-primary'
   ))}}
 
@@ -18,7 +18,7 @@
 
 </div>
 <div align="center" class="col-xs-6"><br></div>
-<table align="center" class="table table-bordered" style="width:100%;">
+<table align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>
             <th width='2%'>ID</th>
@@ -29,7 +29,7 @@
             <th>No.3</th>
             <th>No.4</th>
             <th>No.5</th>
-  =
+
             <th>subheading1</th>
             <th>No.9</th>
             <th>No.10</th>
@@ -64,9 +64,9 @@
 
 
         <td>
-            {{ Form::open(['route' => ['DetailJob.destroy',$p['id'], 'method' => "DELETE"] ]) }}
+            {{ Form::open(['route' => ['DetailJobTh.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
-            {{ Html::link('DetailJob/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;
+            {{ Html::link('DetailJobTh/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;
             {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
             {{ Form::close() }}
 
@@ -76,7 +76,7 @@
       </tr>
         @empty
         <tr>
-            <td colspan="6">No data!!</td>
+            <td colspan="15">No data!!</td>
         </tr>
           @endforelse
   </tbody>

@@ -4,14 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\show;
-use App\partner;
-use App\product;
-use App\about;
-use App\jobapps;
-use App\Activity;
+
 use App\Home;
-use App\Footers;
+
 use App\Image;
 use App\file;
 use Illuminate\Support\Facades\Input;
