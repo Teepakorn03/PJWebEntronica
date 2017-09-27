@@ -94,7 +94,7 @@ class FooterThController extends Controller
     public function edit($id)
     {
       if($id !== '') {
-          $Footers = FootersTh::find($id);
+          $Footers = FooterTh::find($id);
           $data = array(
               'Footers' => $Footers
           );

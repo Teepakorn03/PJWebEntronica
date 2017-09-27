@@ -18,7 +18,7 @@
 
 </div>
 <div align="center" class="col-xs-6"><br></div>
-<table align="center" class="table table-bordered" style="width:70%;">
+<table align="center" class="table table-bordered" style="width80%;">
     <thead>
         <tr>
             <th width='2%'>ID</th>

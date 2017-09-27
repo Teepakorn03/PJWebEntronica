@@ -19,8 +19,8 @@
 <table align="center" class="table table-bordered" style="width:70%;">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>title</th>
+            <th width="1%">ID</th>
+            <th width="10%">title</th>
             <th>description</th>
             <th>Facebook</th>
             <th>Twitter</th>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 26, 2017 at 11:17 AM
+-- Generation Time: Sep 27, 2017 at 05:54 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -56,7 +56,7 @@ CREATE TABLE `about_ths` (
   `id` int(10) UNSIGNED NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -66,7 +66,9 @@ CREATE TABLE `about_ths` (
 --
 
 INSERT INTO `about_ths` (`id`, `image`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'anime-feature1.jpg', 'aaa', 'aaa', '2017-09-26 00:18:26', '2017-09-26 00:18:26');
+(1, 'about4.jpg', 'Entronica Co.,', 'ก่อตั้งขึ้นในเดือนมกราคม 2541', '2017-09-26 00:18:26', '2017-09-26 20:36:52'),
+(2, 'about1.jpg', 'Entronica', 'Entronica เป็นผู้ให้บริการโซลูชันด้านไอทีและ บริษัท ผู้ผสานรวมระบบในประเทศไทยเราให้บริการพัฒนาโซลูชันซอฟต์แวร์การใช้งานรวมถึงบริการระดับมืออาชีพและให้คำปรึกษาด้านไอทีและโทรคมนาคม', '2017-09-26 20:39:39', '2017-09-26 20:39:39'),
+(3, 'about2.jpg', 'ทำไมต้อง ENTRONICA', 'ตระหนักดีว่าความสำเร็จที่สำคัญของธุรกิจของเราคือการพึ่งพาลูกค้าของเราเราได้สร้างธุรกิจของเราขึ้นโดยมุ่งเน้นการส่งมอบโซลูชั่นและบริการที่มีคุณภาพสูงให้กับลูกค้าของเรา พื้นฐานสำหรับการประสบความสำเร็จนี้สามารถทำได้โดยอาศัยการทำงานร่วมกันระหว่างลูกค้าพนักงานและผู้บริหารเท่านั้น นอกเหนือจากนี้การจัดส่งสินค้าทั้งหมดที่เราให้กับลูกค้าของเรายังครอบคลุมไปถึงการสนับสนุนลูกค้าซึ่งเป็นพื้นฐานสำคัญในการดำเนินธุรกิจของเรา ไม่ว่าคุณจะพร้อมใช้งานโซลูชันใดก็ตามหรือไม่ว่าคุณจะประสบปัญหาแบบใดก็ตามเราอยู่ที่นี่เพื่อรองรับความต้องการของคุณ', '2017-09-26 20:41:20', '2017-09-26 20:41:20');
 
 -- --------------------------------------------------------
 
@@ -335,7 +337,7 @@ CREATE TABLE `detail_ths` (
 --
 
 INSERT INTO `detail_ths` (`id`, `title`, `subheading`, `detail`, `No1`, `No2`, `No3`, `No4`, `subheading1`, `detail1`, `No8`, `No9`, `No10`, `No11`, `created_at`, `updated_at`) VALUES
-(1, 'aaaaa', 'aaaa', 'aa', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'aa', '2017-09-25 22:16:00', '2017-09-25 22:16:00');
+(1, 'JAVA PROGRAMMER', 'คุณสมบัติของผู้สมัคร', 'ปริญญาตรี / โทสาขา Computer Science, Information Technology หรือสาขาที่เกี่ยวข้อง', 'ประสบการณ์การทำงาน 0-3 ปีในการพัฒนาแอ็พพลิเคชัน Java', 'การเขียนโปรแกรม JAVA ที่แข็งแกร่งใน J2EE, J2SE, JSP', 'มีประสบการณ์ในการวิเคราะห์และออกแบบเชิงวัตถุโดยใช้ UML, Java / J2EE, RDBMS, งบ SQL, XML', 'โปรโตคอลอินเทอร์เน็ตที่แข็งแกร่ง: TCP, UDP', 'ความรับผิดชอบ', 'โปรแกรมการเข้ารหัสที่ได้รับการออกแบบในเอกสารข้อกำหนดโดยใช้ Programming Best Practices', 'ดำเนินการทดสอบหน่วยเพื่อให้มั่นใจว่าคุณภาพของโปรแกรมที่สร้างขึ้น', 'ดำเนินการทบทวนโดยการตรวจสอบโปรแกรมนักพัฒนาซอฟต์แวร์รายอื่น ๆ เพื่อตรวจหาข้อบกพร่องและการปรับปรุงที่เป็นไปได้', 'เตรียมเอกสารเกี่ยวกับการสมัคร', 'การถ่ายทอดความรู้เพื่อการพัฒนาแอพพลิเคชันสู่การทดสอบและการบริหารแอพพลิเคชัน', '2017-09-25 22:16:00', '2017-09-26 20:52:14');
 
 -- --------------------------------------------------------
 
@@ -384,7 +386,10 @@ CREATE TABLE `footer_ths` (
 --
 
 INSERT INTO `footer_ths` (`id`, `title`, `description`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
-(1, 'aaaa', 'aaa', 'aaa', 'aaaa', '2017-09-25 22:33:30', '2017-09-25 22:33:30');
+(1, 'ข้อมูลส่วนตัว', 'Entronica เป็นผู้ให้บริการโซลูชันด้านไอทีและ บริษัท ผู้ผสานรวมระบบในประเทศไทย เราให้บริการโซลูชันซอฟต์แวร์การติดตั้งรวมถึงบริการระดับมืออาชีพและให้คำปรึกษาด้านไอทีและการสื่อสารโทรคมนาคม ..', '--', '--', '2017-09-25 22:33:30', '2017-09-26 20:46:48'),
+(2, 'ติดต่อ', '31 อาคารพญาไทอาคารสวีทเลขที่ 911-913, ชั้น 9 ถนนพญาไทแขวงลุมพินีเขตปทุมวันเขตปทุมวันกรุงเทพฯ 10400', '--', '--', '2017-09-26 20:47:42', '2017-09-26 20:47:42'),
+(3, 'เครือข่ายของเรา', 'ส่วนของหัวข้อตรง Footers', 'https://www.facebook.com/oOteepakornOo', '--', '2017-09-26 20:48:25', '2017-09-26 20:48:25'),
+(4, 'ใบสมัครงาน', 'ส่วนของหัวข้อตรง Footers', '--', '--', '2017-09-26 20:48:50', '2017-09-26 20:48:50');
 
 -- --------------------------------------------------------
 
@@ -426,7 +431,7 @@ CREATE TABLE `home_ths` (
 --
 
 INSERT INTO `home_ths` (`id`, `image`, `title`, `created_at`, `updated_at`) VALUES
-(1, 'anime-feature1.jpg', 'aa', '2017-09-25 22:58:26', '2017-09-25 22:58:26');
+(1, 'logo.png', 'บริษัท ผู้จัดเตรียมระบบไอทีและ บริษัท ผู้ติดตั้งระบบ', '2017-09-25 22:58:26', '2017-09-26 20:35:59');
 
 -- --------------------------------------------------------
 
@@ -562,8 +567,7 @@ INSERT INTO `partners` (`id`, `image`, `title`, `Facebook`, `Twitter`, `created_
 (1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', '--', '2017-08-30 21:44:14', '2017-08-30 22:25:32'),
 (2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:20', '2017-08-30 22:26:26'),
 (3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:27', '2017-08-30 22:26:16'),
-(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:32', '2017-08-30 22:26:37'),
-(5, 'anime-feature1.jpg', 'aaaa', 'aaa', 'aaa', '2017-09-25 22:45:55', '2017-09-25 22:45:55');
+(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:32', '2017-08-30 22:26:37');
 
 -- --------------------------------------------------------
 
@@ -586,7 +590,10 @@ CREATE TABLE `partner_ths` (
 --
 
 INSERT INTO `partner_ths` (`id`, `image`, `title`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
-(1, 'anime-feature1.jpg', 'aaa2', 'aaa', 'aaa', '2017-09-25 22:49:19', '2017-09-26 00:49:08');
+(1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', '--', '2017-09-25 22:49:19', '2017-09-26 20:29:24'),
+(2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', '--', '2017-09-26 20:29:39', '2017-09-26 20:29:39'),
+(3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', '--', '2017-09-26 20:29:54', '2017-09-26 20:29:54'),
+(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-09-26 20:30:11', '2017-09-26 20:30:11');
 
 -- --------------------------------------------------------
 
@@ -635,7 +642,7 @@ CREATE TABLE `product_ths` (
   `id` int(10) UNSIGNED NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -645,7 +652,10 @@ CREATE TABLE `product_ths` (
 --
 
 INSERT INTO `product_ths` (`id`, `image`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'anime-feature1.jpg', 'aaa', 'aaa', '2017-09-25 21:54:48', '2017-09-25 21:54:48');
+(1, '1-system.png', 'การพัฒนาระบบและการปรับแต่ง', 'เรามุ่งมั่นทุ่มเทให้กับการพัฒนาระบบและบริการปรับแต่งในส่วนงานสื่อสารโทรคมนาคม ความจริงที่ว่าผลิตภัณฑ์นอกหิ้งมักจะทำบนฮาร์ดแวร์หรือซอฟต์แวร์ที่เป็นกรรมสิทธิ์และส่วนใหญ่เวลาที่พวกเขาไม่ได้อย่างเต็มที่ตอบสนองความต้องการของลูกค้าดังนั้นการพัฒนาระบบและการปรับแต่งเป็นคำตอบที่ดีที่สุด', '2017-09-25 21:54:48', '2017-09-26 20:41:53'),
+(2, '2-Custom.png', 'โซลูชันการจัดการระบบคลาวด์แบบกำหนดเอง', 'การประมวลผลแบบคลาวด์กำลังเกิดขึ้นและมีบทบาทสำคัญทั้งในแง่ของการให้บริการทางธุรกิจที่มีคุณค่าและในแง่ของวิธีการจัดการโครงสร้างพื้นฐานสำหรับทรัพยากรที่มีการใช้งานแบบเสมือนจริงจำนวนมาก โซลูชันการจัดการระบบคลาวด์เป็นกุญแจสู่ความสำเร็จในการนำมาใช้งานจริง', '2017-09-26 20:28:06', '2017-09-26 20:42:32'),
+(3, '3-bus.png', 'บริการพัฒนากระบวนการทางธุรกิจ', 'การจัดการกระบวนการทางธุรกิจ (Business Process Management - BPM) เป็นแนวทางในการปรับกระบวนการทางธุรกิจขององค์กรให้สอดคล้องกับความต้องการและความต้องการของลูกค้า ให้การบริหารจัดการสภาพแวดล้อมกระบวนการของธุรกิจเพื่อปรับปรุงประสิทธิภาพและประสิทธิผลของธุรกิจในขณะที่มุ่งมั่นในการสร้างสรรค์นวัตกรรมความยืดหยุ่นและบูรณาการกับเทคโนโลยี', '2017-09-26 20:28:21', '2017-09-26 20:43:03'),
+(4, '4-Mobile.png', 'การพัฒนาแอปพลิเคชันบนมือถือ', 'สอดคล้องกับความต้องการอย่างมากสำหรับการใช้แอปพลิเคชันบนมือถือเรายังได้สร้างความเชี่ยวชาญของเราเกี่ยวกับการพัฒนาแอปพลิเคชันอุปกรณ์เคลื่อนที่ บริการการพัฒนาแอปพลิเคชันบนมือถือปัจจุบันของเราสามารถครอบคลุมทุกแพลตฟอร์ม Android, iOS, Windows, RIM และ HTML5', '2017-09-26 20:28:35', '2017-09-26 20:43:32');
 
 -- --------------------------------------------------------
 
@@ -861,7 +871,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT for table `about_ths`
 --
 ALTER TABLE `about_ths`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `activities`
 --
@@ -926,7 +936,7 @@ ALTER TABLE `footers`
 -- AUTO_INCREMENT for table `footer_ths`
 --
 ALTER TABLE `footer_ths`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `homes`
 --
@@ -961,17 +971,17 @@ ALTER TABLE `partners`
 -- AUTO_INCREMENT for table `partner_ths`
 --
 ALTER TABLE `partner_ths`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `product_ths`
 --
 ALTER TABLE `product_ths`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `show_ths`
 --
