@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 27, 2017 at 05:54 AM
+-- Generation Time: Sep 29, 2017 at 05:30 AM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -362,7 +362,7 @@ CREATE TABLE `footers` (
 INSERT INTO `footers` (`id`, `title`, `description`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
 (1, 'PROFILE', 'Entronica is an IT solution provider and system integrator company based in Thailand. We provide software solution, implementation, integration, including professional and consultancy service on IT and telecommunication area..', '', '', '2017-08-30 21:53:34', '2017-08-30 21:53:34'),
 (2, 'CONTACT', '31 Phyathai Building Suite  No. 911-913, 9th Floor,  Phayathai Rd., Kwang Phayathai Road,Ratchathewi, Bangkok 10400', '-', '-', '2017-08-30 21:54:18', '2017-09-13 01:28:15'),
-(3, 'NETWORK WITH US', 'ส่วนของหัวข้อตรง Footers', 'https://www.facebook.com/oOteepakornOo', '--', '2017-08-30 21:55:32', '2017-08-30 22:18:40'),
+(3, 'NETWORK WITH US', 'ส่วนของหัวข้อตรง Footers', 'https://www.facebook.com/oOteepakornOo', 'https://twitter.com/jaysbabyfood', '2017-08-30 21:55:32', '2017-09-28 20:28:59'),
 (4, 'JOB APPLICATION FORM', 'ส่วนของหัวข้อตรง Footers', '', '', '2017-08-30 21:56:07', '2017-08-30 21:56:07');
 
 -- --------------------------------------------------------
@@ -388,7 +388,7 @@ CREATE TABLE `footer_ths` (
 INSERT INTO `footer_ths` (`id`, `title`, `description`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
 (1, 'ข้อมูลส่วนตัว', 'Entronica เป็นผู้ให้บริการโซลูชันด้านไอทีและ บริษัท ผู้ผสานรวมระบบในประเทศไทย เราให้บริการโซลูชันซอฟต์แวร์การติดตั้งรวมถึงบริการระดับมืออาชีพและให้คำปรึกษาด้านไอทีและการสื่อสารโทรคมนาคม ..', '--', '--', '2017-09-25 22:33:30', '2017-09-26 20:46:48'),
 (2, 'ติดต่อ', '31 อาคารพญาไทอาคารสวีทเลขที่ 911-913, ชั้น 9 ถนนพญาไทแขวงลุมพินีเขตปทุมวันเขตปทุมวันกรุงเทพฯ 10400', '--', '--', '2017-09-26 20:47:42', '2017-09-26 20:47:42'),
-(3, 'เครือข่ายของเรา', 'ส่วนของหัวข้อตรง Footers', 'https://www.facebook.com/oOteepakornOo', '--', '2017-09-26 20:48:25', '2017-09-26 20:48:25'),
+(3, 'เครือข่ายของเรา', 'ส่วนของหัวข้อตรง Footers', 'https://www.facebook.com/oOteepakornOo', 'https://twitter.com/jaysbabyfood', '2017-09-26 20:48:25', '2017-09-28 20:29:25'),
 (4, 'ใบสมัครงาน', 'ส่วนของหัวข้อตรง Footers', '--', '--', '2017-09-26 20:48:50', '2017-09-26 20:48:50');
 
 -- --------------------------------------------------------
@@ -564,10 +564,10 @@ CREATE TABLE `partners` (
 --
 
 INSERT INTO `partners` (`id`, `image`, `title`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
-(1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', '--', '2017-08-30 21:44:14', '2017-08-30 22:25:32'),
-(2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:20', '2017-08-30 22:26:26'),
-(3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:27', '2017-08-30 22:26:16'),
-(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-08-30 21:44:32', '2017-08-30 22:26:37');
+(1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', 'https://twitter.com/jaysbabyfood', '2017-08-30 21:44:14', '2017-09-28 20:20:29'),
+(2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', 'https://twitter.com/jaysbabyfood', '2017-08-30 21:44:20', '2017-09-28 20:20:38'),
+(3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', 'https://twitter.com/jaysbabyfood', '2017-08-30 21:44:27', '2017-09-28 20:20:45'),
+(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', 'https://twitter.com/jaysbabyfood', '2017-08-30 21:44:32', '2017-09-28 20:20:53');
 
 -- --------------------------------------------------------
 
@@ -590,10 +590,10 @@ CREATE TABLE `partner_ths` (
 --
 
 INSERT INTO `partner_ths` (`id`, `image`, `title`, `Facebook`, `Twitter`, `created_at`, `updated_at`) VALUES
-(1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', '--', '2017-09-25 22:49:19', '2017-09-26 20:29:24'),
-(2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', '--', '2017-09-26 20:29:39', '2017-09-26 20:29:39'),
-(3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', '--', '2017-09-26 20:29:54', '2017-09-26 20:29:54'),
-(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', '--', '2017-09-26 20:30:11', '2017-09-26 20:30:11');
+(1, 'People.png', '1', 'https://www.facebook.com/oOteepakornOo', 'https://twitter.com/jaysbabyfood', '2017-09-25 22:49:19', '2017-09-28 20:21:50'),
+(2, 'People.png', '2', 'https://www.facebook.com/zeenuz.pdiiz?fref=pb&hc_location=friends_tab', 'https://twitter.com/jaysbabyfood', '2017-09-26 20:29:39', '2017-09-28 20:21:56'),
+(3, 'People.png', '3', 'https://www.facebook.com/toon.gundam?fref=pb&hc_location=friends_tab', 'https://twitter.com/jaysbabyfood', '2017-09-26 20:29:54', '2017-09-28 20:22:03'),
+(4, 'People.png', '4', 'https://www.facebook.com/TL.tonliw?fref=pb&hc_location=friends_tab', 'https://twitter.com/jaysbabyfood', '2017-09-26 20:30:11', '2017-09-28 20:27:56');
 
 -- --------------------------------------------------------
 
@@ -966,7 +966,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `partners`
 --
 ALTER TABLE `partners`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `partner_ths`
 --
