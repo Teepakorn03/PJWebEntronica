@@ -84,7 +84,11 @@
           {!! Form::label('age', 'Age')  !!}
           </div>
           <div class="col-xs-5">
-              {!!  Form::select('age', ['20' => '20', '21' => '21'],  '20', ['class' => 'form-control' ]) !!}
+            @if(isset($jobapp->age))
+                {{ Form::text('age',$jobapp->age,['class' => 'form-control']) }}
+            @else
+                {{ Form::text('age','',['class' => 'form-control']) }}
+            @endif
           </div>
         </div>
         </div>
