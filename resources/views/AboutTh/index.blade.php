@@ -34,7 +34,7 @@
         @forelse ($about as $p)
           <tr>
               <td> {{ $p['id'] }} </td>
-              <td><img width="100%" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
+              <td><img width="200px" src="img/upload/<?php echo $p -> image?>" alt="{{ $p['image'] }}"> </td>
               <td> {{ $p['title'] }} </td>
               <td>{{ $p['description'] }}</td>
 
