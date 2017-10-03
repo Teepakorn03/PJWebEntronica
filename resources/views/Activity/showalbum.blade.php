@@ -35,7 +35,7 @@
 
       </div>
     </div>
-    <!-- Portfolio Grid Section -->
+    <!--- หน้าโชว์ข้อมูล ---------->
     <section id="portfolio">
       <div class="container">
         <h2 class="text-center">ACTIVITY</h2>
@@ -69,7 +69,7 @@
       </a>
     </div>
 
-    <!-- Portfolio Modals -->
+    <!-- สร้าง model ขึ้นมาเพื่อโชว์รูปภาพขนาดใหญ่ขึ้น  -->
 
       @foreach ($Activity as $i)
         <div class="portfolio-modal modal fade" id="<?php echo $i -> id?>" tabindex="-1" role="dialog" aria-hidden="true">

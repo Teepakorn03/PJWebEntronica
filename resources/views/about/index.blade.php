@@ -15,8 +15,8 @@
   ))}}
 
 
-
 </div>
+<!--- หน้าโชว์ข้อมูล ---------->
 <div align="center" class="col-xs-6"><br></div>
 <table  align="center" class="table table-bordered" style="width:70%;">
     <thead>
@@ -40,6 +40,7 @@
 
 
         <td>
+          <!---ปุ่ม ส่งค่าไอด เพื่อ ลบหรือแก้ไข ---------->
             {{ Form::open(['route' => ['about.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
             {{ Html::link('about/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }} &nbsp;

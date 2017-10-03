@@ -1,6 +1,7 @@
 @extends('layouts/main')
 
 @section('content')
+  <!---ส่วนขอวฟอร์ม---->
 <h1>Form Code</h1>
 <div class="panel panel-primary">
     <div class="panel-heading">

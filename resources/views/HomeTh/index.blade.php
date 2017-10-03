@@ -15,7 +15,7 @@
   ))}}
 
 </div>
-
+<!-- ดึงข้อมูลมาโชว์จาก database  -->
     <p  align="center" class="col-xs-6">**ไอดีที่ 1 อย่างเดียวเท่านั้นที่โชว์หน้า Home</p>
 <table  align="center" class="table table-bordered" style="width:70%;">
     <thead>
@@ -38,6 +38,7 @@
 
 
         <td>
+          <!---ปุ่ม ส่งค่าไอด เพื่อ ลบหรือแก้ไข ---------->
             {{ Form::open(['route' => ['hometh.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
             {{ Html::link('hometh/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+    <!-- ดึงข้อมูลมาโชว์จาก database  -->
 	<div id="page">
 		<div id="page-bgtop">
 			<div id="page-bgbtm">

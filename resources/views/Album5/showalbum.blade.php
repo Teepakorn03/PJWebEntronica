@@ -37,7 +37,7 @@
     </div>
 
 
-    <!-- Portfolio Grid Section -->
+        <!-- ดึงรูปภาพมาโชว์จาก database  -->
     <section id="portfolio">
       <div class="container">
         <h2 class="text-center">ACTIVITY</h2>
@@ -64,15 +64,14 @@
 
 
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+
     <div class="scroll-top d-lg-none">
       <a class="btn btn-primary js-scroll-trigger" href="/">
         <i class="fa fa-chevron-left"></i>
       </a>
     </div>
 
-    <!-- Portfolio Modals -->
-
+  <!-- สร้าง model ขึ้นมาเพื่อโชว์รูปภาพขนาดใหญ่ขึ้น  -->
       @foreach ($Album5 as $i)
         <div class="portfolio-modal modal fade" id="<?php echo $i -> id?>" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">

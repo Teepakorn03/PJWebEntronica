@@ -17,6 +17,7 @@
 
 
 </div>
+  <!-- ดึงข้อมูลมาโชว์จาก database  -->
 <div align="center" class="col-xs-6"><br></div>
 <table align="center" class="table table-bordered" style="width80%;">
     <thead>
@@ -64,6 +65,7 @@
 
 
         <td>
+          <!---ปุ่ม ส่งค่าไอด เพื่อ ลบหรือแก้ไข ---------->
             {{ Form::open(['route' => ['DetailJobTh.destroy',$p['id'], 'method' => "DELETE"] ]) }}
             <input type="hidden" name="_method" value="delete" />
             {{ Html::link('DetailJobTh/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;

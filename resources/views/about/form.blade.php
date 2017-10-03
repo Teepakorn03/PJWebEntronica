@@ -1,7 +1,8 @@
+<!---ดึงฟั่งชั่นเมนูมาใช้---->
 @extends('layouts/main')
-
 @section('content')
 <h1>Form Code</h1>
+<!---ส่วนขอวฟอร์ม---->
 <div class="panel panel-primary">
     <div class="panel-heading">
         @if(isset($about))
