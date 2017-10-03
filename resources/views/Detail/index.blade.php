@@ -14,72 +14,70 @@
           'class' => 'btn btn-primary'
   ))}}
 
-
-
 </div>
 <div align="center" class="col-xs-6"><br></div>
-<table align="center" class="table table-bordered" style="width:100%;">
-    <thead>
-        <tr>
-            <th width='2%'>ID</th>
-            <th>position</th>
-            <th>subheading</th>
-            <th>No.1</th>
-            <th>No.2</th>
-            <th>No.3</th>
-            <th>No.4</th>
-            <th>No.5</th>
-  =
-            <th>subheading1</th>
-            <th>No.9</th>
-            <th>No.10</th>
-            <th>No.11</th>
-            <th>No.12</th>
-            <th>No.13</th>
-
-
-            <th width="200">Action</th>
-        </tr>
-    </thead>
-    <tbody>
+<table align="center" class="table table-bordered" style="width80%;">
+  <thead>
       <tr>
-        @forelse ($detail as $p)
-          <tr>
-              <td> {{ $p['id'] }} </td>
-              <td> {{ $p['title'] }} </td>
-              <td> {{ $p['subheading'] }} </td>
-              <td> {{ $p['detail'] }} </td>
-              <td> {{ $p['No1'] }} </td>
-              <td> {{ $p['No2'] }} </td>
-              <td> {{ $p['No3'] }} </td>
-              <td> {{ $p['No4'] }} </td>
+          <th width='2%'>ID</th>
+          <th>position</th>
+          <th>subheading</th>
+          <th>No.1</th>
+          <th>No.2</th>
+          <th>No.3</th>
+          <th>No.4</th>
+          <th>No.5</th>
 
-              <td> {{ $p['subheading1'] }} </td>
-              <td> {{ $p['detail1'] }} </td>
-              <td> {{ $p['No8'] }} </td>
-              <td> {{ $p['No9'] }} </td>
-              <td> {{ $p['No10'] }} </td>
-              <td> {{ $p['No11'] }} </td>
+          <th>subheading1</th>
+          <th>No.9</th>
+          <th>No.10</th>
+          <th>No.11</th>
+          <th>No.12</th>
+          <th>No.13</th>
 
 
-
-        <td>
-            {{ Form::open(['route' => ['DetailJob.destroy',$p['id'], 'method' => "DELETE"] ]) }}
-            <input type="hidden" name="_method" value="delete" />
-            {{ Html::link('DetailJob/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}&nbsp;
-            {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
-            {{ Form::close() }}
-
-
-        </td>
-
+          <th width="100">Action</th>
       </tr>
-        @empty
+  </thead>
+  <tbody>
+    <tr>
+      @forelse ($detail as $p)
         <tr>
-            <td colspan="6">No data!!</td>
-        </tr>
-          @endforelse
-  </tbody>
+            <td> {{ $p['id'] }} </td>
+            <td> {{ $p['title'] }} </td>
+            <td> {{ $p['subheading'] }} </td>
+            <td> {{ $p['detail'] }} </td>
+            <td> {{ $p['No1'] }} </td>
+            <td> {{ $p['No2'] }} </td>
+            <td> {{ $p['No3'] }} </td>
+            <td> {{ $p['No4'] }} </td>
+
+            <td> {{ $p['subheading1'] }} </td>
+            <td> {{ $p['detail1'] }} </td>
+            <td> {{ $p['No8'] }} </td>
+            <td> {{ $p['No9'] }} </td>
+            <td> {{ $p['No10'] }} </td>
+            <td> {{ $p['No11'] }} </td>
+
+
+
+      <td>
+          {{ Form::open(['route' => ['DetailJobTh.destroy',$p['id'], 'method' => "DELETE"] ]) }}
+          <input type="hidden" name="_method" value="delete" />
+          {{ Html::link('DetailJobTh/'.$p['id'].'/edit', 'Edit', array('class'=> 'btn btn-primary')) }}
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {{ Form::submit('Delete',array('class' => 'btn btn-primary')) }}
+          {{ Form::close() }}
+      </td>
+
+    </tr>
+      @empty
+      <tr>
+          <td colspan="15">No data!!</td>
+      </tr>
+        @endforelse
+</tbody>
   </table>
 
 
